@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitfaden Auswanderung mit Kind – Empfehlung & Planung (Stand: 25.09.2025)</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121936;
+      --ink: #e9eefc;
+      --muted: #b9c3ea;
+      --accent: #7cc1ff;
+      --good: #7dd3a7;
+      --warn: #f6c76d;
+      --bad: #f08d8d;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: radial-gradient(1200px 800px at 20% -10%, #18224a 0%, #0b1020 55%, #070a16 100%);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0.2px; }
+    .meta { color: var(--muted); font-size: 14px; }
+
+    section {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+    h2 { margin: 0 0 8px; font-size: 22px; }
+    h3 { margin: 18px 0 8px; font-size: 18px; }
+    p { margin: 10px 0; }
+    ul { margin: 8px 0 8px 22px; }
+    li { margin: 4px 0; }
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      margin: 2px 6px 2px 0;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 12px; color: var(--muted);
+    }
+    .pros { color: var(--good); }
+    .cons { color: var(--bad); }
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: rgba(124, 193, 255, 0.08);
+      padding: 12px 14px;
+      border-radius: 10px;
+    }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .checklist {
+      display: grid; gap: 8px; grid-template-columns: 24px 1fr; align-items: start;
+    }
+    .box {
+      width: 18px; height: 18px; border-radius: 4px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.02);
+      margin-top: 3px;
+    }
+    .small { color: var(--muted); font-size: 13px; }
+    .divider { height: 1px; background: rgba(255,255,255,0.08); margin: 12px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .foot { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  </style>
+  <style>
+      section, header, .grid > * { break-inside: avoid; page-break-inside: avoid; }
+      h1, h2, h3, h4, h5, h6 { break-before: page; page-break-before: always; break-after: avoid; page-break-after: avoid; }
+      section > :first-child:is(h1,h2,h3,h4,h5,h6) { break-before: auto; page-break-before: auto; }
+    /* Light theme override for screen */
+    :root { --bg:#f3f4f6; --card:#ffffff; --ink:#111827; --muted:#374151; }
+    body { background: var(--bg) !important; color: var(--ink) !important; }
+    header, section { background: var(--card) !important; color: var(--ink) !important; border-color: #e5e7eb !important; box-shadow: none !important; }
+    .meta, .small, .foot { color: var(--muted) !important; }
+  </style>
+  <style>
+    @media print {
+      @page { margin: 8mm 7mm; }
+      html, body { font-size: 11px; line-height: 1.35; }
+      /* Allow natural flow: do not force headings to new pages */
+      h1, h2, h3, h4, h5, h6 { break-before: auto; page-break-before: auto; break-after: avoid; page-break-after: avoid; }
+      /* Allow sections to split to avoid wasted space */
+      section { break-inside: auto; page-break-inside: auto; margin-top: 10px !important; padding: 12px 14px !important; border-radius: 10px; }
+      header { padding: 14px !important; border-radius: 10px; }
+      .container { max-width: 1200px; margin: 8px auto; padding: 8px; }
+      /* Tighter typography */
+      h1 { font-size: 18px; margin: 0 0 6px; }
+      h2 { font-size: 14px; margin: 0 0 6px; }
+      h3 { font-size: 12px; margin: 10px 0 4px; }
+      p { margin: 6px 0; }
+      ul { margin: 6px 0 6px 18px; }
+      li { margin: 2px 0; }
+      .small { font-size: 10px; }
+      .foot { font-size: 9px; }
+      .tag { font-size: 10px; padding: 2px 6px; }
+  /* Hide decorative tags to save space */
+  .tag { display: none !important; }
+      .divider { margin: 8px 0; }
+      /* Lighter callouts */
+      .callout { padding: 8px 10px; border-left-width: 3px; }
+      /* Enforce two-column flow for long sections */
+      .two-col-print { column-count: 2; column-gap: 12px; }
+      .two-col-print > * { break-inside: avoid; page-break-inside: avoid; }
+      /* Let grid blocks flow in columns on print */
+      .grid-2 { display: block; }
+      /* Trim long lists in print to keep overview readable */
+      .trim ul li:nth-child(n+5) { display: none !important; }
+      .trim ol li:nth-child(n+7) { display: none !important; }
+      /* Checklist pairs (box+text) -> show first 4 items (8 children) */
+      .checklist > :nth-child(n+9) { display: none !important; }
+      /* Hide low-priority content in print */
+      .print-hide { display: none !important; }
+      /* Avoid splitting small UI blocks; allow text to flow */
+      p, li, blockquote, pre, code, tr, td, th { break-inside: avoid; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Leitfaden Auswanderung mit Kind – Empfehlung & Planung</h1>
+  <div class="meta">Stand: 25.09.2025 · Zielgruppe: Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</div>
+      <p class="small">Hinweis: Politische Lagen und Einwanderungsregeln ändern sich. Prüfen Sie vor Entscheidungen stets die offiziellen Quellen (Ministerien, Botschaften, Behörden) und aktuelle Nachrichten.</p>
+    </header>
+
+    <section class="two-col-print trim">
+      <h2>Kurzfazit</h2>
+      <p><strong>Empfehlung:</strong> Norwegen (Regionen: Oslofjord, Trondheim, ggf. Stavanger/Bergen).</p>
+      <p><strong>Gute Alternativen:</strong> Kanada – British Columbia (Vancouver/Victoria) · Irland (Dublin/Cork).</p>
+      <div class="callout">
+        <strong>Warum Norwegen?</strong> Sehr hohe Bildungsqualität, starke öffentliche Gesundheitssysteme, großzügige Familienpolitik, gute Chancen für soziale Berufe und wirtschaftsnahe Tätigkeiten, respektvoller Umgang und hohe Lebenszufriedenheit. Englisch ist weit verbreitet; Norwegisch ist für dauerhafte Integration sinnvoll.
+      </div>
+      <div class="tag">gute Schulen</div>
+      <div class="tag">Work‑Life‑Balance</div>
+      <div class="tag">starkes Sozialsystem</div>
+      <div class="tag">kulturelle Offenheit</div>
+      <div class="tag">sehr sicher</div>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Empfehlung im Detail: Norwegen</h2>
+      <h3>Bildung</h3>
+      <p>Norwegische Schulen sind gut ausgestattet, Ganztagsangebote und individuelle Förderung sind verbreitet. Englischunterricht beginnt früh; Übergänge zwischen Schulformen sind vergleichsweise durchlässig.</p>
+
+      <h3>Arbeitsmarkt (Ihre Profile)</h3>
+      <ul>
+        <li><strong>Sozialpädagogik/Sozialarbeit:</strong> Bedarf in Jugendhilfe, Schulsozialarbeit, Integrations‑/Gemeinwesenarbeit, Gesundheits‑ und Pflegebereichen. Teile sind <em>reglementiert</em>; Anerkennung kann nötig sein.</li>
+        <li><strong>Wirtschaftswissenschaften:</strong> Chancen in Beratung, Controlling, Supply‑Chain, Energie/Maritim, Tech/Startups; Englischsprachige Rollen existieren, Norwegisch erweitert Optionen deutlich.</li>
+      </ul>
+
+      <h3>Gesellschaft, Politik, Sicherheit</h3>
+      <p>Norwegen ist konsensorientiert, gesellschaftlich respektvoll und zählt regelmäßig zu den Ländern mit hoher Lebenszufriedenheit. Regierungen wechseln; der politische Kurs liegt meist in der Mitte bis Mitte‑links. Prüfen Sie vorab die aktuelle Regierungsbildung.</p>
+
+      <h3>Gesundheit und Altersvorsorge</h3>
+      <ul>
+        <li><strong>Gesundheit:</strong> Universelles System mit Hausarztmodell; Zuzahlungen gedeckelt; in ländlichen Regionen teils Wartezeiten.</li>
+        <li><strong>Altersvorsorge:</strong> Staatliche Grundsäule plus betriebliche/individuelle Vorsorge; stabile Rahmenbedingungen, hohe Transparenz.</li>
+      </ul>
+
+      <h3>Klima</h3>
+      <p>Küste: milde, feuchte Winter, kühle Sommer (z. B. Bergen/Stavanger). Inland/Norden: kalte Winter, Schnee, kurze Sommer. Längere Dunkelheit im Winter; dafür viel Natur, Licht und Aktivitäten im Sommer.</p>
+
+      <h3>Lebenshaltung & Wohnen</h3>
+      <p>Hohe Preise (Wohnen, Lebensmittel, Dienstleistungen). Löhne/Sozialleistungen sind entsprechend angepasst. Gute Work‑Life‑Balance (37,5‑Std‑Woche verbreitet, Elternzeit großzügig).</p>
+
+      <h3>Sprache & Integration</h3>
+      <p>Englisch hilft beim Einstieg; <strong>Norwegisch</strong> ist für Schule, Verwaltung und soziale Berufe essenziell. Kommunale Integrationsangebote und Sprachkurse unterstützen den Start.</p>
+
+      <h3>Einwanderung & Anerkennung (Überblick)</h3>
+      <ul>
+        <li><strong>Aufenthalt/Arbeit:</strong> EU/EFTA‑Bürger melden Aufenthalt bei der Polizei/UDI; für nicht EU/EFTA: Visum/Permit nötig.</li>
+        <li><strong>Anerkennung:</strong> Reglementierte soziale Berufe ggf. über <em>Helsedirektoratet</em>/NOKUT; Übersetzungen/Zeugnisse erforderlich.</li>
+      </ul>
+
+      <h3>Vor- und Nachteile</h3>
+      <div class="grid grid-2">
+        <div>
+          <p class="pros"><strong>Vorteile</strong></p>
+          <ul>
+            <li>Sehr gutes Bildungssystem, sichere Umgebung für Kinder</li>
+            <li>Starke Familienpolitik, gute Work‑Life‑Balance</li>
+            <li>Hohe Gehälter, solide soziale Sicherung</li>
+            <li>Respektvolle, niedrig‑hierarchische Kultur</li>
+            <li>Großartige Natur, Outdoor‑Möglichkeiten</li>
+          </ul>
+        </div>
+        <div>
+          <p class="cons"><strong>Herausforderungen</strong></p>
+          <ul>
+            <li>Hohe Lebenshaltungskosten und Mieten</li>
+            <li>Sprache für soziale Berufe zwingend</li>
+            <li>Dunkle Winter; Anpassung an Klima/Licht</li>
+            <li>Berufsanerkennung kann dauern</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Regionenempfehlung</h3>
+      <ul>
+        <li><strong>Oslo & Umgebung:</strong> Größter Arbeitsmarkt, internationale Schulen/Arbeitgeber.</li>
+        <li><strong>Trondheim:</strong> Universitäts‑ und Techstandort, familienfreundlich.</li>
+        <li><strong>Stavanger/Bergen:</strong> Energie/Maritim, starke Wirtschaft, feuchteres Klima.</li>
+      </ul>
+    </section>
+
+    <section class="two-col-print print-hide">
+      <h2>Alternativen in Kürze</h2>
+      <h3>Kanada – British Columbia (Vancouver/Victoria)</h3>
+      <ul>
+        <li><strong>Plus:</strong> Multikulturell, freundlich, gute Schulen, starke Natur, Englisch; Bedarf in Sozialdiensten und Wirtschaft/Tech.</li>
+        <li><strong>Minus:</strong> Einwanderungspfade (Express Entry/PNP) benötigen Punkte/Nachweise; hohe Wohnkosten; Wartezeiten im Gesundheitssystem.</li>
+        <li><strong>Klima:</strong> Vancouver/Victoria mild, regenreich Winter; Inland kontinental/kälter.</li>
+      </ul>
+      <h3>Irland – Dublin/Cork</h3>
+      <ul>
+        <li><strong>Plus:</strong> Englisch, EU‑Freizügigkeit, offene Kultur, starker Tech/Finanz‑Sektor, gute Grundschulen.</li>
+        <li><strong>Minus:</strong> Hohe Mieten, öffentliche Gesundheit mit Wartezeiten; ländlich teils weniger Angebote.</li>
+        <li><strong>Klima:</strong> Milder Atlantik, häufig Regen/Wind, selten extreme Temperaturen.</li>
+      </ul>
+      <p class="small">Hinweis: Politische Mehrheiten wechseln. Prüfen Sie jeweils die aktuelle Regierungslage, wenn „keine rechte Regierung“ ein Muss ist.</p>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Planung & Zeitstrahl</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>12–9 Monate</h3>
+          <ul>
+            <li>Kurzliste Länder/Regionen, Budgetrahmen, grobe Zeitplanung</li>
+            <li>Sprachstart (Norwegisch/Englisch A2→B1), Termin Berufsberatung/Anerkennung</li>
+            <li>CV/Zeugnisse übersetzen & beglaubigen, Referenzen sammeln</li>
+            <li>Schulsystem/Schulformen recherchieren; Bedarf des Kindes klären</li>
+          </ul>
+          <h3>9–6 Monate</h3>
+          <ul>
+            <li>Scout‑Reise (1–2 Wochen) mit Schul‑ und Wohnungsbesichtigungen</li>
+            <li>Berufsanerkennung anstoßen (falls nötig), Profilprüfung durch Behörden</li>
+            <li>Jobsuche starten (LinkedIn, kommunale Träger, NGOs, Hochschulen)</li>
+            <li>Finanz‑Puffer aufbauen (6–9 Monatskosten empfohlen)</li>
+          </ul>
+          <h3>6–3 Monate</h3>
+          <ul>
+            <li>Arbeitsverträge/Angebote, Mietmarkt sondieren, Umzug/Spedition anfragen</li>
+            <li>Krankenversicherung, Impf‑/Gesundheitsunterlagen, Vollmachten vorbereiten</li>
+            <li>Schulanmeldung/Anfrage bei Kommune, Übergabe Lernstand (Zeugnisse)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>3–1 Monat</h3>
+          <ul>
+            <li>Kündigungen/Abmeldungen (Miete, Kita/Schule, Strom/Internet)</li>
+            <li>Behörden: Führungszeugnis, Ehe‑/Geburtsurkunden, Melde‑/Steuerbescheide</li>
+            <li>Banken/Altersvorsorge: Konten, Depot, Renteninformationen sichern</li>
+            <li>Packliste, Dokumentenmappe, Übergangsunterkunft buchen</li>
+          </ul>
+          <h3>Erste 90 Tage</h3>
+          <ul>
+            <li>Adresse registrieren, Steuer‑/Sozialnummer beantragen</li>
+            <li>Hausarzt/Impfstatus, Versicherungen, Schulantritt/Elterngespräche</li>
+            <li>Sprachkurs intensivieren, Netzwerk aufbauen (Vereine, Nachbarschaft)</li>
+            <li>Probe‑Plan: Nach 90 Tagen Review von Budget/Schule/Job‑Fit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Checkliste (Auszug)</h2>
+      <div class="grid grid-2">
+        <div class="checklist">
+          <div class="box"></div><div>Pass/Personalausweis, Geburts‑/Heiratsurkunden (mehrsprachig, beglaubigt)</div>
+          <div class="box"></div><div>Abschlusszeugnisse, Tätigkeitsnachweise, Arbeitszeugnisse (übersetzt)</div>
+          <div class="box"></div><div>Führungszeugnis, Impfnachweise, Krankenakte (Kind)</div>
+          <div class="box"></div><div>Finanzplan (Monatsbudget, Rücklagen, Umzugskosten)</div>
+          <div class="box"></div><div>Sprachzertifikate (A2/B1+), laufende Kurse</div>
+          <div class="box"></div><div>Kontaktliste Behörden/Schulen/Arbeitgeber</div>
+        </div>
+        <div class="checklist">
+          <div class="box"></div><div>Scout‑Reise: Gespräche mit Schulen/Trägern/Arbeitgebern</div>
+          <div class="box"></div><div>Übergangsunterkunft und temporäre Krankenversicherung</div>
+          <div class="box"></div><div>Umzug/Spedition, Zollliste (bei Drittstaaten)</div>
+          <div class="box"></div><div>Abmeldungen/Verträge, Nachsendeauftrag</div>
+          <div class="box"></div><div>Digitale Mappe: Scans aller Dokumente</div>
+          <div class="box"></div><div>Notfallplan/Rückfallebene (3–6 Monate)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Erste Schritte jetzt</h2>
+      <ol>
+        <li><strong>Sprache:</strong> Sofort mit Norwegisch (oder Englisch) beginnen; Ziel B1 in 6–9 Monaten.</li>
+        <li><strong>Berufe prüfen:</strong> Ist Sozialpädagogik reglementiert? Falls ja: Anerkennung/Autorisasjon anfragen.</li>
+        <li><strong>Schule:</strong> Zielkommune wählen, Schulformen prüfen (öffentlich/international), Unterlagen vorbereiten.</li>
+        <li><strong>Budget:</strong> Realistische Monatskosten im Zielort + 6–9 Monate Rücklage.</li>
+        <li><strong>Netzwerk:</strong> Kontakt zu Trägern/Verbänden, deutschen Communities vor Ort, Informationsgespräche buchen.</li>
+        <li><strong>Scout‑Reise:</strong> Termin in 3–6 Monaten planen; 6–8 Termine (Schule/Arbeit/Wohnen).</li>
+      </ol>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Risiken, Hürden und Umgang damit</h2>
+      <p><strong>Größte Hürde:</strong> Kombination aus Sprache + Anerkennung + Wohnungsmarkt. Wer dies aktiv adressiert (früher Sprachstart, vollständige Unterlagen, flexible Wohnoptionen), beschleunigt die Integration erheblich.</p>
+      <ul>
+        <li><strong>Sprache:</strong> Täglich 30–45 Minuten; Tandems, lokale Meetups, berufsspezifische Vokabeln.</li>
+        <li><strong>Anerkennung:</strong> Vollständigkeit der Dokumente, frühzeitige Anträge, Zwischenlösungen (Assistenzrollen) akzeptieren.</li>
+        <li><strong>Wohnen:</strong> Erst Übergang (3–6 Monate), dann langfristige Suche mit lokalem Netzwerk.</li>
+        <li><strong>Schule:</strong> Enger Austausch mit Lehrkräften, ggf. Sprachförderung/Eingliederungsklassen nutzen.</li>
+      </ul>
+      <div class="callout">
+        <strong>Umgang mit Sorgen/Angst:</strong> Ein Umzug ist groß – und normaler­weise mit gemischten Gefühlen verbunden. Struktur (Zeitplan, Checklisten), kleine Schritte und reale Kontakte vor Ort reduzieren Unsicherheit. Halten Sie eine Rückfallebene vor, damit Entscheidungen nicht unter Druck entstehen müssen.
+      </div>
+      <p class="small">Wichtig: Aussagen über Deutschland oder andere Gruppen sollten sachlich bleiben. Prüfen Sie Statistiken aus belastbaren Quellen. Die Entscheidung für ein neues Land gelingt am besten mit einem Blick auf Lösungen statt auf Schuldzuschreibungen.</p>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Finanzrahmen (Richtwerte)</h2>
+      <ul>
+        <li><strong>Umzug:</strong> 4.000–12.000 € (Distanz, Volumen, Versicherung)</li>
+        <li><strong>Startkosten:</strong> 2–4 Monatsmieten Kaution/Deposit, Ausstattung</li>
+        <li><strong>Rücklagen:</strong> 6–9 Monate Lebenshaltung (Zielort), plus Puffer 10–15%</li>
+      </ul>
+      <p class="small">Individuelle Situation weicht ab. Erstellen Sie ein Szenario „Basis / Realistisch / Stress“ und planen Sie mit dem mittleren Wert plus Puffer.</p>
+    </section>
+
+    <section class="two-col-print trim">
+      <h2>Ressourcen (Startpunkte)</h2>
+      <ul>
+        <li><strong>Norwegen Einreise/Arbeit:</strong> UDI (Directorate of Immigration), Polizei Registrierung EU/EFTA</li>
+        <li><strong>Anerkennung:</strong> NOKUT, Helsedirektoratet (reglementierte Gesundheits‑ und Sozialberufe)</li>
+        <li><strong>Jobs:</strong> Finn.no, NAV, Kommunen, Hochschulen, LinkedIn</li>
+        <li><strong>Schulen:</strong> Kommunale Webseiten, Utdanningsdirektoratet, internationale Schulen</li>
+        <li><strong>Sprachen:</strong> Norskprøve, Folkeuniversitet, Online‑Plattformen (A1→B1)</li>
+      </ul>
+      <p class="foot">Alle Angaben ohne Gewähr; bitte offizielle Quellen prüfen.</p>
+    </section>
+  </div>
+</body>
+</html>
