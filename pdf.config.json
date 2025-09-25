@@ -1,0 +1,19 @@
+{
+  "title": "Auswanderungsleitfaden – Familie",
+  "date": "",
+  "headerColor": "#111827",
+  "borderColor": "#e5e7eb",
+  "headerFontSize": 9,
+  "forceLightTheme": true,
+  "printBg": "#f3f4f6",
+  "printInk": "#111827",
+  "printCard": "#ffffff",
+  "printMuted": "#374151",
+  "scale": 0.9,
+  "margins": {
+    "top": "16mm",
+    "bottom": "14mm",
+    "left": "12mm",
+    "right": "12mm"
+  }
+}
