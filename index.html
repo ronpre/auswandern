@@ -1,0 +1,2580 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auswandern – Gesamtdokument</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #050916;
+      --bg-accent: radial-gradient(circle at 20% -10%, rgba(56, 189, 248, 0.25), transparent 55%), radial-gradient(circle at 80% 0%, rgba(129, 140, 248, 0.18), transparent 55%), #030713;
+      --ink: #e2e8f0;
+      --ink-strong: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --card-bg: rgba(15, 23, 42, 0.82);
+      --card-border: rgba(148, 163, 184, 0.32);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-accent);
+      color: var(--ink);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .site-header {
+      width: min(1140px, 90vw);
+      margin: 48px auto 32px;
+      padding: 32px 36px;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      box-shadow: 0 24px 48px rgba(2, 6, 23, 0.55);
+    }
+
+    .site-header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 4vw, 42px);
+      color: var(--ink-strong);
+    }
+
+    .site-header p {
+      margin: 0 0 18px;
+      color: var(--text-muted);
+      max-width: 720px;
+    }
+
+    .site-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .site-nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.14);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus {
+      border-color: rgba(94, 234, 212, 0.65);
+      background: rgba(45, 212, 191, 0.22);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      padding: 0 0 88px;
+    }
+
+    .page-section {
+      margin: 0 auto;
+      width: min(1240px, 92vw);
+      border-radius: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      box-shadow: 0 40px 70px rgba(15, 23, 42, 0.45);
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+
+    .page-section > .page-shell {
+      position: relative;
+    }
+
+    .page-note {
+      margin: 0 auto;
+      width: min(1180px, 88vw);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .site-header {
+        margin: 32px auto 24px;
+        padding: 24px 20px 20px;
+      }
+
+      .site-nav a {
+        padding: 7px 12px;
+        font-size: 13px;
+      }
+
+      .page-section {
+        width: min(1000px, 94vw);
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Auswandern – Gesamtdokument</h1>
+    <p>Zusammenführung aller bisherigen HTML-Berichte und Leitfäden in einer Datei.</p>
+    <nav class="site-nav" aria-label="Inhaltsverzeichnis">
+      <ul>
+        <li><a href="#leitfaden">Leitfaden</a></li>
+        <li><a href="#empfehlung">Empfehlung</a></li>
+        <li><a href="#norwegen">Norwegen</a></li>
+        <li><a href="#island">Island</a></li>
+        <li><a href="#kanada">Kanada</a></li>
+        <li><a href="#neuseeland">Neuseeland</a></li>
+        <li><a href="#laendervergleich">Ländervergleich</a></li>
+        <li><a href="#vergleich">Vergleich</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="leitfaden" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-leitfaden {
+            --lf-bg: #0b1020;
+            --lf-card: #121936;
+            --lf-ink: #e9eefc;
+            --lf-muted: #b9c3ea;
+            --lf-accent: #7cc1ff;
+            --lf-good: #7dd3a7;
+            --lf-warn: #f6c76d;
+            --lf-bad: #f08d8d;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+            color: var(--lf-ink);
+            background: radial-gradient(1200px 800px at 20% -10%, #18224a 0%, #0b1020 55%, #070a16 100%);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 40px 24px;
+          }
+          .doc-leitfaden .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0;
+          }
+          .doc-leitfaden header {
+            background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04);
+          }
+          .doc-leitfaden h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0.2px; }
+          .doc-leitfaden .meta { color: var(--lf-muted); font-size: 14px; }
+          .doc-leitfaden section {
+            margin-top: 28px;
+            background: var(--lf-card);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 20px 22px;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.03);
+          }
+          .doc-leitfaden h2 { margin: 0 0 8px; font-size: 22px; }
+          .doc-leitfaden h3 { margin: 18px 0 8px; font-size: 18px; }
+          .doc-leitfaden p { margin: 10px 0; }
+          .doc-leitfaden ul { margin: 8px 0 8px 22px; }
+          .doc-leitfaden li { margin: 4px 0; }
+          .doc-leitfaden .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 2px 6px 2px 0;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.08);
+            font-size: 12px; color: var(--lf-muted);
+          }
+          .doc-leitfaden .pros { color: var(--lf-good); }
+          .doc-leitfaden .cons { color: var(--lf-bad); }
+          .doc-leitfaden .callout {
+            border-left: 4px solid var(--lf-accent);
+            background: rgba(124, 193, 255, 0.08);
+            padding: 12px 14px;
+            border-radius: 10px;
+          }
+          .doc-leitfaden .grid { display: grid; gap: 16px; }
+          @media (min-width: 860px) { .doc-leitfaden .grid-2 { grid-template-columns: 1fr 1fr; } }
+          .doc-leitfaden .checklist {
+            display: grid; gap: 8px; grid-template-columns: 24px 1fr; align-items: start;
+          }
+          .doc-leitfaden .box {
+            width: 18px; height: 18px; border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.02);
+            margin-top: 3px;
+          }
+          .doc-leitfaden .small { color: var(--lf-muted); font-size: 13px; }
+          .doc-leitfaden .divider { height: 1px; background: rgba(255,255,255,0.08); margin: 12px 0; }
+          .doc-leitfaden a { color: var(--lf-accent); text-decoration: none; }
+          .doc-leitfaden a:hover { text-decoration: underline; }
+          .doc-leitfaden .foot { color: var(--lf-muted); font-size: 12px; margin-top: 6px; }
+        </style>
+        <style>
+          .doc-leitfaden section,
+          .doc-leitfaden header,
+          .doc-leitfaden .grid > * {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          .doc-leitfaden h1,
+          .doc-leitfaden h2,
+          .doc-leitfaden h3,
+          .doc-leitfaden h4,
+          .doc-leitfaden h5,
+          .doc-leitfaden h6 {
+            break-before: page;
+            page-break-before: always;
+            break-after: avoid;
+            page-break-after: avoid;
+          }
+          .doc-leitfaden section > :first-child:is(h1,h2,h3,h4,h5,h6) {
+            break-before: auto;
+            page-break-before: auto;
+          }
+          .doc-leitfaden {
+            background: #f3f4f6 !important;
+            color: #111827 !important;
+          }
+          .doc-leitfaden header,
+          .doc-leitfaden section {
+            background: #ffffff !important;
+            color: #111827 !important;
+            border-color: #e5e7eb !important;
+            box-shadow: none !important;
+          }
+          .doc-leitfaden .meta,
+          .doc-leitfaden .small,
+          .doc-leitfaden .foot {
+            color: #374151 !important;
+          }
+        </style>
+        <style>
+          @media print {
+            .doc-leitfaden {
+              font-size: 11px;
+              line-height: 1.35;
+            }
+            .doc-leitfaden section,
+            .doc-leitfaden header {
+              break-inside: auto;
+              page-break-inside: auto;
+            }
+            .doc-leitfaden section {
+              margin-top: 10px !important;
+              padding: 12px 14px !important;
+              border-radius: 10px;
+            }
+            .doc-leitfaden header {
+              padding: 14px !important;
+              border-radius: 10px;
+            }
+            .doc-leitfaden .container {
+              max-width: 1200px;
+              margin: 8px auto;
+              padding: 8px;
+            }
+            .doc-leitfaden h1 { font-size: 18px; margin: 0 0 6px; }
+            .doc-leitfaden h2 { font-size: 14px; margin: 0 0 6px; }
+            .doc-leitfaden h3 { font-size: 12px; margin: 10px 0 4px; }
+            .doc-leitfaden p { margin: 6px 0; }
+            .doc-leitfaden ul { margin: 6px 0 6px 18px; }
+            .doc-leitfaden li { margin: 2px 0; }
+            .doc-leitfaden .small { font-size: 10px; }
+            .doc-leitfaden .foot { font-size: 9px; }
+            .doc-leitfaden .tag { font-size: 10px; padding: 2px 6px; display: none !important; }
+            .doc-leitfaden .divider { margin: 8px 0; }
+            .doc-leitfaden .callout { padding: 8px 10px; border-left-width: 3px; }
+            .doc-leitfaden .two-col-print { column-count: 2; column-gap: 12px; }
+            .doc-leitfaden .two-col-print > * { break-inside: avoid; page-break-inside: avoid; }
+            .doc-leitfaden .grid-2 { display: block; }
+            .doc-leitfaden .trim ul li:nth-child(n+5) { display: none !important; }
+            .doc-leitfaden .trim ol li:nth-child(n+7) { display: none !important; }
+            .doc-leitfaden .checklist > :nth-child(n+9) { display: none !important; }
+            .doc-leitfaden .print-hide { display: none !important; }
+            .doc-leitfaden p,
+            .doc-leitfaden li,
+            .doc-leitfaden blockquote,
+            .doc-leitfaden pre,
+            .doc-leitfaden code,
+            .doc-leitfaden tr,
+            .doc-leitfaden td,
+            .doc-leitfaden th {
+              break-inside: avoid;
+              page-break-inside: avoid;
+            }
+          }
+        </style>
+        <div class="doc doc-leitfaden">
+          <div class="container">
+          <header>
+            <h1>Leitfaden Auswanderung mit Kind – Empfehlung & Planung</h1>
+            <div class="meta">Stand: 25.09.2025 · Zielgruppe: Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</div>
+            <p class="small">Hinweis: Politische Lagen und Einwanderungsregeln ändern sich. Prüfen Sie vor Entscheidungen stets die offiziellen Quellen (Ministerien, Botschaften, Behörden) und aktuelle Nachrichten.</p>
+          </header>
+
+          <section class="two-col-print trim">
+            <h2>Kurzfazit</h2>
+            <p><strong>Empfehlung:</strong> Norwegen (Regionen: Oslofjord, Trondheim, ggf. Stavanger/Bergen).</p>
+            <p><strong>Gute Alternativen:</strong> Kanada – British Columbia (Vancouver/Victoria) · Irland (Dublin/Cork).</p>
+            <div class="callout">
+              <strong>Warum Norwegen?</strong> Sehr hohe Bildungsqualität, starke öffentliche Gesundheitssysteme, großzügige Familienpolitik, gute Chancen für soziale Berufe und wirtschaftsnahe Tätigkeiten, respektvoller Umgang und hohe Lebenszufriedenheit. Englisch ist weit verbreitet; Norwegisch ist für dauerhafte Integration sinnvoll.
+            </div>
+            <div class="tag">gute Schulen</div>
+            <div class="tag">Work‑Life‑Balance</div>
+            <div class="tag">starkes Sozialsystem</div>
+            <div class="tag">kulturelle Offenheit</div>
+            <div class="tag">sehr sicher</div>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Empfehlung im Detail: Norwegen</h2>
+            <h3>Bildung</h3>
+            <p>Norwegische Schulen sind gut ausgestattet, Ganztagsangebote und individuelle Förderung sind verbreitet. Englischunterricht beginnt früh; Übergänge zwischen Schulformen sind vergleichsweise durchlässig.</p>
+
+            <h3>Arbeitsmarkt (Ihre Profile)</h3>
+            <ul>
+              <li><strong>Sozialpädagogik/Sozialarbeit:</strong> Bedarf in Jugendhilfe, Schulsozialarbeit, Integrations‑/Gemeinwesenarbeit, Gesundheits‑ und Pflegebereichen. Teile sind <em>reglementiert</em>; Anerkennung kann nötig sein.</li>
+              <li><strong>Wirtschaftswissenschaften:</strong> Chancen in Beratung, Controlling, Supply‑Chain, Energie/Maritim, Tech/Startups; Englischsprachige Rollen existieren, Norwegisch erweitert Optionen deutlich.</li>
+            </ul>
+
+            <h3>Gesellschaft, Politik, Sicherheit</h3>
+            <p>Norwegen ist konsensorientiert, gesellschaftlich respektvoll und zählt regelmäßig zu den Ländern mit hoher Lebenszufriedenheit. Regierungen wechseln; der politische Kurs liegt meist in der Mitte bis Mitte‑links. Prüfen Sie vorab die aktuelle Regierungsbildung.</p>
+
+            <h3>Gesundheit und Altersvorsorge</h3>
+            <ul>
+              <li><strong>Gesundheit:</strong> Universelles System mit Hausarztmodell; Zuzahlungen gedeckelt; in ländlichen Regionen teils Wartezeiten.</li>
+              <li><strong>Altersvorsorge:</strong> Staatliche Grundsäule plus betriebliche/individuelle Vorsorge; stabile Rahmenbedingungen, hohe Transparenz.</li>
+            </ul>
+
+            <h3>Klima</h3>
+            <p>Küste: milde, feuchte Winter, kühle Sommer (z. B. Bergen/Stavanger). Inland/Norden: kalte Winter, Schnee, kurze Sommer. Längere Dunkelheit im Winter; dafür viel Natur, Licht und Aktivitäten im Sommer.</p>
+
+            <h3>Lebenshaltung & Wohnen</h3>
+            <p>Hohe Preise (Wohnen, Lebensmittel, Dienstleistungen). Löhne/Sozialleistungen sind entsprechend angepasst. Gute Work‑Life‑Balance (37,5‑Std‑Woche verbreitet, Elternzeit großzügig).</p>
+
+            <h3>Sprache & Integration</h3>
+            <p>Englisch hilft beim Einstieg; <strong>Norwegisch</strong> ist für Schule, Verwaltung und soziale Berufe essenziell. Kommunale Integrationsangebote und Sprachkurse unterstützen den Start.</p>
+
+            <h3>Einwanderung & Anerkennung (Überblick)</h3>
+            <ul>
+              <li><strong>Aufenthalt/Arbeit:</strong> EU/EFTA‑Bürger melden Aufenthalt bei der Polizei/UDI; für nicht EU/EFTA: Visum/Permit nötig.</li>
+              <li><strong>Anerkennung:</strong> Reglementierte soziale Berufe ggf. über <em>Helsedirektoratet</em>/NOKUT; Übersetzungen/Zeugnisse erforderlich.</li>
+            </ul>
+
+            <h3>Vor- und Nachteile</h3>
+            <div class="grid grid-2">
+              <div>
+                <p class="pros"><strong>Vorteile</strong></p>
+                <ul>
+                  <li>Sehr gutes Bildungssystem, sichere Umgebung für Kinder</li>
+                  <li>Starke Familienpolitik, gute Work‑Life‑Balance</li>
+                  <li>Hohe Gehälter, solide soziale Sicherung</li>
+                  <li>Respektvolle, niedrig‑hierarchische Kultur</li>
+                  <li>Großartige Natur, Outdoor‑Möglichkeiten</li>
+                </ul>
+              </div>
+              <div>
+                <p class="cons"><strong>Herausforderungen</strong></p>
+                <ul>
+                  <li>Hohe Lebenshaltungskosten und Mieten</li>
+                  <li>Sprache für soziale Berufe zwingend</li>
+                  <li>Dunkle Winter; Anpassung an Klima/Licht</li>
+                  <li>Berufsanerkennung kann dauern</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Regionenempfehlung</h3>
+            <ul>
+              <li><strong>Oslo & Umgebung:</strong> Größter Arbeitsmarkt, internationale Schulen/Arbeitgeber.</li>
+              <li><strong>Trondheim:</strong> Universitäts‑ und Techstandort, familienfreundlich.</li>
+              <li><strong>Stavanger/Bergen:</strong> Energie/Maritim, starke Wirtschaft, feuchteres Klima.</li>
+            </ul>
+          </section>
+
+          <section class="two-col-print print-hide">
+            <h2>Alternativen in Kürze</h2>
+            <h3>Kanada – British Columbia (Vancouver/Victoria)</h3>
+            <ul>
+              <li><strong>Plus:</strong> Multikulturell, freundlich, gute Schulen, starke Natur, Englisch; Bedarf in Sozialdiensten und Wirtschaft/Tech.</li>
+              <li><strong>Minus:</strong> Einwanderungspfade (Express Entry/PNP) benötigen Punkte/Nachweise; hohe Wohnkosten; Wartezeiten im Gesundheitssystem.</li>
+              <li><strong>Klima:</strong> Vancouver/Victoria mild, regenreich Winter; Inland kontinental/kälter.</li>
+            </ul>
+            <h3>Irland – Dublin/Cork</h3>
+            <ul>
+              <li><strong>Plus:</strong> Englisch, EU‑Freizügigkeit, offene Kultur, starker Tech/Finanz‑Sektor, gute Grundschulen.</li>
+              <li><strong>Minus:</strong> Hohe Mieten, öffentliche Gesundheit mit Wartezeiten; ländlich teils weniger Angebote.</li>
+              <li><strong>Klima:</strong> Milder Atlantik, häufig Regen/Wind, selten extreme Temperaturen.</li>
+            </ul>
+            <p class="small">Hinweis: Politische Mehrheiten wechseln. Prüfen Sie jeweils die aktuelle Regierungslage, wenn „keine rechte Regierung“ ein Muss ist.</p>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Planung & Zeitstrahl</h2>
+            <div class="grid grid-2">
+              <div>
+                <h3>12–9 Monate</h3>
+                <ul>
+                  <li>Kurzliste Länder/Regionen, Budgetrahmen, grobe Zeitplanung</li>
+                  <li>Sprachstart (Norwegisch/Englisch A2→B1), Termin Berufsberatung/Anerkennung</li>
+                  <li>CV/Zeugnisse übersetzen & beglaubigen, Referenzen sammeln</li>
+                  <li>Schulsystem/Schulformen recherchieren; Bedarf des Kindes klären</li>
+                </ul>
+                <h3>9–6 Monate</h3>
+                <ul>
+                  <li>Scout‑Reise (1–2 Wochen) mit Schul‑ und Wohnungsbesichtigungen</li>
+                  <li>Berufsanerkennung anstoßen (falls nötig), Profilprüfung durch Behörden</li>
+                  <li>Jobsuche starten (LinkedIn, kommunale Träger, NGOs, Hochschulen)</li>
+                  <li>Finanz‑Puffer aufbauen (6–9 Monatskosten empfohlen)</li>
+                </ul>
+                <h3>6–3 Monate</h3>
+                <ul>
+                  <li>Arbeitsverträge/Angebote, Mietmarkt sondieren, Umzug/Spedition anfragen</li>
+                  <li>Krankenversicherung, Impf‑/Gesundheitsunterlagen, Vollmachten vorbereiten</li>
+                  <li>Schulanmeldung/Anfrage bei Kommune, Übergabe Lernstand (Zeugnisse)</li>
+                </ul>
+              </div>
+              <div>
+                <h3>3–1 Monat</h3>
+                <ul>
+                  <li>Kündigungen/Abmeldungen (Miete, Kita/Schule, Strom/Internet)</li>
+                  <li>Behörden: Führungszeugnis, Ehe‑/Geburtsurkunden, Melde‑/Steuerbescheide</li>
+                  <li>Banken/Altersvorsorge: Konten, Depot, Renteninformationen sichern</li>
+                  <li>Packliste, Dokumentenmappe, Übergangsunterkunft buchen</li>
+                </ul>
+                <h3>Erste 90 Tage</h3>
+                <ul>
+                  <li>Adresse registrieren, Steuer‑/Sozialnummer beantragen</li>
+                  <li>Hausarzt/Impfstatus, Versicherungen, Schulantritt/Elterngespräche</li>
+                  <li>Sprachkurs intensivieren, Netzwerk aufbauen (Vereine, Nachbarschaft)</li>
+                  <li>Probe‑Plan: Nach 90 Tagen Review von Budget/Schule/Job‑Fit</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Checkliste (Auszug)</h2>
+            <div class="grid grid-2">
+              <div class="checklist">
+                <div class="box"></div><div>Pass/Personalausweis, Geburts‑/Heiratsurkunden (mehrsprachig, beglaubigt)</div>
+                <div class="box"></div><div>Abschlusszeugnisse, Tätigkeitsnachweise, Arbeitszeugnisse (übersetzt)</div>
+                <div class="box"></div><div>Führungszeugnis, Impfnachweise, Krankenakte (Kind)</div>
+                <div class="box"></div><div>Finanzplan (Monatsbudget, Rücklagen, Umzugskosten)</div>
+                <div class="box"></div><div>Sprachzertifikate (A2/B1+), laufende Kurse</div>
+                <div class="box"></div><div>Kontaktliste Behörden/Schulen/Arbeitgeber</div>
+              </div>
+              <div class="checklist">
+                <div class="box"></div><div>Scout‑Reise: Gespräche mit Schulen/Trägern/Arbeitgebern</div>
+                <div class="box"></div><div>Übergangsunterkunft und temporäre Krankenversicherung</div>
+                <div class="box"></div><div>Umzug/Spedition, Zollliste (bei Drittstaaten)</div>
+                <div class="box"></div><div>Abmeldungen/Verträge, Nachsendeauftrag</div>
+                <div class="box"></div><div>Digitale Mappe: Scans aller Dokumente</div>
+                <div class="box"></div><div>Notfallplan/Rückfallebene (3–6 Monate)</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Erste Schritte jetzt</h2>
+            <ol>
+              <li><strong>Sprache:</strong> Sofort mit Norwegisch (oder Englisch) beginnen; Ziel B1 in 6–9 Monaten.</li>
+              <li><strong>Berufe prüfen:</strong> Ist Sozialpädagogik reglementiert? Falls ja: Anerkennung/Autorisasjon anfragen.</li>
+              <li><strong>Schule:</strong> Zielkommune wählen, Schulformen prüfen (öffentlich/international), Unterlagen vorbereiten.</li>
+              <li><strong>Budget:</strong> Realistische Monatskosten im Zielort + 6–9 Monate Rücklage.</li>
+              <li><strong>Netzwerk:</strong> Kontakt zu Trägern/Verbänden, deutschen Communities vor Ort, Informationsgespräche buchen.</li>
+              <li><strong>Scout‑Reise:</strong> Termin in 3–6 Monaten planen; 6–8 Termine (Schule/Arbeit/Wohnen).</li>
+            </ol>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Risiken, Hürden und Umgang damit</h2>
+            <p><strong>Größte Hürde:</strong> Kombination aus Sprache + Anerkennung + Wohnungsmarkt. Wer dies aktiv adressiert (früher Sprachstart, vollständige Unterlagen, flexible Wohnoptionen), beschleunigt die Integration erheblich.</p>
+            <ul>
+              <li><strong>Sprache:</strong> Täglich 30–45 Minuten; Tandems, lokale Meetups, berufsspezifische Vokabeln.</li>
+              <li><strong>Anerkennung:</strong> Vollständigkeit der Dokumente, frühzeitige Anträge, Zwischenlösungen (Assistenzrollen) akzeptieren.</li>
+              <li><strong>Wohnen:</strong> Erst Übergang (3–6 Monate), dann langfristige Suche mit lokalem Netzwerk.</li>
+              <li><strong>Schule:</strong> Enger Austausch mit Lehrkräften, ggf. Sprachförderung/Eingliederungsklassen nutzen.</li>
+            </ul>
+            <div class="callout">
+              <strong>Umgang mit Sorgen/Angst:</strong> Ein Umzug ist groß – und normaler­weise mit gemischten Gefühlen verbunden. Struktur (Zeitplan, Checklisten), kleine Schritte und reale Kontakte vor Ort reduzieren Unsicherheit. Halten Sie eine Rückfallebene vor, damit Entscheidungen nicht unter Druck entstehen müssen.
+            </div>
+            <p class="small">Wichtig: Aussagen über Deutschland oder andere Gruppen sollten sachlich bleiben. Prüfen Sie Statistiken aus belastbaren Quellen. Die Entscheidung für ein neues Land gelingt am besten mit einem Blick auf Lösungen statt auf Schuldzuschreibungen.</p>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Finanzrahmen (Richtwerte)</h2>
+            <ul>
+              <li><strong>Umzug:</strong> 4.000–12.000 € (Distanz, Volumen, Versicherung)</li>
+              <li><strong>Startkosten:</strong> 2–4 Monatsmieten Kaution/Deposit, Ausstattung</li>
+              <li><strong>Rücklagen:</strong> 6–9 Monate Lebenshaltung (Zielort), plus Puffer 10–15%</li>
+            </ul>
+            <p class="small">Individuelle Situation weicht ab. Erstellen Sie ein Szenario „Basis / Realistisch / Stress“ und planen Sie mit dem mittleren Wert plus Puffer.</p>
+          </section>
+
+          <section class="two-col-print trim">
+            <h2>Ressourcen (Startpunkte)</h2>
+            <ul>
+              <li><strong>Norwegen Einreise/Arbeit:</strong> UDI (Directorate of Immigration), Polizei Registrierung EU/EFTA</li>
+              <li><strong>Anerkennung:</strong> NOKUT, Helsedirektoratet (reglementierte Gesundheits‑ und Sozialberufe)</li>
+              <li><strong>Jobs:</strong> Finn.no, NAV, Kommunen, Hochschulen, LinkedIn</li>
+              <li><strong>Schulen:</strong> Kommunale Webseiten, Utdanningsdirektoratet, internationale Schulen</li>
+              <li><strong>Sprachen:</strong> Norskprøve, Folkeuniversitet, Online‑Plattformen (A1→B1)</li>
+            </ul>
+            <p class="foot">Alle Angaben ohne Gewähr; bitte offizielle Quellen prüfen.</p>
+          </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="empfehlung" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-empfehlung {
+            --de-bg: #0b1020;
+            --de-card: #121936;
+            --de-ink: #e9eefc;
+            --de-muted: #b9c3ea;
+            --de-good: #7dd3a7;
+            --de-warn: #f6c76d;
+            --de-bad: #f08d8d;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            color: var(--de-ink);
+            background: radial-gradient(1200px 800px at 20% -10%, #18224a 0%, #0b1020 55%, #070a16 100%);
+            line-height: 1.6;
+            padding: 40px 24px;
+          }
+          .doc-empfehlung .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0;
+          }
+          .doc-empfehlung header {
+            background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+          }
+          .doc-empfehlung h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: .2px; }
+          .doc-empfehlung .meta { color: var(--de-muted); font-size: 14px; }
+          .doc-empfehlung section {
+            margin-top: 28px;
+            background: var(--de-card);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 20px 22px;
+            box-shadow: 0 16px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+          }
+          .doc-empfehlung h2 { margin: 0 0 8px; font-size: 22px; }
+          .doc-empfehlung h3 { margin: 18px 0 8px; font-size: 18px; }
+          .doc-empfehlung p { margin: 10px 0; }
+          .doc-empfehlung ul { margin: 8px 0 8px 22px; }
+          .doc-empfehlung li { margin: 4px 0; }
+          .doc-empfehlung .pros { color: var(--de-good); }
+          .doc-empfehlung .cons { color: var(--de-bad); }
+          .doc-empfehlung .small { color: var(--de-muted); font-size: 13px; }
+        </style>
+        <style>
+          .doc-empfehlung section,
+          .doc-empfehlung header {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          .doc-empfehlung h1,
+          .doc-empfehlung h2,
+          .doc-empfehlung h3 {
+            break-before: page;
+            page-break-before: always;
+            break-after: avoid;
+            page-break-after: avoid;
+          }
+          .doc-empfehlung section > :first-child:is(h1,h2,h3) {
+            break-before: auto;
+            page-break-before: auto;
+          }
+          .doc-empfehlung {
+            background: #f3f4f6 !important;
+            color: #111827 !important;
+          }
+          .doc-empfehlung header,
+          .doc-empfehlung section {
+            background: #ffffff !important;
+            color: #111827 !important;
+            border-color: #e5e7eb !important;
+            box-shadow: none !important;
+          }
+          .doc-empfehlung .meta,
+          .doc-empfehlung .small {
+            color: #374151 !important;
+          }
+        </style>
+        <style>
+          @media print {
+            .doc-empfehlung {
+              font-size: 11px;
+              line-height: 1.4;
+            }
+            .doc-empfehlung section {
+              margin-top: 12px !important;
+              padding: 14px !important;
+            }
+            .doc-empfehlung header {
+              padding: 18px !important;
+            }
+            .doc-empfehlung h1 { font-size: 20px; margin: 0 0 6px; }
+            .doc-empfehlung h2 { font-size: 16px; }
+            .doc-empfehlung h3 { font-size: 13px; }
+            .doc-empfehlung p,
+            .doc-empfehlung li { break-inside: avoid; page-break-inside: avoid; }
+          }
+        </style>
+        <div class="doc doc-empfehlung">
+          <div class="container">
+            <header>
+              <h1>Empfehlung: Norwegen</h1>
+              <div class="meta">Stand: 25.09.2025 · Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</div>
+              <p class="small">Kurzbegründung für die Auswahl des Ziellands gemäß Ihren Kriterien.</p>
+            </header>
+
+            <section>
+              <h2>Warum Norwegen passt</h2>
+              <ul>
+                <li>Schule/Kind: öffentliche Schulen mit guter Förderung; sichere Umgebung.</li>
+                <li>Arbeitsmarkt: Bedarf in Sozialarbeit/Kommunen sowie Wirtschaft/Finance/Tech.</li>
+                <li>Gesellschaft/Politik: hohe Gleichstellung, niedrige Polarisierung, stabile Demokratie.</li>
+                <li>Gesundheit/Alter: gut ausgebautes System; solide Rentenstruktur.</li>
+                <li>Lebensqualität: Work‑Life‑Balance, Naturzugang, saubere Umwelt.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Klima & Lebenshaltung</h2>
+              <ul>
+                <li>Klima: Oslo/Viken kontinental (kalte Winter, warme Sommer); Westküste milder, feuchter.</li>
+                <li>Kosten: hoch, aber Gehälter angepasst; Übergang möbliert, dann langfristig.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Risiken & Gegenmaßnahmen</h2>
+              <ul>
+                <li>Sprache: früh Norwegisch A1→B1/B2 planen; berufsspezifische Module.</li>
+                <li>Anerkennung: NOKUT/Helsedirektoratet prüfen; Zwischenrollen nutzen.</li>
+                <li>Wohnen: 3–6 Monate möbliert; Kautionskonto; Scout‑Reise.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Empfohlene Startregionen</h2>
+              <ul>
+                <li>Oslo & Viken: größter Arbeitsmarkt, internationale Optionen, diverse Schultypen.</li>
+                <li>Trondheim: Uni/Tech, familienfreundlich; solide Schulqualität.</li>
+                <li>Stavanger/Bergen: Energie/Maritim; milderes Küstenklima.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>1‑Seite Fazit</h2>
+              <p class="pros"><strong>Pro:</strong> Schule, Sicherheit, Jobs, Work‑Life‑Balance, Natur.</p>
+              <p class="cons"><strong>Contra:</strong> Kosten, Sprache, dunkle Winter → planbar.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="norwegen" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-norwegen {
+            --dn-bg: #0b1020;
+            --dn-card: #121936;
+            --dn-ink: #e9eefc;
+            --dn-muted: #b9c3ea;
+            --dn-accent: #7cc1ff;
+            --dn-good: #7dd3a7;
+            --dn-warn: #f6c76d;
+            --dn-bad: #f08d8d;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            color: var(--dn-ink);
+            background: radial-gradient(1200px 800px at 20% -10%, #18224a 0%, #0b1020 55%, #070a16 100%);
+            line-height: 1.6;
+            padding: 40px 24px;
+          }
+          .doc-norwegen .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0;
+          }
+          .doc-norwegen header {
+            background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+          }
+          .doc-norwegen h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: .2px; }
+          .doc-norwegen .meta { color: var(--dn-muted); font-size: 14px; }
+          .doc-norwegen section {
+            margin-top: 28px;
+            background: var(--dn-card);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 20px 22px;
+            box-shadow: 0 16px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+          }
+          .doc-norwegen h2 { margin: 0 0 8px; font-size: 22px; }
+          .doc-norwegen h3 { margin: 18px 0 8px; font-size: 18px; }
+          .doc-norwegen p { margin: 10px 0; }
+          .doc-norwegen ul { margin: 8px 0 8px 22px; }
+          .doc-norwegen li { margin: 4px 0; }
+          .doc-norwegen .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 2px 6px 2px 0;
+            border-radius: 999px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.08);
+            font-size: 12px;
+            color: var(--dn-muted);
+          }
+          .doc-norwegen .pros { color: var(--dn-good); }
+          .doc-norwegen .cons { color: var(--dn-bad); }
+          .doc-norwegen .small { color: var(--dn-muted); font-size: 13px; }
+          .doc-norwegen .foot { color: var(--dn-muted); font-size: 12px; margin-top: 6px; }
+          .doc-norwegen .callout {
+            border-left: 4px solid var(--dn-accent);
+            background: rgba(124, 193, 255, .08);
+            padding: 12px 14px;
+            border-radius: 10px;
+          }
+          .doc-norwegen .grid { display: grid; gap: 16px; }
+          @media (min-width: 860px) { .doc-norwegen .grid-2 { grid-template-columns: 1fr 1fr; } }
+          .doc-norwegen .flow { display: flex; flex-direction: column; gap: 8px; }
+          .doc-norwegen .step {
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 8px;
+            padding: 8px 10px;
+          }
+          .doc-norwegen .arrow { align-self: center; color: var(--dn-muted); }
+        </style>
+        <style>
+          .doc-norwegen section,
+          .doc-norwegen header,
+          .doc-norwegen .grid > * {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          .doc-norwegen h1,
+          .doc-norwegen h2,
+          .doc-norwegen h3,
+          .doc-norwegen h4,
+          .doc-norwegen h5,
+          .doc-norwegen h6 {
+            break-before: page;
+            page-break-before: always;
+            break-after: avoid;
+            page-break-after: avoid;
+          }
+          .doc-norwegen section > :first-child:is(h1,h2,h3,h4,h5,h6) {
+            break-before: auto;
+            page-break-before: auto;
+          }
+          .doc-norwegen {
+            background: #f3f4f6 !important;
+            color: #111827 !important;
+          }
+          .doc-norwegen header,
+          .doc-norwegen section {
+            background: #ffffff !important;
+            color: #111827 !important;
+            border-color: #e5e7eb !important;
+            box-shadow: none !important;
+          }
+          .doc-norwegen .meta,
+          .doc-norwegen .small,
+          .doc-norwegen .foot { color: #374151 !important; }
+        </style>
+        <style>
+          @media print {
+            .doc-norwegen {
+              font-size: 11px;
+              line-height: 1.35;
+            }
+            .doc-norwegen section,
+            .doc-norwegen header {
+              break-inside: auto;
+              page-break-inside: auto;
+            }
+            .doc-norwegen section {
+              margin-top: 12px !important;
+              padding: 14px !important;
+            }
+            .doc-norwegen header {
+              padding: 18px !important;
+            }
+            .doc-norwegen h1 { font-size: 20px; }
+            .doc-norwegen h2 { font-size: 16px; }
+            .doc-norwegen h3 { font-size: 13px; }
+            .doc-norwegen p,
+            .doc-norwegen li,
+            .doc-norwegen table,
+            .doc-norwegen tr,
+            .doc-norwegen td,
+            .doc-norwegen th { break-inside: avoid; page-break-inside: avoid; }
+          }
+        </style>
+        <div class="doc doc-norwegen">
+          <div class="container">
+            <header>
+              <h1>Norwegen – Auswanderungsleitfaden</h1>
+              <div class="meta">Stand: 25.09.2025 · Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</div>
+              <p class="small">Hinweis: Rechtliche Rahmenbedingungen ändern sich. Prüfen Sie stets UDI/Politi, Kommunen und Ministerien.</p>
+            </header>
+
+            <section>
+              <h2>Warum Norwegen?</h2>
+              <p>Sehr hohe Lebensqualität, gute Schulen, respektvolle Gesellschaft, familienfreundliche Arbeitskultur. Englisch breit nutzbar; Norwegisch für dauerhafte Integration wichtig.</p>
+              <div class="tag">Schulen</div><div class="tag">Gesundheit</div><div class="tag">Work‑Life‑Balance</div><div class="tag">Sicherheit</div>
+            </section>
+
+            <section>
+              <h2>Regionen & Klima</h2>
+              <ul>
+                <li><strong>Oslo & Viken:</strong> Größter Arbeitsmarkt, internationale Arbeitgeber/Schulen; kontinentales Klima, kalte Winter, warme Sommer.</li>
+                <li><strong>Trondheim:</strong> Uni/Tech, familienfreundlich; kühler, schneereicher Winter.</li>
+                <li><strong>Stavanger/Bergen:</strong> Energie/Maritim; milde, feuchte Winter, kühle Sommer.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Erst‑Wohnorte & Start‑Wohnen</h2>
+              <h3>Oslo & Umgebung</h3>
+              <ul>
+                <li><strong>Familienfreundlich:</strong> Nordstrand, Ullern, St. Hanshaugen; außerhalb: <em>Asker/Bærum</em> (ruhig, gute Schulen, internationale Optionen).</li>
+                <li><strong>Urban/international:</strong> Grünerløkka, Frogner, Majorstuen (teurer, lebhaft, kurze Wege).</li>
+              </ul>
+              <h3>Trondheim</h3>
+              <ul>
+                <li>Byåsen (grün, familienfreundlich), Charlottenlund/Lade (gute Anbindung, Schulen).</li>
+              </ul>
+              <h3>Stavanger/Bergen</h3>
+              <ul>
+                <li>Stavanger: Hinna, Hundvåg; <em>Sandnes</em> als erschwingliche Alternative.</li>
+                <li>Bergen: Fana, Åsane, Sandviken (unterschiedliche Pendelzeiten, prüfen Sie ÖPNV).</li>
+              </ul>
+              <h3>Start‑Wohnen (praktisch)</h3>
+              <ul>
+                <li><strong>Übergang 3–6 Monate:</strong> Möbliert (<em>møblert</em>) über <strong>finn.no</strong>; später unmöbliert. Typisch <strong>3 Monatsmieten</strong> Kaution (Depositumskonto).</li>
+                <li><strong>Unterlagen:</strong> Ausweis, Arbeitsvertrag/Angebot, Gehaltsnachweise/Referenzen, ggf. norwegische ID (nach Registrierung).</li>
+                <li><strong>Vertrag:</strong> Achten Sie auf <em>Husleiekontrakt</em>, Nebenkosten, Kündigungsfrist, separaten Kautionskonto‑Nachweis.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Schule & Bildung</h2>
+              <ul>
+                <li>Öffentliche Schulen ohne Gebühren; zusätzliche Sprachförderung für zugewanderte Kinder üblich.</li>
+                <li>Schulstart August; Quereinstieg möglich. Zeugnisse/Lernstand mitbringen; Kommune weist Schule zu.</li>
+                <li>Internationale Schulen in Oslo/Bergen/Stavanger/Trondheim als Alternative (gebührenpflichtig).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Arbeitsmarkt (Ihre Profile)</h2>
+              <ul>
+                <li><strong>Sozialpädagogik/Sozialarbeit:</strong> Bedarf bei Kommune/Bezirk (Barnevern, Schulsozialarbeit, NAV‑nah), NGOs, Gesundheits‑/Pflegeeinrichtungen. Anerkennung/Autorisasjon je nach Tätigkeit über Helsedirektoratet/NOKUT.</li>
+                <li><strong>Wirtschaft:</strong> Rollen in Finance/Controlling, Beratung, Supply‑Chain, Energie, Tech. Englisch möglich, Norwegisch erweitert stark.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Einreise, Registrierung, Anerkennung</h2>
+              <ul>
+                <li><strong>EU/EFTA:</strong> Online‑Vorregistrierung, Termin bei Polizei, Registrierungsbeleg; Steuer‑ID (Skatteetaten), Sozialnummer.</li>
+                <li><strong>Nicht‑EU:</strong> UDI‑Permit je nach Kategorie (Skilled Worker, Family, Study).</li>
+                <li><strong>Anerkennung:</strong> NOKUT (Bildungsnachweise), Helsedirektoratet (reglementierte Gesundheits‑/Sozialberufe). Übersetzungen beglaubigt.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Vor‑ und Nachteile</h2>
+              <p class="pros"><strong>Plus:</strong> Bildungsqualität, Sicherheit, Familienleistungen, Gehälter, Natur.</p>
+              <p class="cons"><strong>Minus:</strong> Hohe Kosten, Sprache nötig, dunkle Winter, Anerkennungsprozess.</p>
+            </section>
+
+            <section>
+              <h2>Erste Schritte (90‑Tage‑Plan)</h2>
+              <ol>
+                <li>Norwegisch starten (A1→A2 in 3–4 Monaten), berufsspezifische Vokabeln.</li>
+                <li>Dokumentenpaket: Urkunden, Zeugnisse, Arbeitsnachweise, Führungszeugnis, Übersetzungen.</li>
+                <li>Anerkennung prüfen/beantragen; Zwischenrolle (assistent/veileder) erwägen.</li>
+                <li>Job‑Recherche (finn.no, kommunale Portale, LinkedIn), 10 passende Arbeitgeber identifizieren.</li>
+                <li>Schulrecherche in Zielkommune, Kontaktaufnahme, Anforderungen klären.</li>
+                <li>Scout‑Reise einplanen, Gespräche mit Arbeitgebern/Schulen/Wohnung.</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2>Ressourcen (Startpunkte)</h2>
+              <ul>
+                <li>UDI (Ausländerbehörde), Polizei Registrierung, Skatteetaten (Steuern/ID), NAV (Arbeitsmarkt/Leistungen)</li>
+                <li>NOKUT, Helsedirektoratet (Autorisasjon), Utdanningsdirektoratet (Schulen)</li>
+                <li>Stellen: finn.no, kommunale Seiten, Hochschulen, LinkedIn</li>
+                <li>Sprachkurse: Folkeuniversitet, Norskprøve‑Infos, lokale Anbieter</li>
+              </ul>
+              <p class="foot">Alle Angaben ohne Gewähr; offizielle Quellen prüfen.</p>
+            </section>
+
+            <section>
+              <h2>Checkliste (Norwegen)</h2>
+              <ul>
+                <li>Pässe/Urkunden (mehrsprachig, beglaubigt), Übersetzungen</li>
+                <li>UDI/Politi Registrierung (EU/EFTA), Steuer‑ID (Skatteetaten), Bank</li>
+                <li>NOKUT/Helsedirektoratet (Anerkennung), Referenzen, CV auf Norwegisch/Englisch</li>
+                <li>Schulanmeldung Kommune, Sprachförderung</li>
+                <li>Wohnung: finn.no, Depositumskonto, Übergangsunterkunft</li>
+                <li>Versicherungen, Hausarzt, Impfstatus</li>
+              </ul>
+              <p class="small">Alle Angaben ohne Gewähr; offizielle Quellen prüfen.</p>
+            </section>
+
+            <section>
+              <h2>1‑Seite – Zusammenfassung</h2>
+              <ul>
+                <li><strong>Warum:</strong> Schulen, Sicherheit, Familienpolitik, Work‑Life‑Balance.</li>
+                <li><strong>Jobs:</strong> Sozialarbeit in Kommune/Barnevern; Wirtschaft in Finance/Consulting/Energie/Tech.</li>
+                <li><strong>Sprache:</strong> Englisch für Start, <strong>Norwegisch</strong> für Schule/Verwaltung/soziale Berufe nötig.</li>
+                <li><strong>Kosten:</strong> Hoch, aber Löhne angepasst; Übergang möbliert, danach langfristig.</li>
+                <li><strong>Einreise:</strong> EU/EFTA Registrierung; Nicht‑EU Permit; Steuer‑ID, Hausarzt, Schule anmelden.</li>
+                <li><strong>Hürden:</strong> Sprache + Anerkennung + Wohnen → früh starten, Unterlagen komplett.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Anerkennung – Ablauf (Flowcharts)</h2>
+              <div class="grid grid-2">
+                <div>
+                  <h3>Sozialpädagogik/Sozialarbeit</h3>
+                  <div class="flow">
+                    <div class="step">Rolle klären: reglementiert? (z. B. klinisch/gesundheitsnah)</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Diplome sammeln, Übersetzungen → <strong>NOKUT</strong> (Bildungsbewertung)</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Falls reglementiert: <strong>Helsedirektoratet</strong> Autorisasjon beantragen</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Sprachniveau: Norwegisch B1→B2 (fachspezifisch)</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Zwischenrolle (assistent/veileder) bis Anerkennung abgeschlossen</div>
+                  </div>
+                </div>
+                <div>
+                  <h3>Wirtschaft (Finance/Controlling)</h3>
+                  <div class="flow">
+                    <div class="step">Nicht reglementiert: CV/LinkedIn auf EN/NO aktualisieren</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Referenzen, Zeugnisse, Projekterfolge (engl./norw.)</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Skatteetaten‑Registrierung (ID), Bewerben bei Firmen/Kommunen</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Optional Zertifikate (ACCA/CFA, Excel/BI, Norskprøve)</div>
+                  </div>
+                </div>
+              </div>
+              <p class="small">Hinweis: Anforderungen je nach Tätigkeit/Arbeitgeber. Offizielle Stellen geben den verbindlichen Rahmen vor.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="island" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-island {
+            --di-bg: #0b1020;
+            --di-card: #121936;
+            --di-ink: #e9eefc;
+            --di-muted: #b9c3ea;
+            --di-accent: #7cc1ff;
+            --di-good: #7dd3a7;
+            --di-bad: #f08d8d;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            color: var(--di-ink);
+            background: radial-gradient(1200px 800px at 20% -10%, #18224a 0%, #0b1020 55%, #070a16 100%);
+            line-height: 1.6;
+            padding: 40px 24px;
+          }
+          .doc-island .container { max-width: 900px; margin: 0 auto; padding: 0; }
+          .doc-island header {
+            background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+          }
+          .doc-island h1 { margin: 0 0 8px; font-size: 28px; }
+          .doc-island .meta { color: var(--di-muted); font-size: 14px; }
+          .doc-island section {
+            margin-top: 28px;
+            background: var(--di-card);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 16px;
+            padding: 20px 22px;
+            box-shadow: 0 16px 40px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+          }
+          .doc-island h2 { margin: 0 0 8px; font-size: 22px; }
+          .doc-island h3 { margin: 18px 0 8px; font-size: 18px; }
+          .doc-island p { margin: 10px 0; }
+          .doc-island ul { margin: 8px 0 8px 22px; }
+          .doc-island li { margin: 4px 0; }
+          .doc-island .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 2px 6px 2px 0;
+            border-radius: 999px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.08);
+            font-size: 12px;
+            color: var(--di-muted);
+          }
+          .doc-island .pros { color: var(--di-good); }
+          .doc-island .cons { color: var(--di-bad); }
+          .doc-island .small { color: var(--di-muted); font-size: 12px; }
+          .doc-island .flow { display: flex; flex-direction: column; gap: 8px; }
+          .doc-island .step {
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 8px;
+            padding: 8px 10px;
+          }
+          .doc-island .arrow { align-self: center; color: var(--di-muted); }
+        </style>
+        <style>
+          .doc-island section,
+          .doc-island header,
+          .doc-island .grid > * {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          .doc-island h1,
+          .doc-island h2,
+          .doc-island h3 {
+            break-before: page;
+            page-break-before: always;
+            break-after: avoid;
+            page-break-after: avoid;
+          }
+          .doc-island section > :first-child:is(h1,h2,h3) {
+            break-before: auto;
+            page-break-before: auto;
+          }
+          .doc-island {
+            background: #f3f4f6 !important;
+            color: #111827 !important;
+          }
+          .doc-island header,
+          .doc-island section {
+            background: #ffffff !important;
+            color: #111827 !important;
+            border-color: #e5e7eb !important;
+            box-shadow: none !important;
+          }
+          .doc-island .meta,
+          .doc-island .small { color: #374151 !important; }
+        </style>
+        <style>
+          @media print {
+            .doc-island {
+              font-size: 11px;
+              line-height: 1.35;
+            }
+            .doc-island section,
+            .doc-island header {
+              break-inside: auto;
+              page-break-inside: auto;
+            }
+            .doc-island section { margin-top: 12px !important; padding: 14px !important; }
+            .doc-island header { padding: 18px !important; }
+            .doc-island p,
+            .doc-island li { break-inside: avoid; page-break-inside: avoid; }
+          }
+        </style>
+        <div class="doc doc-island">
+          <div class="container">
+            <header>
+              <h1>Island – Auswanderungsleitfaden</h1>
+              <div class="meta">Stand: 25.09.2025 · Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</div>
+              <p class="small">Hinweis: Prüfen Sie stets aktuelle Informationen (Registers Iceland, Directorate of Immigration, Kommunen).</p>
+            </header>
+
+            <section>
+              <h2>Kurzfazit</h2>
+              <p><strong>Warum Island?</strong> Sehr sichere, kleine Gesellschaft mit hoher Lebenszufriedenheit, gute Englischkenntnisse, starke Naturverbundenheit, pragmatische Arbeitskultur. Bildung solide, viel Projekt‑ und Draußen‑Lernen. Gesundheitsversorgung gut, aber regional begrenzte Kapazitäten. <strong>Isländisch</strong> ist für Schule/Verwaltung wichtig.</p>
+              <div class="tag">Sicher</div><div class="tag">Englisch verbreitet</div><div class="tag">Work‑Life‑Balance</div><div class="tag">Natur</div>
+            </section>
+
+            <section>
+              <h2>Regionen & Klima</h2>
+              <ul>
+                <li><strong>Großraum Reykjavík (Hauptstadtregion):</strong> Meiste Jobs/Schulen; hohe Mieten.</li>
+                <li><strong>Akureyri (Norden):</strong> Kleinere Stadt, gute Lebensqualität, kalt im Winter.</li>
+                <li><strong>Westfjorde/Ostfjorde:</strong> Ländlich, teils begrenzte Infrastruktur, starke Gemeinschaften.</li>
+              </ul>
+              <p><strong>Klima:</strong> Kühl‑maritim, windig; Winter stürmisch/dunkel, Sommer hell/mild.</p>
+            </section>
+
+            <section>
+              <h2>Schule & Bildung</h2>
+              <ul>
+                <li>Kommunale Schulen (Grunnskóli), frühe Englischförderung; oft kleinere Klassen, mehr Outdoor.</li>
+                <li>Internationale/zweisprachige Angebote v. a. in Reykjavík (Wartelisten beachten).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Arbeitsmarkt (Ihre Profile)</h2>
+              <ul>
+                <li><strong>Sozialpädagogik/Sozialarbeit:</strong> Bedarf in Kommunen, Schulen, Integrations‑/Gemeinwesenarbeit; Anerkennung je nach Rolle bei Behörden zu prüfen.</li>
+                <li><strong>Wirtschaft:</strong> Rollen in Tourismus‑Management, Energie/Geothermie, öffentliche Verwaltung, KMU/Startups; Englisch teils ausreichend, Isländisch eröffnet mehr.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Gesellschaft, Gesundheit, Vorsorge</h2>
+              <ul>
+                <li><strong>Gesellschaft:</strong> Klein, vertraut, hohe Sicherheit; Offenheit gegenüber Zugezogenen, aber Sprache hilft sehr.</li>
+                <li><strong>Gesundheit:</strong> Universell mit regionalen Wartezeiten; Spezialversorgung meist in Reykjavík.</li>
+                <li><strong>Altersvorsorge:</strong> Mehrsäulig (staatlich + betriebliche Pensionskassen + privat).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Einreise & Anerkennung (Überblick)</h2>
+              <ul>
+                <li><strong>EU/EFTA:</strong> Freizügigkeit; Anmeldung bei Registers Iceland (Þjóðskrá), Kennitala, Krankenversicherung.</li>
+                <li><strong>Nicht‑EU:</strong> Directorate of Immigration (Arbeit/ Aufenthalt), je nach Kategorie.</li>
+                <li><strong>Anerkennung:</strong> Diplomanerkennung bei zuständigen Ministerien/Ämtern; Übersetzungen erforderlich.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Vor‑ und Nachteile</h2>
+              <p class="pros"><strong>Plus:</strong> Sehr sicher, familienfreundlich, Natur, Englisch, enge Gemeinschaften.</p>
+              <p class="cons"><strong>Minus:</strong> Hohe Lebenshaltungskosten, begrenzter Wohnraum/Jobs, Wetter/Dunkelheit, Sprache nötig.</p>
+            </section>
+
+            <section>
+              <h2>Erst‑Wohnorte & Start‑Wohnen</h2>
+              <ul>
+                <li><strong>Reykjavík/Kópavogur/Hafnarfjörður:</strong> Familienfreundliche Viertel mit Schulen und ÖPNV; prüfen Sie Pendelzeiten.</li>
+                <li><strong>Übergang 3–6 Monate:</strong> Möbliert über Mieten‑Portale/Expat‑Gruppen; Kaution 1–3 Monatsmieten.</li>
+                <li><strong>Unterlagen:</strong> Ausweis, Arbeitsvertrag, Einkommensnachweis, Kennitala (nach Anmeldung), Referenzen.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Checkliste (Island)</h2>
+              <ul>
+                <li>Urkunden/Zeugnisse beglaubigt (mehrsprachig), Übersetzungen</li>
+                <li>Registers Iceland Anmeldung, Kennitala, Bankkonto, Krankenversicherung</li>
+                <li>Schulanmeldung in Zielgemeinde, Sprachförderung anfragen</li>
+                <li>Jobsuche: Kommune, staatliche Portale, Energie/Tourismus, LinkedIn</li>
+                <li>Sprachstart Isländisch; Englisch für Übergang</li>
+                <li>Budget: hohe Mieten/Importpreise berücksichtigen, Rücklagen 6–9 Monate</li>
+              </ul>
+              <p class="small">Alle Angaben ohne Gewähr; offizielle Quellen prüfen.</p>
+            </section>
+
+            <section>
+              <h2>1‑Seite – Zusammenfassung</h2>
+              <ul>
+                <li><strong>Warum:</strong> Sehr sicher, naturverbunden, kleine Gemeinschaften, Englisch verbreitet.</li>
+                <li><strong>Jobs:</strong> Kommunen/Schulen/Sozialarbeit; Wirtschaft in Tourismus/Energie/Verwaltung/KMU.</li>
+                <li><strong>Sprache:</strong> Englisch hilft; <strong>Isländisch</strong> für Schule/Verwaltung wichtig.</li>
+                <li><strong>Kosten:</strong> Hoch (Mieten/Import); Übergang möbliert einplanen.</li>
+                <li><strong>Einreise:</strong> EU/EFTA Freizügigkeit (Registers Iceland/ Kennitala); Nicht‑EU per Permit.</li>
+                <li><strong>Hürden:</strong> Wohnraumknappheit, Wetter/Dunkelheit, kleiner Arbeitsmarkt.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Anerkennung – Ablauf (Flowcharts)</h2>
+              <div class="grid grid-2">
+                <div>
+                  <h3>Sozialpädagogik/Sozialarbeit</h3>
+                  <div class="flow">
+                    <div class="step">Rolle klären (kommunal/schulisch/gesundheitsnah)</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Diplome/Übersetzungen → zuständige Behörde/Ministerium</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Sprachaufbau Isländisch A2→B1/B2</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Zwischenrolle bis Anerkennung</div>
+                  </div>
+                </div>
+                <div>
+                  <h3>Wirtschaft (Finance/Controlling)</h3>
+                  <div class="flow">
+                    <div class="step">CV/LinkedIn EN/IS, Referenzen</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Kennitala/Bank nach Anmeldung</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Bewerbungen bei Kommunen/Unternehmen</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">Optional Zertifikate (BI/IFRS)</div>
+                  </div>
+                </div>
+              </div>
+              <p class="small">Hinweis: Anforderungen je nach Tätigkeit/Arbeitgeber.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kanada" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-kanada {
+            --dk-bg: #f3f4f6;
+            --dk-ink: #111827;
+            --dk-card: #ffffff;
+            --dk-muted: #e5e7eb;
+            --dk-accent: #9ca3af;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--dk-bg);
+            color: var(--dk-ink);
+            line-height: 1.5;
+            padding: 32px 20px;
+          }
+          .doc-kanada .kanada-main { max-width: 900px; margin: 0 auto; padding: 0; }
+          .doc-kanada header {
+            border-bottom: 2px solid var(--dk-muted);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+          }
+          .doc-kanada h1,
+          .doc-kanada h2,
+          .doc-kanada h3 { color: var(--dk-ink); margin: 0 0 12px; }
+          .doc-kanada p { margin: 0 0 12px; }
+          .doc-kanada .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+          @media (min-width: 840px) { .doc-kanada .grid { grid-template-columns: 1fr 1fr; } }
+          .doc-kanada section,
+          .doc-kanada .card {
+            background: var(--dk-card);
+            border: 1px solid var(--dk-muted);
+            border-radius: 8px;
+            padding: 16px;
+          }
+          .doc-kanada .tags { display: inline-flex; gap: 8px; flex-wrap: wrap; }
+          .doc-kanada .tag {
+            background: var(--dk-muted);
+            color: var(--dk-ink);
+            border-radius: 999px;
+            padding: 2px 10px;
+            font-size: 12px;
+          }
+          .doc-kanada ul { margin: 0 0 0 18px; padding: 0; }
+          .doc-kanada li { margin-bottom: 6px; }
+          .doc-kanada .callout { border-left: 4px solid var(--dk-accent); padding-left: 12px; }
+          .doc-kanada .checklist li { margin-bottom: 6px; }
+        </style>
+        <style>
+          .doc-kanada section,
+          .doc-kanada .card { break-inside: avoid; page-break-inside: avoid; }
+          .doc-kanada h1,
+          .doc-kanada h2,
+          .doc-kanada h3 { break-after: avoid; page-break-after: avoid; }
+        </style>
+        <style>
+          @media print {
+            .doc-kanada {
+              font-size: 11px;
+              line-height: 1.35;
+            }
+            .doc-kanada section,
+            .doc-kanada .card {
+              break-inside: avoid;
+              page-break-inside: avoid;
+              background: #ffffff !important;
+            }
+            .doc-kanada .grid { grid-template-columns: 1fr 1fr; }
+            .doc-kanada h1,
+            .doc-kanada h2,
+            .doc-kanada h3 { break-before: auto; page-break-before: auto; }
+          }
+        </style>
+        <div class="doc doc-kanada">
+          <div class="kanada-main">
+            <header>
+              <h1>Kanada – Auswanderungsleitfaden</h1>
+              <p class="small">Stand: 25.09.2025 · Familie mit 10‑jährigem Kind · Profile: Sozialpädagogin & Wirtschaftswissenschaftler</p>
+              <p class="tags">
+                <span class="tag">Familie</span>
+                <span class="tag">Schule</span>
+                <span class="tag">Gesundheit</span>
+                <span class="tag">Sozialpädagogik</span>
+                <span class="tag">Wirtschaft</span>
+                <span class="tag">Klima</span>
+              </p>
+            </header>
+
+            <section class="card">
+              <h2>Warum Kanada?</h2>
+              <p>Sehr hohe Lebensqualität, stabile Demokratie, weltoffene Gesellschaft, starke öffentliche Schulen und Universitäten, gutes Gesundheitssystem (öffentlich finanziert, provinzweise organisiert), vielfältiger Arbeitsmarkt von Sozialwesen bis Wirtschaft. Viele Einwanderungspfade mit klaren Punkten‑Systemen.</p>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>Bildung (10‑jähriges Kind)</h3>
+                <ul>
+                  <li>Öffentliche Schulen ohne Gebühren; Qualität variiert nach Provinz/Bezirk, insgesamt hoch.</li>
+                  <li>Französisch/Englisch als Sprachen; Immersionsprogramme verbreitet; Deutsch als Fremdsprache seltener.</li>
+                  <li>Ganztagsangebote und außerschulische Programme gut ausgebaut in Städten.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Arbeitsmarkt</h3>
+                <ul>
+                  <li>Sozialpädagogik/Sozialarbeit: Bedarf in Schulen, Community Services, Kinder‑ und Jugendhilfe; Anerkennung je nach Provinz (z. B. Registrierung/College of Social Workers).</li>
+                  <li>Wirtschaftswissenschaften: Chancen in Consulting, Finance, öffentliche Verwaltung, Tech‑Unternehmen; starke Hubs in Toronto, Vancouver, Montreal, Calgary.</li>
+                  <li>Gute Work‑Life‑Balance, aber Urlaubsanspruch oft geringer als in DE (2–3 Wochen initial).</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>Gesellschaft & Politik</h3>
+                <ul>
+                  <li>Respektvolle, diverse Gesellschaft; klare Anti‑Diskriminierungsregeln.</li>
+                  <li>Politisch stabil, Mitte‑links bis Mitte‑rechts; starke Institutionen.</li>
+                  <li>Zuwanderungsfreundliche Politik, besonders in bestimmten Programmen/Provinzen.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Gesundheit & Rente</h3>
+                <ul>
+                  <li>Universal Health Care (Medicare) mit Provinz‑Karten; Wartezeiten für nicht akute Eingriffe möglich.</li>
+                  <li>Rente: CPP/QPP + betriebliche Pläne + persönliche Vorsorge; solide, aber Eigenvorsorge wichtig.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>Klima & Natur</h3>
+                <ul>
+                  <li>Sehr unterschiedlich je nach Region: Milder an Küsten (Vancouver), kontinental kalt im Inland (Prärien), harsche Winter in Zentral‑/Ostkanada; Sommer warm.</li>
+                  <li>Hervorragende Natur: Berge, Seen, Küsten; Outdoor‑Kultur stark.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Lebenshaltung & Wohnen</h3>
+                <ul>
+                  <li>Kosten stark stadtabhängig; teurer in Toronto/Vancouver; moderat in kleineren Städten/Provinzen.</li>
+                  <li>Mieten: 2–3 Zimmer in Großstädten 2.200–3.500 CAD; kleinere Städte 1.500–2.200 CAD.</li>
+                  <li>Kinderbetreuung teilweise teuer; staatliche Entlastungen ausgebaut (variiert je Provinz).</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>Sprache & Integration</h3>
+                <ul>
+                  <li>Englisch weit verbreitet; in Québec primär Französisch. Offizielle Zweisprachigkeit national.</li>
+                  <li>Viele Integrationsservices für Newcomer; Community‑Zentren, Settlement Services.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Einreise & Anerkennung</h3>
+                <ul>
+                  <li>Immigration: Express Entry (FSW/CEC), Provincial Nominee Programs, Atlantic Immigration Program; klare Punkte‑Logik.</li>
+                  <li>Anerkennung: Reglementierte Berufe je Provinz; Social Worker Registrierung erforderlich; betriebswirtliche Abschlüsse meist problemlos.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>Pro & Contra</h3>
+                <ul>
+                  <li>Pro: Sicherheit, Chancenvielfalt, Schulen, Natur, Einwanderungswege, Englisch.</li>
+                  <li>Contra: Kalte Winter/weite Distanzen, hohe Mieten in Metropolen, Wartezeiten im Gesundheitssystem, weniger Urlaub.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Budget grob (Start)</h3>
+                <ul>
+                  <li>Monatlich: 5.000–7.000 CAD in Großstädten, 3.800–5.500 CAD kleiner.</li>
+                  <li>Rücklagen: 15.000–25.000 CAD (Kaution, Setup, Puffer 3–4 Monate).</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="card">
+              <h2>Erst‑Wohnorte & Start‑Wohnen</h2>
+              <ul>
+                <li>Vancouver (mild, teuer, viele Services), Victoria (familienfreundlich, teurer), Kelowna (milder, günstiger), Calgary (gute Jobs, kälter), Toronto/GTA (sehr viele Chancen, teuer), Ottawa (solide Verwaltung, familienfreundlich), Halifax (aufstrebend, günstiger, maritim).</li>
+                <li>Start‑Wohnen: Möblierte Kurzzeitmiete (Furnished Finder / Landing / Airbnb länger), 1–3 Monate, dann regulärer Mietmarkt mit Credit Check/References.</li>
+              </ul>
+            </section>
+
+            <section class="card">
+              <h2>Checkliste (Kanada)</h2>
+              <ul class="checklist">
+                <li>Programm wählen (Express Entry/PNP/AIP) und Punkte prüfen (Alter, Sprache, Ausbildung, Erfahrung).</li>
+                <li>Sprachtests: IELTS General / CELPIP (Englisch), TEF/TCF (Französisch) frühzeitig ablegen.</li>
+                <li>WES/ICAS ECA für Abschlussbewertung einholen (FSW erforderlich).</li>
+                <li>Berufsanerkennung prüfen (z. B. Social Worker Registrierung der Ziel‑Provinz).</li>
+                <li>Police Certificates & Medical Exam organisieren; Proof of Funds vorbereiten.</li>
+                <li>Job‑Suche parallel: Indeed, LinkedIn, WorkBC, Job Bank; Zielprovinznetzwerke.</li>
+                <li>Schulen und Wohnviertel nach Ratings/Reviews sichten; Kinderbetreuungslage klären.</li>
+                <li>Krankenversicherung Übergang (z. B. private Bridge) bis Provincial Card aktiv.</li>
+                <li>Erste 90 Tage: SIN beantragen, Bankkonto, Handy, Führerschein umschreiben, Family Doctor suchen.</li>
+              </ul>
+            </section>
+
+            <section class="grid">
+              <div class="card">
+                <h3>1‑Seiter Überblick</h3>
+                <ul>
+                  <li>Für Familie: sehr geeignet, wenn Winter akzeptabel und Budget für Großstadt vorhanden oder kleinere Städte bevorzugt.</li>
+                  <li>Chancen: Sozialwesen, öffentliche Verwaltung, Finance/Tech, Bildung, Healthcare‑Administration.</li>
+                  <li>Risiken: Wartezeiten Gesundheit, hohe Mieten in Hubs, lange Wege.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Anerkennung Flowchart</h3>
+                <ol>
+                  <li>Beruf/Provinz wählen → Reglementierung checken</li>
+                  <li>ECA (falls FSW) → Sprachtest</li>
+                  <li>Express Entry/PNP Profil → Invitation → Unterlagen</li>
+                  <li>Arrival → Provincial Registration (falls nötig) → Arbeitsstart</li>
+                </ol>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="neuseeland" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-neuseeland {
+            --dnz-bg: #f3f4f6;
+            --dnz-card: #ffffff;
+            --dnz-ink: #111827;
+            --dnz-muted: #374151;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            color: var(--dnz-ink);
+            background: var(--dnz-bg);
+            line-height: 1.5;
+            padding: 36px 20px;
+          }
+          .doc-neuseeland .container { max-width: 900px; margin: 0 auto; padding: 20px; background: var(--dnz-card); border: 1px solid #e5e7eb; border-radius: 16px; }
+          .doc-neuseeland header,
+          .doc-neuseeland section { background: var(--dnz-card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; }
+          .doc-neuseeland header { margin-bottom: 20px; }
+          .doc-neuseeland h1 { margin: 0 0 10px; font-size: 32px; line-height: 1.2; }
+          .doc-neuseeland h2 { margin: 0 0 10px; font-size: 22px; }
+          .doc-neuseeland section { margin-top: 20px; }
+          .doc-neuseeland ul { margin: 8px 0 0 18px; }
+          .doc-neuseeland .small { color: var(--dnz-muted); font-size: 12px; }
+        </style>
+        <style>
+          .doc-neuseeland header,
+          .doc-neuseeland section { break-inside: avoid; page-break-inside: avoid; }
+          .doc-neuseeland h1,
+          .doc-neuseeland h2 { break-after: avoid; page-break-after: avoid; }
+        </style>
+        <style>
+          @media print {
+            .doc-neuseeland { font-size: 11px; line-height: 1.35; }
+            .doc-neuseeland header,
+            .doc-neuseeland section { margin-top: 12px !important; padding: 14px !important; }
+            .doc-neuseeland p,
+            .doc-neuseeland li { break-inside: avoid; page-break-inside: avoid; }
+          }
+        </style>
+        <div class="doc doc-neuseeland">
+          <div class="container">
+            <header>
+              <h1>Neuseeland – Auswanderungsleitfaden</h1>
+              <div class="small">Stand: 25.09.2025 · Profile: Sozialpädagogin & Wirtschaftswissenschaftler · Familie mit 10‑jährigem Kind</div>
+            </header>
+
+            <section>
+              <h2>Schulen & Bildung</h2>
+              <ul>
+                <li>Öffentliches Schulsystem, hohe Qualität; Englisch als Unterrichtssprache.</li>
+                <li>Starke Praxis-/Outdoor-Orientierung; integrative Förderung; kleinere Klassen je nach Region.</li>
+                <li>ESOL-Unterstützung für Neuankömmlinge; Ganztagsangebote je nach Schule.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Arbeitsmarkt</h2>
+              <ul>
+                <li>Sozialpädagogik: Bedarf in Community/Social Services, Schulen, NGOs; Registrierung/Lizenzen rollenabhängig.</li>
+                <li>Wirtschaft: Finance, Controlling, Consulting; zudem Agritech, Tourismus, Tech in Auckland/Wellington/Christchurch.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Gesellschaft & Politik</h2>
+              <ul>
+                <li>Respektvolle, pragmatische Kultur; starke Community, hohe Sicherheit.</li>
+                <li>Politisch stabil; Mehrheitswechsel zwischen Mitte‑links/‑rechts.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Gesundheit & Altersvorsorge</h2>
+              <ul>
+                <li>Öffentliche Gesundheitsversorgung; private Zusatzleistungen verbreitet.</li>
+                <li>Altersvorsorge: NZ Superannuation + KiwiSaver (betrieblich/privat).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Lebenshaltung & Wohnen</h2>
+              <ul>
+                <li>Lebenshaltung mittel bis hoch; teurer in Auckland/Wellington, moderater außerhalb.</li>
+                <li>Wohnraum knapp/teuer in Ballungsräumen, entspannter in Regionalstädten.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Klima & Sprache</h2>
+              <ul>
+                <li>Mild‑ozeanisches Klima; viel Regen/Wind; große regionale Unterschiede.</li>
+                <li>Englisch Amtssprache; Māori ebenfalls Amtssprache; Englisch ausreichend.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Einreise & Anerkennung</h2>
+              <ul>
+                <li>Immigration New Zealand (Arbeitsvisa, Skilled Migrant Category, Accredited Employer Work Visa).</li>
+                <li>Qualifikationsanerkennung: NZQA/berufsbezogene Stellen (z. B. Social Workers Registration Board).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Pro & Contra</h2>
+              <ul>
+                <li>Pro: Englischsprachig, familienfreundlich, Natur/Outdoor, pragmatische Kultur.</li>
+                <li>Contra: Entfernung zu Europa, hohe Kosten in Hubs, Wetter volatil.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Erstwunsch-Orte & Wohnen</h2>
+              <ul>
+                <li>Auckland (Jobchancen, teuer), Wellington (Politik/Services), Christchurch (Tech/Engineering), Regionalstädte (günstiger, ruhiger).</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Checkliste (Kurz)</h2>
+              <ul>
+                <li>Skill Profile, Englisch‑Nachweise, Anerkennung anstoßen (NZQA).</li>
+                <li>Visapfade prüfen (Skilled Migrant/AEWV), Arbeitgeberkontakt.</li>
+                <li>Budget/Startkosten, Schulrecherche, Übergangswohnen.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="laendervergleich" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-laendervergleich {
+            --dl-bg: #f3f4f6;
+            --dl-card: #ffffff;
+            --dl-ink: #111827;
+            --dl-muted: #374151;
+            --dl-good: #059669;
+            --dl-warn: #d97706;
+            --dl-bad: #b91c1c;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            background: var(--dl-bg);
+            color: var(--dl-ink);
+            line-height: 1.5;
+            padding: 36px 20px;
+          }
+          .doc-laendervergleich .container { max-width: 1200px; margin: 36px auto; padding: 20px; }
+          .doc-laendervergleich header { background: var(--dl-card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px; }
+          .doc-laendervergleich header h1 { margin: 0 0 10px; font-size: 32px; line-height: 1.2; font-weight: 700; color: var(--dl-ink); background: #f3f4f6; padding: 12px 14px; border: 1px solid #e5e7eb; border-radius: 8px; }
+          .doc-laendervergleich .meta { color: var(--dl-muted); font-size: 14px; }
+          .doc-laendervergleich section { margin-top: 22px; background: var(--dl-card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; }
+          .doc-laendervergleich table { width: 100%; border-collapse: separate; border-spacing: 0; }
+          .doc-laendervergleich th,
+          .doc-laendervergleich td { padding: 10px 12px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+          .doc-laendervergleich th { position: sticky; top: 0; background: #f9fafb; }
+          .doc-laendervergleich .k { color: var(--dl-muted); width: 240px; }
+          .doc-laendervergleich .good { color: var(--dl-good); }
+          .doc-laendervergleich .warn { color: var(--dl-warn); }
+          .doc-laendervergleich .bad { color: var(--dl-bad); }
+          .doc-laendervergleich .tag { display: inline-block; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 999px; padding: 2px 8px; margin: 2px 4px; color: var(--dl-muted); font-size: 12px; }
+          .doc-laendervergleich .small { color: var(--dl-muted); font-size: 12px; }
+          .doc-laendervergleich .checklists { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
+          .doc-laendervergleich .checklists .col { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; }
+          .doc-laendervergleich .checklists h3 { margin: 0 0 6px; font-size: 16px; }
+          .doc-laendervergleich .checklists ul { margin: 0; padding-left: 18px; }
+          .doc-laendervergleich .household { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; margin: 8px 0; }
+          .doc-laendervergleich .household table { width: 100%; border-collapse: separate; border-spacing: 0; }
+          .doc-laendervergleich .household th,
+          .doc-laendervergleich .household td { padding: 4px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+          .doc-laendervergleich .two-col-print { display: grid; grid-template-columns: 1fr; gap: 16px; }
+          @media (min-width: 1000px) { .doc-laendervergleich .two-col-print { grid-template-columns: 1fr 1fr; } }
+        </style>
+        <style>
+          .doc-laendervergleich section,
+          .doc-laendervergleich header,
+          .doc-laendervergleich .grid > * { break-inside: avoid; page-break-inside: avoid; }
+          .doc-laendervergleich h1,
+          .doc-laendervergleich h2,
+          .doc-laendervergleich h3,
+          .doc-laendervergleich h4,
+          .doc-laendervergleich h5,
+          .doc-laendervergleich h6 { break-after: avoid; page-break-after: avoid; }
+        </style>
+        <style>
+          @media print {
+            .doc-laendervergleich { padding: 16mm 12mm 14mm; }
+            .doc-laendervergleich section,
+            .doc-laendervergleich header { break-inside: avoid; page-break-inside: avoid; background: #ffffff !important; color: #111827 !important; border-color: #e5e7eb !important; box-shadow: none !important; }
+            .doc-laendervergleich h1,
+            .doc-laendervergleich h2,
+            .doc-laendervergleich h3 { break-before: auto; page-break-before: auto; }
+            .doc-laendervergleich table,
+            .doc-laendervergleich p,
+            .doc-laendervergleich ul,
+            .doc-laendervergleich ol { break-inside: avoid; page-break-inside: avoid; }
+          }
+        </style>
+        <div class="doc doc-laendervergleich">
+          <div class="container">
+            <header>
+              <h1>Ländervergleich – Norwegen · Neuseeland · Island · Kanada</h1>
+              <div class="meta">Stand: 25.09.2025 · Profile: Sozialpädagogin & Wirtschaftswissenschaftler · Familie mit 10‑jährigem Kind</div>
+            </header>
+            <section>
+              <h2>Kurz-Übersicht (tabellarisch)</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="k">Kriterium</th>
+                    <th>Norwegen</th>
+                    <th>Kanada</th>
+                    <th>Neuseeland</th>
+                    <th>Island</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="k">Schulen</td>
+                    <td class="good">Ganztag, Förderung</td>
+                    <td class="good">Öffentlich, hoch</td>
+                    <td class="good">Gut, Fritids</td>
+                    <td class="good">Solide, klein</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sozialpädagogik</td>
+                    <td>Bedarf Kommune</td>
+                    <td>Registrierung provinzl.</td>
+                    <td>Kommunen/Schulen</td>
+                    <td>Kleine Märkte</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Wirtschaftsjobs</td>
+                    <td>Beratung, Energie</td>
+                    <td>Finance, Tech Hubs</td>
+                    <td>Finance, Agritech, Tourismus</td>
+                    <td>Tourismus, Energie</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Gesundheit</td>
+                    <td>Universell</td>
+                    <td>Universell (Provinz)</td>
+                    <td>Öffentlich/teils privat</td>
+                    <td>Universell</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Kosten</td>
+                    <td class="warn">Hoch</td>
+                    <td class="warn">Hoch (Hubs)</td>
+                    <td class="warn">Mittel</td>
+                    <td class="warn">Hoch</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Klima</td>
+                    <td>Küste mild</td>
+                    <td>West mild, Inland kalt</td>
+                    <td>Mild, ozeanisch</td>
+                    <td>Kühl‑maritim</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sprache</td>
+                    <td colspan="4" class="small">Details siehe Matrix</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="small">Kurzüberblick: farbige Markierungen zeigen Tendenzen; Details siehe Matrix unten.</p>
+            </section>
+            <section class="matrix">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="k">Kriterium</th>
+                    <th>Norwegen</th>
+                    <th>Kanada</th>
+                    <th>Neuseeland</th>
+                    <th>Island</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="k">Schulen/Bildung</td>
+                    <td class="good">Gut ausgestattet, Ganztag verbreitet, Förderung</td>
+                    <td class="good">Öffentlich, hohe Qualität; Englisch/Französisch; Immersion</td>
+                    <td class="good">Gute Schulen; fokus auf Praxis/Outdoor</td>
+                    <td class="good">Solide, viel Outdoor/Projekt; kleinere Klassen</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Jobs Sozialpädagogik</td>
+                    <td>Bedarf Kommune/Barnevern; Autorisasjon ggf.</td>
+                    <td>Community Services/Schulen; provinzl. Registrierung (College)</td>
+                    <td>Community/Social Services; Registrierung je nach Rolle</td>
+                    <td>Kleinere Märkte; Bedarf in Schulen/Services</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Jobs Wirtschaft</td>
+                    <td>Beratung, Energie, Tech; Englisch teils</td>
+                    <td>Finance, Consulting, Tech; große Hubs (Toronto/Vancouver)</td>
+                    <td>Finance, Agritech, Tech, Tourismus</td>
+                    <td>Tourismus‑Mgmt, Energie/Geothermie, Verwaltung, KMU</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Gesellschaft/Respekt</td>
+                    <td class="good">Sehr respektvoll, geringe Hierarchien</td>
+                    <td class="good">Divers, inklusiv, klare Anti‑Diskriminierung</td>
+                    <td class="good">Freundlich, pragmatisch, community‑orientiert</td>
+                    <td class="good">Sehr sicher, kleine Gemeinschaften</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="k">Gesundheit</td>
+                    <td>Universell; Wartezeiten regional</td>
+                    <td>Universal (provinziell); Wartezeiten möglich</td>
+                    <td>Öffentlich; teils private Zusatzleistungen</td>
+                    <td>Universell; regional begrenzte Kapazitäten</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Altersvorsorge</td>
+                    <td>Staatlich + betrieblich + privat</td>
+                    <td>CPP/QPP + betriebliche Pläne + privat</td>
+                    <td>NZ Superannuation + KiwiSaver + privat</td>
+                    <td>Mehrsäulig (staatlich + Fonds + privat)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Lebenshaltung</td>
+                    <td class="warn">Hoch (Löhne angepasst)</td>
+                    <td class="warn">Hoch in Metropolen (Toronto/Vancouver)</td>
+                    <td class="warn">Mittel bis hoch (Auckland/Wellington)</td>
+                    <td class="warn">Hoch (Importpreise, kleine Märkte)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Wohnen</td>
+                    <td>Knapp in Städten, teuer</td>
+                    <td>Sehr teuer in Hubs, moderater außerhalb</td>
+                    <td>Teuer in Auckland/Wellington, moderater außerhalb</td>
+                    <td>Begrenzt in Reykjavík, teuer</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Klima</td>
+                    <td>Küste mild/feucht, Norden kalt, dunkle Winter</td>
+                    <td>Westküste milder; Inland/Prärien kalt; Sommer warm</td>
+                    <td>Mild, ozeanisch, viel Regen/Wind</td>
+                    <td>Kühl‑maritim, windig, dunkle Winter</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Visum/Einwanderung</td>
+                    <td class="good">EU/EWR: Freizügigkeit; Registrierung vor Ort</td>
+                    <td>Express Entry/PNP; Work Permit via Jobangebot</td>
+                    <td>Skilled Migrant/Accredited Employer; Work Visa</td>
+                    <td class="good">EU/EWR: Freizügigkeit; Registrierung</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Anerkennung/Regulierung</td>
+                    <td>Sozialarbeit/Barnevern teils Autorisasjon; Ärzte/PG stark reguliert</td>
+                    <td>Regulierte Berufe provinzl. (College/License); Nachweise nötig</td>
+                    <td>SWRB‑Registrierung für Social Work; teils NZQA‑Assessment</td>
+                    <td>Berufe teils reguliert; Anerkennung über Behörden/Fonds</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sprache & Tests</td>
+                    <td>Norsk B1–B2 hilfreich; Englisch oft möglich</td>
+                    <td>EN (IELTS/CELPIP) für Einwanderung; FR vorteilhaft</td>
+                    <td>EN (IELTS) für Visa; Māori optional in Schulen</td>
+                    <td>Isländisch vorteilhaft; EN in Tourismus/Tech</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Familienleistungen</td>
+                    <td class="good">Elterngeld/‑zeit stark; günstige Kita (Obergrenzen)</td>
+                    <td>Canada Child Benefit einkommensabhängig; Elternzeit variiert</td>
+                    <td>Paid Parental Leave; Family Tax Credit</td>
+                    <td>Elternzeit/Leistungen gut; Kita begrenzt</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Arbeitszeit/Urlaub</td>
+                    <td>~37.5 h; 25+ Urlaubstage, Tarif stark</td>
+                    <td>~40 h; 10–20 Urlaubstage (provinziell)</td>
+                    <td>~40 h; 20 Urlaubstage (min.)</td>
+                    <td>38–40 h; 24–30 Urlaubstage (Tarif)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Steuern (effektiv)</td>
+                    <td>~28–35% median (Familie, Kommune variiert)</td>
+                    <td>~22–35% je nach Provinz/Einkommen</td>
+                    <td>~20–30% je nach Einkommen</td>
+                    <td>~28–35% je nach Einkommen</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Registrierung & Behörden</td>
+                    <td>Folkeregister, D‑/Personnummer, Skatteetaten, Hausarzt</td>
+                    <td>SIN, Health Card, Driver’s License, CRA</td>
+                    <td>IRD, GP‑Einschreibung, Driver Licence Convert</td>
+                    <td>Kennitala, Registers Iceland, Gesundheitskasse</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Erste Schritte (Kurz)</td>
+                    <td>Wohnsitz anmelden → Personnr. → Bank/Steuer → Schule/Kita</td>
+                    <td>Work Permit/PR → SIN → Health Card → Bank/Schule</td>
+                    <td>Work Visa → IRD → GP → Bank/Schule</td>
+                    <td>Adressmeldung → Kennitala → Bank/Skattur → Schule/Kita</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="checklists">
+                <div class="col">
+                  <h3>Norwegen – Checkliste</h3>
+                  <ul>
+                    <li>Wohnsitz anmelden (Folkeregister)</li>
+                    <li>Personnummer/D‑Nr. beantragen</li>
+                    <li>Steuer (Skatteetaten) & Bank</li>
+                    <li>Hausarzt/Schule/Kita anmelden</li>
+                    <li>Sprachkurs Norsk (B1–B2)</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Kanada – Checkliste</h3>
+                  <ul>
+                    <li>Work Permit/PR (IRCC)</li>
+                    <li>SIN & Health Card holen</li>
+                    <li>Bankkonto & Führerschein</li>
+                    <li>Schul‑/Kinderbetreuung anmelden</li>
+                    <li>Englischtest/Französisch stärken</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Neuseeland – Checkliste</h3>
+                  <ul>
+                    <li>Accredited Employer/Work Visa</li>
+                    <li>IRD holen, GP registrieren</li>
+                    <li>Bankkonto & Driver Licence</li>
+                    <li>Schule/KiwiSaver prüfen</li>
+                    <li>IELTS & Qual. Anerkennung</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Island – Checkliste</h3>
+                  <ul>
+                    <li>Kennitala & Adressmeldung</li>
+                    <li>Skatturinn & Bank</li>
+                    <li>Hausarzt/Heilbrigðiskerfi</li>
+                    <li>Schule/Kinderbetreuung</li>
+                    <li>Isländischkurs beginnen</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="small">Hinweis: Politische Mehrheiten und Fristen ändern sich. Bitte aktuelle Regierungsbildungen, Anerkennungsstellen und Behördenlinks prüfen. Quellen (Kurz‑Links): NO – <a href="https://udi.no">udi.no</a> · <a href="https://skatteetaten.no">skatteetaten.no</a> | CA – <a href="https://www.canada.ca/immigration">canada.ca/immigration</a> | NZ – <a href="https://www.immigration.govt.nz">immigration.govt.nz</a> · <a href="https://www.ird.govt.nz">ird.govt.nz</a> | IS – <a href="https://utl.is">utl.is</a> · <a href="https://www.skattur.is">skattur.is</a></p>
+            </section>
+
+            <section class="budget">
+              <h2>Budget (konservative Monatswerte)</h2>
+              <div class="household">
+                <h3>Beispielhaushalt (2 Vollzeit, konservativ – Netto vs. Budget)</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Stadt</th>
+                      <th>Netto 2 Jobs (~k€)</th>
+                      <th>Budget (~k€)</th>
+                      <th>Delta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Oslo</td>
+                      <td>~7.1</td>
+                      <td>~3.8</td>
+                      <td class="good">~+3.3</td>
+                    </tr>
+                    <tr>
+                      <td>Toronto/Vancouver</td>
+                      <td>~7.0</td>
+                      <td>~3.9</td>
+                      <td class="good">~+3.1</td>
+                    </tr>
+                    <tr>
+                      <td>Auckland</td>
+                      <td>~6.5</td>
+                      <td>~3.3</td>
+                      <td class="good">~+3.2</td>
+                    </tr>
+                    <tr>
+                      <td>Reykjavík</td>
+                      <td>~6.4</td>
+                      <td>~4.4</td>
+                      <td class="good">~+2.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="small">Annahmen: Mittelpunkte der Spannen, Netto nach Steuer; keine Sonderzahlungen, keine Pendel‑/Auto‑/Rücklagenkosten. Nur Orientierung.</p>
+              </div>
+              <div class="two-col-print">
+                <div>
+                  <p class="small">Richtwerte für städtische Lagen (Stand 2025). Nettolöhne variieren nach Arbeitgeber, Tarif, Erfahrung, Steuern, Wechselkurs. Beträge gerundet.</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="k">Posten</th>
+                        <th>Oslo</th>
+                        <th>Toronto/Vancouver</th>
+                        <th>Auckland</th>
+                        <th>Reykjavík</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="k">Miete 3‑Zi. (Stadt)</td>
+                        <td class="warn">1.85–2.5k €</td>
+                        <td class="warn">1.5–2.4k €</td>
+                        <td class="warn">1.55–2.15k €</td>
+                        <td class="warn">2.45–3.5k €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">ÖPNV (Fam.)</td>
+                        <td>1.800–2.200 NOK (~150–180 €)</td>
+                        <td>200–280 €</td>
+                        <td>120–180 €</td>
+                        <td>15.000–25.000 ISK (~105–175 €)</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Kinderbetreuung</td>
+                        <td>125–290 €</td>
+                        <td>250–450 €</td>
+                        <td>85–170 €</td>
+                        <td>140–280 €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Krankenversicherung/Zuzahlungen</td>
+                        <td>120–220 €</td>
+                        <td>150–300 €</td>
+                        <td>110–190 €</td>
+                        <td>120–200 €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Lebensmittel/Alltag</td>
+                        <td>0.7–1.0k €</td>
+                        <td>0.7–1.1k €</td>
+                        <td>0.65–0.95k €</td>
+                        <td>0.7–1.1k €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Summe konservativ (Monat)</td>
+                        <td class="warn">3.0k–4.6k €</td>
+                        <td class="warn">3.1k–4.7k €</td>
+                        <td class="warn">2.7k–3.9k €</td>
+                        <td class="warn">3.5k–5.3k €</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="small" style="display:none">Nicht enthalten: Rücklagen, Möbel/Erstausstattung, Kaution/Deposit, Auto, Freizeit/Urlaub. Wechselkurse schwanken; prüfen Sie lokale Angebote.</p>
+                </div>
+                <div>
+                  <h3>Nettolohn‑Spannen (Vollzeit, 2025, grob)</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="k">Rolle</th>
+                        <th>Oslo</th>
+                        <th>Toronto/Vancouver</th>
+                        <th>Auckland</th>
+                        <th>Reykjavík</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="k">Sozialpädagogik/Sozialarbeit</td>
+                        <td>2.800–3.600 € netto</td>
+                        <td>2.600–3.400 € netto</td>
+                        <td>2.500–3.200 € netto</td>
+                        <td>2.400–3.100 € netto</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Wirtschaft (Finance/Controlling)</td>
+                        <td>3.200–4.500 € netto</td>
+                        <td>3.200–4.800 € netto</td>
+                        <td>3.000–4.200 € netto</td>
+                        <td>3.000–4.300 € netto</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="small">Spannen dienen der Orientierung und hängen stark von Erfahrung, Tarif, Branche und Steuern ab. Für konkrete Angebote lokale Gehaltsreports und Tarifverträge prüfen.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vergleich" class="page-section">
+      <div class="page-shell">
+        <style>
+          .doc-vergleich {
+            --dv-bg: #f3f4f6;
+            --dv-card: #ffffff;
+            --dv-ink: #111827;
+            --dv-muted: #374151;
+            --dv-good: #059669;
+            --dv-warn: #d97706;
+            --dv-bad: #b91c1c;
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans;
+            background: var(--dv-bg);
+            color: var(--dv-ink);
+            line-height: 1.5;
+            padding: 36px 20px;
+          }
+          .doc-vergleich .container { max-width: 1200px; margin: 36px auto; padding: 20px; }
+          .doc-vergleich header { background: var(--dv-card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px; }
+          .doc-vergleich header h1 { margin: 0 0 10px; font-size: 32px; line-height: 1.2; font-weight: 700; color: var(--dv-ink); background: #f3f4f6; padding: 12px 14px; border: 1px solid #e5e7eb; border-radius: 8px; }
+          .doc-vergleich .meta { color: var(--dv-muted); font-size: 14px; }
+          .doc-vergleich section { margin-top: 22px; background: var(--dv-card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; }
+          .doc-vergleich table { width: 100%; border-collapse: separate; border-spacing: 0; }
+          .doc-vergleich th,
+          .doc-vergleich td { padding: 10px 12px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+          .doc-vergleich th { position: sticky; top: 0; background: #f9fafb; }
+          .doc-vergleich .k { color: var(--dv-muted); width: 240px; }
+          .doc-vergleich .good { color: var(--dv-good); }
+          .doc-vergleich .warn { color: var(--dv-warn); }
+          .doc-vergleich .bad { color: var(--dv-bad); }
+          .doc-vergleich .tag { display: inline-block; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 999px; padding: 2px 8px; margin: 2px 4px; color: var(--dv-muted); font-size: 12px; }
+          .doc-vergleich .small { color: var(--dv-muted); font-size: 12px; }
+          .doc-vergleich .checklists { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
+          .doc-vergleich .checklists .col { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; }
+          .doc-vergleich .checklists h3 { margin: 0 0 6px; font-size: 16px; }
+          .doc-vergleich .checklists ul { margin: 0; padding-left: 18px; }
+          .doc-vergleich .checklists li { margin: 2px 0; }
+          .doc-vergleich .household { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; margin: 8px 0; }
+          .doc-vergleich .household h3 { margin: 0 0 6px; font-size: 16px; }
+          .doc-vergleich .household table { width: 100%; border-collapse: separate; border-spacing: 0; }
+          .doc-vergleich .household th,
+          .doc-vergleich .household td { padding: 4px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+          .doc-vergleich .two-col-print { display: grid; grid-template-columns: 1fr; gap: 16px; }
+          @media (min-width: 1000px) { .doc-vergleich .two-col-print { grid-template-columns: 1fr 1fr; } }
+        </style>
+        <style>
+          .doc-vergleich section,
+          .doc-vergleich header,
+          .doc-vergleich .grid > * { break-inside: avoid; page-break-inside: avoid; }
+          .doc-vergleich h1,
+          .doc-vergleich h2,
+          .doc-vergleich h3,
+          .doc-vergleich h4,
+          .doc-vergleich h5,
+          .doc-vergleich h6 { break-before: auto; page-break-before: auto; break-after: avoid; page-break-after: avoid; }
+          .doc-vergleich :is(h1, h2, h3, h4, h5, h6):first-child { break-before: auto; page-break-before: auto; }
+          .doc-vergleich { background: var(--dv-bg); color: var(--dv-ink); }
+          .doc-vergleich header,
+          .doc-vergleich section { background: var(--dv-card); color: var(--dv-ink); border-color: #e5e7eb; }
+          .doc-vergleich header h1 { background: #f3f4f6; border-color: #e5e7eb; }
+          .doc-vergleich .meta,
+          .doc-vergleich .small { color: var(--dv-muted); }
+        </style>
+        <style>
+          @media print {
+            .doc-vergleich { padding: 16mm 12mm 14mm; }
+            .doc-vergleich .container { max-width: 1200px; margin: 8px auto; padding: 8px; }
+            .doc-vergleich section,
+            .doc-vergleich header { margin-top: 8px; padding: 10px; break-inside: auto; page-break-inside: auto; background: #ffffff !important; color: #111827 !important; border-color: #e5e7eb !important; box-shadow: none !important; }
+            .doc-vergleich header h1 { font-size: 24px !important; padding: 6px 8px !important; margin: 0 0 6px !important; background: #f3f4f6 !important; border-color: #e5e7eb !important; }
+            .doc-vergleich .meta { font-size: 11px !important; display: none !important; }
+            .doc-vergleich table,
+            .doc-vergleich p,
+            .doc-vergleich ul,
+            .doc-vergleich ol,
+            .doc-vergleich tr,
+            .doc-vergleich td,
+            .doc-vergleich th { break-inside: avoid; page-break-inside: avoid; }
+            .doc-vergleich section.matrix { padding: 8px !important; break-after: page !important; page-break-after: always !important; }
+            .doc-vergleich section.matrix table { font-size: 8.8px; line-height: 1.16; table-layout: fixed; }
+            .doc-vergleich section.matrix th,
+            .doc-vergleich section.matrix td { padding: 1px 3px; word-break: break-word; hyphens: auto; border-bottom: 0.5px solid #e5e7eb; position: static !important; }
+            .doc-vergleich section.matrix .k { width: 150px; }
+            .doc-vergleich section.matrix p.small { display: none !important; }
+            .doc-vergleich .checklists { grid-template-columns: 1fr 1fr; gap: 6px; font-size: 9px; line-height: 1.25; }
+            .doc-vergleich .checklists .col { padding: 6px; }
+            .doc-vergleich .checklists h3 { font-size: 11px; margin: 0 0 3px; }
+            .doc-vergleich .two-col-print { grid-template-columns: 1fr 1fr; gap: 4px; font-size: 10.5px; line-height: 1.28; }
+            .doc-vergleich .two-col-print > * { break-inside: avoid; page-break-inside: avoid; }
+            .doc-vergleich .two-col-print h3 { margin: 0 0 6px; }
+            .doc-vergleich .two-col-print .small { font-size: 8.6px; margin: 2px 0 4px; }
+            .doc-vergleich .two-col-print table { font-size: 10px; table-layout: fixed; }
+            .doc-vergleich .two-col-print th,
+            .doc-vergleich .two-col-print td { padding: 2px 4px; word-break: break-word; hyphens: auto; }
+            .doc-vergleich section.budget { padding: 10px !important; break-before: page !important; page-break-before: always !important; }
+            .doc-vergleich section.budget h2 { font-size: 17px; margin: 0 0 6px; }
+            .doc-vergleich section.budget .k { width: 140px; }
+            .doc-vergleich section.budget p.small { margin: 2px 0 4px; }
+            .doc-vergleich .household { padding: 6px; margin: 4px 0 6px; font-size: 9px; }
+            .doc-vergleich .household h3 { font-size: 11px; margin: 0 0 3px; }
+            .doc-vergleich .household th,
+            .doc-vergleich .household td { padding: 2px 4px; }
+            .doc-vergleich section:first-of-type table { font-size: 9.5px; line-height: 1.22; table-layout: fixed; }
+            .doc-vergleich section:first-of-type th,
+            .doc-vergleich section:first-of-type td { padding: 1px 3px; }
+            .doc-vergleich section:first-of-type .k { width: 160px; }
+            .doc-vergleich .two-col-print { grid-template-columns: 1fr 1fr; gap: 2px; font-size: 9.2px; line-height: 1.22; }
+            .doc-vergleich .two-col-print table { font-size: 8.8px; }
+            .doc-vergleich .two-col-print th,
+            .doc-vergleich .two-col-print td { padding: 1px 3px; }
+            .doc-vergleich .two-col-print .small { font-size: 8px; display: none !important; }
+            .doc-vergleich section.budget h2 { font-size: 15px; margin: 0 0 4px; }
+            .doc-vergleich section.budget .k { width: 130px; }
+          }
+        </style>
+        <div class="doc doc-vergleich">
+          <div class="container">
+            <header>
+              <h1>Ländervergleich – Norwegen · Neuseeland · Island · Kanada</h1>
+              <div class="meta">Stand: 25.09.2025 · Profile: Sozialpädagogin & Wirtschaftswissenschaftler · Familie mit 10‑jährigem Kind</div>
+            </header>
+            <section>
+              <h2>Kurz-Übersicht (tabellarisch)</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="k">Kriterium</th>
+                    <th>Norwegen</th>
+                    <th>Kanada</th>
+                    <th>Neuseeland</th>
+                    <th>Island</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="k">Schulen</td>
+                    <td class="good">Ganztag, Förderung</td>
+                    <td class="good">Öffentlich, hoch</td>
+                    <td class="good">Gut, Fritids</td>
+                    <td class="good">Solide, klein</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sozialpädagogik</td>
+                    <td>Bedarf Kommune</td>
+                    <td>Registrierung provinzl.</td>
+                    <td>Kommunen/Schulen</td>
+                    <td>Kleine Märkte</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Wirtschaftsjobs</td>
+                    <td>Beratung, Energie</td>
+                    <td>Finance, Tech Hubs</td>
+                    <td>Finance, Agritech, Tourismus</td>
+                    <td>Tourismus, Energie</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Gesundheit</td>
+                    <td>Universell</td>
+                    <td>Universell (Provinz)</td>
+                    <td>Öffentlich/teils privat</td>
+                    <td>Universell</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Kosten</td>
+                    <td class="warn">Hoch</td>
+                    <td class="warn">Hoch (Hubs)</td>
+                    <td class="warn">Mittel</td>
+                    <td class="warn">Hoch</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Klima</td>
+                    <td>Küste mild</td>
+                    <td>West mild, Inland kalt</td>
+                    <td>Mild, ozeanisch</td>
+                    <td>Kühl‑maritim</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sprache</td>
+                    <td colspan="4" class="small">Details siehe Matrix</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="small">Kurzüberblick: farbige Markierungen zeigen Tendenzen; Details siehe Matrix unten.</p>
+            </section>
+            <section class="matrix">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="k">Kriterium</th>
+                    <th>Norwegen</th>
+                    <th>Kanada</th>
+                    <th>Neuseeland</th>
+                    <th>Island</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="k">Schulen/Bildung</td>
+                    <td class="good">Gut ausgestattet, Ganztag verbreitet, Förderung</td>
+                    <td class="good">Öffentlich, hohe Qualität; Englisch/Französisch; Immersion</td>
+                    <td class="good">Gute Schulen; fokus auf Praxis/Outdoor</td>
+                    <td class="good">Solide, viel Outdoor/Projekt; kleinere Klassen</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Jobs Sozialpädagogik</td>
+                    <td>Bedarf Kommune/Barnevern; Autorisasjon ggf.</td>
+                    <td>Community Services/Schulen; provinzl. Registrierung (College)</td>
+                    <td>Community/Social Services; Registrierung je nach Rolle</td>
+                    <td>Kleinere Märkte; Bedarf in Schulen/Services</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Jobs Wirtschaft</td>
+                    <td>Beratung, Energie, Tech; Englisch teils</td>
+                    <td>Finance, Consulting, Tech; große Hubs (Toronto/Vancouver)</td>
+                    <td>Finance, Agritech, Tech, Tourismus</td>
+                    <td>Tourismus‑Mgmt, Energie/Geothermie, Verwaltung, KMU</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Gesellschaft/Respekt</td>
+                    <td class="good">Sehr respektvoll, geringe Hierarchien</td>
+                    <td class="good">Divers, inklusiv, klare Anti‑Diskriminierung</td>
+                    <td class="good">Freundlich, pragmatisch, community‑orientiert</td>
+                    <td class="good">Sehr sicher, kleine Gemeinschaften</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="k">Gesundheit</td>
+                    <td>Universell; Wartezeiten regional</td>
+                    <td>Universal (provinziell); Wartezeiten möglich</td>
+                    <td>Öffentlich; teils private Zusatzleistungen</td>
+                    <td>Universell; regional begrenzte Kapazitäten</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Altersvorsorge</td>
+                    <td>Staatlich + betrieblich + privat</td>
+                    <td>CPP/QPP + betriebliche Pläne + privat</td>
+                    <td>NZ Superannuation + KiwiSaver + privat</td>
+                    <td>Mehrsäulig (staatlich + Fonds + privat)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Lebenshaltung</td>
+                    <td class="warn">Hoch (Löhne angepasst)</td>
+                    <td class="warn">Hoch in Metropolen (Toronto/Vancouver)</td>
+                    <td class="warn">Mittel bis hoch (Auckland/Wellington)</td>
+                    <td class="warn">Hoch (Importpreise, kleine Märkte)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Wohnen</td>
+                    <td>Knapp in Städten, teuer</td>
+                    <td>Sehr teuer in Hubs, moderater außerhalb</td>
+                    <td>Teuer in Auckland/Wellington, moderater außerhalb</td>
+                    <td>Begrenzt in Reykjavík, teuer</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Klima</td>
+                    <td>Küste mild/feucht, Norden kalt, dunkle Winter</td>
+                    <td>Westküste milder; Inland/Prärien kalt; Sommer warm</td>
+                    <td>Mild, ozeanisch, viel Regen/Wind</td>
+                    <td>Kühl‑maritim, windig, dunkle Winter</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Visum/Einwanderung</td>
+                    <td class="good">EU/EWR: Freizügigkeit; Registrierung vor Ort</td>
+                    <td>Express Entry/PNP; Work Permit via Jobangebot</td>
+                    <td>Skilled Migrant/Accredited Employer; Work Visa</td>
+                    <td class="good">EU/EWR: Freizügigkeit; Registrierung</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Anerkennung/Regulierung</td>
+                    <td>Sozialarbeit/Barnevern teils Autorisasjon; Ärzte/PG stark reguliert</td>
+                    <td>Regulierte Berufe provinzl. (College/License); Nachweise nötig</td>
+                    <td>SWRB‑Registrierung für Social Work; teils NZQA‑Assessment</td>
+                    <td>Berufe teils reguliert; Anerkennung über Behörden/Fonds</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Sprache & Tests</td>
+                    <td>Norsk B1–B2 hilfreich; Englisch oft möglich</td>
+                    <td>EN (IELTS/CELPIP) für Einwanderung; FR vorteilhaft</td>
+                    <td>EN (IELTS) für Visa; Māori optional in Schulen</td>
+                    <td>Isländisch vorteilhaft; EN in Tourismus/Tech</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Familienleistungen</td>
+                    <td class="good">Elterngeld/‑zeit stark; günstige Kita (Obergrenzen)</td>
+                    <td>Canada Child Benefit einkommensabhängig; Elternzeit variiert</td>
+                    <td>Paid Parental Leave; Family Tax Credit</td>
+                    <td>Elternzeit/Leistungen gut; Kita begrenzt</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Arbeitszeit/Urlaub</td>
+                    <td>~37.5 h; 25+ Urlaubstage, Tarif stark</td>
+                    <td>~40 h; 10–20 Urlaubstage (provinziell)</td>
+                    <td>~40 h; 20 Urlaubstage (min.)</td>
+                    <td>38–40 h; 24–30 Urlaubstage (Tarif)</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Steuern (effektiv)</td>
+                    <td>~28–35% median (Familie, Kommune variiert)</td>
+                    <td>~22–35% je nach Provinz/Einkommen</td>
+                    <td>~20–30% je nach Einkommen</td>
+                    <td>~28–35% je nach Einkommen</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Registrierung & Behörden</td>
+                    <td>Folkeregister, D‑/Personnummer, Skatteetaten, Hausarzt</td>
+                    <td>SIN, Health Card, Driver’s License, CRA</td>
+                    <td>IRD, GP‑Einschreibung, Driver Licence Convert</td>
+                    <td>Kennitala, Registers Iceland, Gesundheitskasse</td>
+                  </tr>
+                  <tr>
+                    <td class="k">Erste Schritte (Kurz)</td>
+                    <td>Wohnsitz anmelden → Personnr. → Bank/Steuer → Schule/Kita</td>
+                    <td>Work Permit/PR → SIN → Health Card → Bank/Schule</td>
+                    <td>Work Visa → IRD → GP → Bank/Schule</td>
+                    <td>Adressmeldung → Kennitala → Bank/Skattur → Schule/Kita</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="checklists">
+                <div class="col">
+                  <h3>Norwegen – Checkliste</h3>
+                  <ul>
+                    <li>Wohnsitz anmelden (Folkeregister)</li>
+                    <li>Personnummer/D‑Nr. beantragen</li>
+                    <li>Steuer (Skatteetaten) & Bank</li>
+                    <li>Hausarzt/Schule/Kita anmelden</li>
+                    <li>Sprachkurs Norsk (B1–B2)</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Kanada – Checkliste</h3>
+                  <ul>
+                    <li>Work Permit/PR (IRCC)</li>
+                    <li>SIN & Health Card holen</li>
+                    <li>Bankkonto & Führerschein</li>
+                    <li>Schul‑/Kinderbetreuung anmelden</li>
+                    <li>Englischtest/Französisch stärken</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Neuseeland – Checkliste</h3>
+                  <ul>
+                    <li>Accredited Employer/Work Visa</li>
+                    <li>IRD holen, GP registrieren</li>
+                    <li>Bankkonto & Driver Licence</li>
+                    <li>Schule/KiwiSaver prüfen</li>
+                    <li>IELTS & Qual. Anerkennung</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Island – Checkliste</h3>
+                  <ul>
+                    <li>Kennitala & Adressmeldung</li>
+                    <li>Skatturinn & Bank</li>
+                    <li>Hausarzt/Heilbrigðiskerfi</li>
+                    <li>Schule/Kinderbetreuung</li>
+                    <li>Isländischkurs beginnen</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="small">Hinweis: Politische Mehrheiten und Fristen ändern sich. Bitte aktuelle Regierungsbildungen, Anerkennungsstellen und Behördenlinks prüfen. Quellen (Kurz‑Links): NO – <a href="https://udi.no">udi.no</a> · <a href="https://skatteetaten.no">skatteetaten.no</a> | CA – <a href="https://www.canada.ca/immigration">canada.ca/immigration</a> | NZ – <a href="https://www.immigration.govt.nz">immigration.govt.nz</a> · <a href="https://www.ird.govt.nz">ird.govt.nz</a> | IS – <a href="https://utl.is">utl.is</a> · <a href="https://www.skattur.is">skattur.is</a></p>
+            </section>
+
+            <section class="budget">
+              <h2>Budget (konservative Monatswerte)</h2>
+              <div class="household">
+                <h3>Beispielhaushalt (2 Vollzeit, konservativ – Netto vs. Budget)</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Stadt</th>
+                      <th>Netto 2 Jobs (~k€)</th>
+                      <th>Budget (~k€)</th>
+                      <th>Delta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Oslo</td>
+                      <td>~7.1</td>
+                      <td>~3.8</td>
+                      <td class="good">~+3.3</td>
+                    </tr>
+                    <tr>
+                      <td>Toronto/Vancouver</td>
+                      <td>~7.0</td>
+                      <td>~3.9</td>
+                      <td class="good">~+3.1</td>
+                    </tr>
+                    <tr>
+                      <td>Auckland</td>
+                      <td>~6.5</td>
+                      <td>~3.3</td>
+                      <td class="good">~+3.2</td>
+                    </tr>
+                    <tr>
+                      <td>Reykjavík</td>
+                      <td>~6.4</td>
+                      <td>~4.4</td>
+                      <td class="good">~+2.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="small">Annahmen: Mittelpunkte der Spannen, Netto nach Steuer; keine Sonderzahlungen, keine Pendel‑/Auto‑/Rücklagenkosten. Nur Orientierung.</p>
+              </div>
+              <div class="two-col-print">
+                <div>
+                  <p class="small">Richtwerte für städtische Lagen (Stand 2025). Nettolöhne variieren nach Arbeitgeber, Tarif, Erfahrung, Steuern, Wechselkurs. Beträge gerundet.</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="k">Posten</th>
+                        <th>Oslo</th>
+                        <th>Toronto/Vancouver</th>
+                        <th>Auckland</th>
+                        <th>Reykjavík</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="k">Miete 3‑Zi. (Stadt)</td>
+                        <td class="warn">1.85–2.5k €</td>
+                        <td class="warn">1.5–2.4k €</td>
+                        <td class="warn">1.55–2.15k €</td>
+                        <td class="warn">2.45–3.5k €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">ÖPNV (Fam.)</td>
+                        <td>1.800–2.200 NOK (~150–180 €)</td>
+                        <td>200–280 €</td>
+                        <td>120–180 €</td>
+                        <td>15.000–25.000 ISK (~105–175 €)</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Kinderbetreuung</td>
+                        <td>125–290 €</td>
+                        <td>250–450 €</td>
+                        <td>85–170 €</td>
+                        <td>140–280 €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Krankenversicherung/Zuzahlungen</td>
+                        <td>120–220 €</td>
+                        <td>150–300 €</td>
+                        <td>110–190 €</td>
+                        <td>120–200 €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Lebensmittel/Alltag</td>
+                        <td>0.7–1.0k €</td>
+                        <td>0.7–1.1k €</td>
+                        <td>0.65–0.95k €</td>
+                        <td>0.7–1.1k €</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Summe konservativ (Monat)</td>
+                        <td class="warn">3.0k–4.6k €</td>
+                        <td class="warn">3.1k–4.7k €</td>
+                        <td class="warn">2.7k–3.9k €</td>
+                        <td class="warn">3.5k–5.3k €</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="small" style="display:none">Nicht enthalten: Rücklagen, Möbel/Erstausstattung, Kaution/Deposit, Auto, Freizeit/Urlaub. Wechselkurse schwanken; prüfen Sie lokale Angebote.</p>
+                </div>
+                <div>
+                  <h3>Nettolohn‑Spannen (Vollzeit, 2025, grob)</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="k">Rolle</th>
+                        <th>Oslo</th>
+                        <th>Toronto/Vancouver</th>
+                        <th>Auckland</th>
+                        <th>Reykjavík</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="k">Sozialpädagogik/Sozialarbeit</td>
+                        <td>2.800–3.600 € netto</td>
+                        <td>2.600–3.400 € netto</td>
+                        <td>2.500–3.200 € netto</td>
+                        <td>2.400–3.100 € netto</td>
+                      </tr>
+                      <tr>
+                        <td class="k">Wirtschaft (Finance/Controlling)</td>
+                        <td>3.200–4.500 € netto</td>
+                        <td>3.200–4.800 € netto</td>
+                        <td>3.000–4.200 € netto</td>
+                        <td>3.000–4.300 € netto</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="small">Spannen dienen der Orientierung und hängen stark von Erfahrung, Tarif, Branche und Steuern ab. Für konkrete Angebote lokale Gehaltsreports und Tarifverträge prüfen.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
