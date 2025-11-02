@@ -2097,7 +2097,7 @@
               <h2>Budget (konservative Monatswerte)</h2>
               <div class="household">
                 <h3>Beispielhaushalt (2 Vollzeit, konservativ – Netto vs. Budget)</h3>
-                <table>
+                <table class="responsive-table household-table">
                   <thead>
                     <tr>
                       <th>Stadt</th>
@@ -2108,28 +2108,28 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Oslo</td>
-                      <td>~7.1</td>
-                      <td>~3.8</td>
-                      <td class="good">~+3.3</td>
+                      <td data-label="Stadt">Oslo</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~7.1</td>
+                      <td data-label="Budget (~k€)">~3.8</td>
+                      <td class="good" data-label="Delta">~+3.3</td>
                     </tr>
                     <tr>
-                      <td>Toronto/Vancouver</td>
-                      <td>~7.0</td>
-                      <td>~3.9</td>
-                      <td class="good">~+3.1</td>
+                      <td data-label="Stadt">Toronto/Vancouver</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~7.0</td>
+                      <td data-label="Budget (~k€)">~3.9</td>
+                      <td class="good" data-label="Delta">~+3.1</td>
                     </tr>
                     <tr>
-                      <td>Auckland</td>
-                      <td>~6.5</td>
-                      <td>~3.3</td>
-                      <td class="good">~+3.2</td>
+                      <td data-label="Stadt">Auckland</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~6.5</td>
+                      <td data-label="Budget (~k€)">~3.3</td>
+                      <td class="good" data-label="Delta">~+3.2</td>
                     </tr>
                     <tr>
-                      <td>Reykjavík</td>
-                      <td>~6.4</td>
-                      <td>~4.4</td>
-                      <td class="good">~+2.0</td>
+                      <td data-label="Stadt">Reykjavík</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~6.4</td>
+                      <td data-label="Budget (~k€)">~4.4</td>
+                      <td class="good" data-label="Delta">~+2.0</td>
                     </tr>
                   </tbody>
                 </table>
@@ -2138,7 +2138,7 @@
               <div class="two-col-print">
                 <div>
                   <p class="small">Richtwerte für städtische Lagen (Stand 2025). Nettolöhne variieren nach Arbeitgeber, Tarif, Erfahrung, Steuern, Wechselkurs. Beträge gerundet.</p>
-                  <table>
+                  <table class="responsive-table cost-table">
                     <thead>
                       <tr>
                         <th class="k">Posten</th>
@@ -2150,46 +2150,46 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="k">Miete 3‑Zi. (Stadt)</td>
-                        <td class="warn">1.85–2.5k €</td>
-                        <td class="warn">1.5–2.4k €</td>
-                        <td class="warn">1.55–2.15k €</td>
-                        <td class="warn">2.45–3.5k €</td>
+                        <td class="k" data-label="Posten">Miete 3‑Zi. (Stadt)</td>
+                        <td class="warn" data-label="Oslo">1.85–2.5k €</td>
+                        <td class="warn" data-label="Toronto/Vancouver">1.5–2.4k €</td>
+                        <td class="warn" data-label="Auckland">1.55–2.15k €</td>
+                        <td class="warn" data-label="Reykjavík">2.45–3.5k €</td>
                       </tr>
                       <tr>
-                        <td class="k">ÖPNV (Fam.)</td>
-                        <td>1.800–2.200 NOK (~150–180 €)</td>
-                        <td>200–280 €</td>
-                        <td>120–180 €</td>
-                        <td>15.000–25.000 ISK (~105–175 €)</td>
+                        <td class="k" data-label="Posten">ÖPNV (Fam.)</td>
+                        <td data-label="Oslo">1.800–2.200 NOK (~150–180 €)</td>
+                        <td data-label="Toronto/Vancouver">200–280 €</td>
+                        <td data-label="Auckland">~220 €</td>
+                        <td data-label="Reykjavík">~260 €</td>
                       </tr>
                       <tr>
-                        <td class="k">Kinderbetreuung</td>
-                        <td>125–290 €</td>
-                        <td>250–450 €</td>
-                        <td>85–170 €</td>
-                        <td>140–280 €</td>
+                        <td class="k" data-label="Posten">Kinderbetreuung</td>
+                        <td data-label="Oslo">125–290 €</td>
+                        <td data-label="Toronto/Vancouver">250–450 €</td>
+                        <td data-label="Auckland">85–170 €</td>
+                        <td data-label="Reykjavík">140–280 €</td>
                       </tr>
                       <tr>
-                        <td class="k">Krankenversicherung/Zuzahlungen</td>
-                        <td>120–220 €</td>
-                        <td>150–300 €</td>
-                        <td>110–190 €</td>
-                        <td>120–200 €</td>
+                        <td class="k" data-label="Posten">Krankenversicherung/Zuzahlungen</td>
+                        <td data-label="Oslo">120–220 €</td>
+                        <td data-label="Toronto/Vancouver">150–300 €</td>
+                        <td data-label="Auckland">110–190 €</td>
+                        <td data-label="Reykjavík">120–200 €</td>
                       </tr>
                       <tr>
-                        <td class="k">Lebensmittel/Alltag</td>
-                        <td>0.7–1.0k €</td>
-                        <td>0.7–1.1k €</td>
-                        <td>0.65–0.95k €</td>
-                        <td>0.7–1.1k €</td>
+                        <td class="k" data-label="Posten">Lebensmittel/Alltag</td>
+                        <td data-label="Oslo">0.7–1.0k €</td>
+                        <td data-label="Toronto/Vancouver">0.7–1.1k €</td>
+                        <td data-label="Auckland">0.65–0.95k €</td>
+                        <td data-label="Reykjavík">0.7–1.1k €</td>
                       </tr>
                       <tr>
-                        <td class="k">Summe konservativ (Monat)</td>
-                        <td class="warn">3.0k–4.6k €</td>
-                        <td class="warn">3.1k–4.7k €</td>
-                        <td class="warn">2.7k–3.9k €</td>
-                        <td class="warn">3.5k–5.3k €</td>
+                        <td class="k" data-label="Posten">Summe konservativ (Monat)</td>
+                        <td class="warn" data-label="Oslo">3.0k–4.6k €</td>
+                        <td class="warn" data-label="Toronto/Vancouver">3.1k–4.7k €</td>
+                        <td class="warn" data-label="Auckland">2.7k–3.9k €</td>
+                        <td class="warn" data-label="Reykjavík">3.5k–5.3k €</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2197,7 +2197,7 @@
                 </div>
                 <div>
                   <h3>Nettolohn‑Spannen (Vollzeit, 2025, grob)</h3>
-                  <table>
+                  <table class="responsive-table income-table">
                     <thead>
                       <tr>
                         <th class="k">Rolle</th>
@@ -2209,18 +2209,18 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="k">Sozialpädagogik/Sozialarbeit</td>
-                        <td>2.800–3.600 € netto</td>
-                        <td>2.600–3.400 € netto</td>
-                        <td>2.500–3.200 € netto</td>
-                        <td>2.400–3.100 € netto</td>
+                        <td class="k" data-label="Rolle">Sozialpädagogik/Sozialarbeit</td>
+                        <td data-label="Oslo">2.800–3.600 € netto</td>
+                        <td data-label="Toronto/Vancouver">2.600–3.400 € netto</td>
+                        <td data-label="Auckland">2.500–3.200 € netto</td>
+                        <td data-label="Reykjavík">2.400–3.100 € netto</td>
                       </tr>
                       <tr>
-                        <td class="k">Wirtschaft (Finance/Controlling)</td>
-                        <td>3.200–4.500 € netto</td>
-                        <td>3.200–4.800 € netto</td>
-                        <td>3.000–4.200 € netto</td>
-                        <td>3.000–4.300 € netto</td>
+                        <td class="k" data-label="Rolle">Wirtschaft (Finance/Controlling)</td>
+                        <td data-label="Oslo">3.200–4.500 € netto</td>
+                        <td data-label="Toronto/Vancouver">3.200–4.800 € netto</td>
+                        <td data-label="Auckland">3.000–4.200 € netto</td>
+                        <td data-label="Reykjavík">3.000–4.300 € netto</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2404,7 +2404,7 @@
             </header>
             <section>
               <h2>Kurz-Übersicht (tabellarisch)</h2>
-              <table>
+              <table class="responsive-table quick-table">
                 <thead>
                   <tr>
                     <th class="k">Kriterium</th>
@@ -2466,7 +2466,7 @@
               <p class="small">Kurzüberblick: farbige Markierungen zeigen Tendenzen; Details siehe Matrix unten.</p>
             </section>
             <section class="matrix">
-              <table>
+              <table class="responsive-table matrix-table">
                 <thead>
                   <tr>
                     <th class="k">Kriterium</th>
@@ -2479,123 +2479,123 @@
                 <tbody>
                   <tr>
                     <td class="k">Schulen/Bildung</td>
-                    <td class="good">Gut ausgestattet, Ganztag verbreitet, Förderung</td>
-                    <td class="good">Öffentlich, hohe Qualität; Englisch/Französisch; Immersion</td>
-                    <td class="good">Gute Schulen; fokus auf Praxis/Outdoor</td>
-                    <td class="good">Solide, viel Outdoor/Projekt; kleinere Klassen</td>
+                    <td class="good" data-label="Norwegen">Gut ausgestattet, Ganztag verbreitet, Förderung</td>
+                    <td class="good" data-label="Kanada">Öffentlich, hohe Qualität; Englisch/Französisch; Immersion</td>
+                    <td class="good" data-label="Neuseeland">Gute Schulen; fokus auf Praxis/Outdoor</td>
+                    <td class="good" data-label="Island">Solide, viel Outdoor/Projekt; kleinere Klassen</td>
                   </tr>
                   <tr>
                     <td class="k">Jobs Sozialpädagogik</td>
-                    <td>Bedarf Kommune/Barnevern; Autorisasjon ggf.</td>
-                    <td>Community Services/Schulen; provinzl. Registrierung (College)</td>
-                    <td>Community/Social Services; Registrierung je nach Rolle</td>
-                    <td>Kleinere Märkte; Bedarf in Schulen/Services</td>
+                    <td data-label="Norwegen">Bedarf Kommune/Barnevern; Autorisasjon ggf.</td>
+                    <td data-label="Kanada">Community Services/Schulen; provinzl. Registrierung (College)</td>
+                    <td data-label="Neuseeland">Community/Social Services; Registrierung je nach Rolle</td>
+                    <td data-label="Island">Kleinere Märkte; Bedarf in Schulen/Services</td>
                   </tr>
                   <tr>
                     <td class="k">Jobs Wirtschaft</td>
-                    <td>Beratung, Energie, Tech; Englisch teils</td>
-                    <td>Finance, Consulting, Tech; große Hubs (Toronto/Vancouver)</td>
-                    <td>Finance, Agritech, Tech, Tourismus</td>
-                    <td>Tourismus‑Mgmt, Energie/Geothermie, Verwaltung, KMU</td>
+                    <td data-label="Norwegen">Beratung, Energie, Tech; Englisch teils</td>
+                    <td data-label="Kanada">Finance, Consulting, Tech; große Hubs (Toronto/Vancouver)</td>
+                    <td data-label="Neuseeland">Finance, Agritech, Tech, Tourismus</td>
+                    <td data-label="Island">Tourismus‑Mgmt, Energie/Geothermie, Verwaltung, KMU</td>
                   </tr>
                   <tr>
                     <td class="k">Gesellschaft/Respekt</td>
-                    <td class="good">Sehr respektvoll, geringe Hierarchien</td>
-                    <td class="good">Divers, inklusiv, klare Anti‑Diskriminierung</td>
-                    <td class="good">Freundlich, pragmatisch, community‑orientiert</td>
-                    <td class="good">Sehr sicher, kleine Gemeinschaften</td>
+                    <td class="good" data-label="Norwegen">Sehr respektvoll, geringe Hierarchien</td>
+                    <td class="good" data-label="Kanada">Divers, inklusiv, klare Anti‑Diskriminierung</td>
+                    <td class="good" data-label="Neuseeland">Freundlich, pragmatisch, community‑orientiert</td>
+                    <td class="good" data-label="Island">Sehr sicher, kleine Gemeinschaften</td>
                   </tr>
                   
                   <tr>
                     <td class="k">Gesundheit</td>
-                    <td>Universell; Wartezeiten regional</td>
-                    <td>Universal (provinziell); Wartezeiten möglich</td>
-                    <td>Öffentlich; teils private Zusatzleistungen</td>
-                    <td>Universell; regional begrenzte Kapazitäten</td>
+                    <td data-label="Norwegen">Universell; Wartezeiten regional</td>
+                    <td data-label="Kanada">Universal (provinziell); Wartezeiten möglich</td>
+                    <td data-label="Neuseeland">Öffentlich; teils private Zusatzleistungen</td>
+                    <td data-label="Island">Universell; regional begrenzte Kapazitäten</td>
                   </tr>
                   <tr>
                     <td class="k">Altersvorsorge</td>
-                    <td>Staatlich + betrieblich + privat</td>
-                    <td>CPP/QPP + betriebliche Pläne + privat</td>
-                    <td>NZ Superannuation + KiwiSaver + privat</td>
-                    <td>Mehrsäulig (staatlich + Fonds + privat)</td>
+                    <td data-label="Norwegen">Staatlich + betrieblich + privat</td>
+                    <td data-label="Kanada">CPP/QPP + betriebliche Pläne + privat</td>
+                    <td data-label="Neuseeland">NZ Superannuation + KiwiSaver + privat</td>
+                    <td data-label="Island">Mehrsäulig (staatlich + Fonds + privat)</td>
                   </tr>
                   <tr>
                     <td class="k">Lebenshaltung</td>
-                    <td class="warn">Hoch (Löhne angepasst)</td>
-                    <td class="warn">Hoch in Metropolen (Toronto/Vancouver)</td>
-                    <td class="warn">Mittel bis hoch (Auckland/Wellington)</td>
-                    <td class="warn">Hoch (Importpreise, kleine Märkte)</td>
+                    <td class="warn" data-label="Norwegen">Hoch (Löhne angepasst)</td>
+                    <td class="warn" data-label="Kanada">Hoch in Metropolen (Toronto/Vancouver)</td>
+                    <td class="warn" data-label="Neuseeland">Mittel bis hoch (Auckland/Wellington)</td>
+                    <td class="warn" data-label="Island">Hoch (Importpreise, kleine Märkte)</td>
                   </tr>
                   <tr>
                     <td class="k">Wohnen</td>
-                    <td>Knapp in Städten, teuer</td>
-                    <td>Sehr teuer in Hubs, moderater außerhalb</td>
-                    <td>Teuer in Auckland/Wellington, moderater außerhalb</td>
-                    <td>Begrenzt in Reykjavík, teuer</td>
+                    <td data-label="Norwegen">Knapp in Städten, teuer</td>
+                    <td data-label="Kanada">Sehr teuer in Hubs, moderater außerhalb</td>
+                    <td data-label="Neuseeland">Teuer in Auckland/Wellington, moderater außerhalb</td>
+                    <td data-label="Island">Begrenzt in Reykjavík, teuer</td>
                   </tr>
                   <tr>
                     <td class="k">Klima</td>
-                    <td>Küste mild/feucht, Norden kalt, dunkle Winter</td>
-                    <td>Westküste milder; Inland/Prärien kalt; Sommer warm</td>
-                    <td>Mild, ozeanisch, viel Regen/Wind</td>
-                    <td>Kühl‑maritim, windig, dunkle Winter</td>
+                    <td data-label="Norwegen">Küste mild/feucht, Norden kalt, dunkle Winter</td>
+                    <td data-label="Kanada">Westküste milder; Inland/Prärien kalt; Sommer warm</td>
+                    <td data-label="Neuseeland">Mild, ozeanisch, viel Regen/Wind</td>
+                    <td data-label="Island">Kühl‑maritim, windig, dunkle Winter</td>
                   </tr>
                   <tr>
                     <td class="k">Visum/Einwanderung</td>
-                    <td class="good">EU/EWR: Freizügigkeit; Registrierung vor Ort</td>
-                    <td>Express Entry/PNP; Work Permit via Jobangebot</td>
-                    <td>Skilled Migrant/Accredited Employer; Work Visa</td>
-                    <td class="good">EU/EWR: Freizügigkeit; Registrierung</td>
+                    <td class="good" data-label="Norwegen">EU/EWR: Freizügigkeit; Registrierung vor Ort</td>
+                    <td data-label="Kanada">Express Entry/PNP; Work Permit via Jobangebot</td>
+                    <td data-label="Neuseeland">Skilled Migrant/Accredited Employer; Work Visa</td>
+                    <td class="good" data-label="Island">EU/EWR: Freizügigkeit; Registrierung</td>
                   </tr>
                   <tr>
                     <td class="k">Anerkennung/Regulierung</td>
-                    <td>Sozialarbeit/Barnevern teils Autorisasjon; Ärzte/PG stark reguliert</td>
-                    <td>Regulierte Berufe provinzl. (College/License); Nachweise nötig</td>
-                    <td>SWRB‑Registrierung für Social Work; teils NZQA‑Assessment</td>
-                    <td>Berufe teils reguliert; Anerkennung über Behörden/Fonds</td>
+                    <td data-label="Norwegen">Sozialarbeit/Barnevern teils Autorisasjon; Ärzte/PG stark reguliert</td>
+                    <td data-label="Kanada">Regulierte Berufe provinzl. (College/License); Nachweise nötig</td>
+                    <td data-label="Neuseeland">SWRB‑Registrierung für Social Work; teils NZQA‑Assessment</td>
+                    <td data-label="Island">Berufe teils reguliert; Anerkennung über Behörden/Fonds</td>
                   </tr>
                   <tr>
                     <td class="k">Sprache & Tests</td>
-                    <td>Norsk B1–B2 hilfreich; Englisch oft möglich</td>
-                    <td>EN (IELTS/CELPIP) für Einwanderung; FR vorteilhaft</td>
-                    <td>EN (IELTS) für Visa; Māori optional in Schulen</td>
-                    <td>Isländisch vorteilhaft; EN in Tourismus/Tech</td>
+                    <td data-label="Norwegen">Norsk B1–B2 hilfreich; Englisch oft möglich</td>
+                    <td data-label="Kanada">EN (IELTS/CELPIP) für Einwanderung; FR vorteilhaft</td>
+                    <td data-label="Neuseeland">EN (IELTS) für Visa; Māori optional in Schulen</td>
+                    <td data-label="Island">Isländisch vorteilhaft; EN in Tourismus/Tech</td>
                   </tr>
                   <tr>
                     <td class="k">Familienleistungen</td>
-                    <td class="good">Elterngeld/‑zeit stark; günstige Kita (Obergrenzen)</td>
-                    <td>Canada Child Benefit einkommensabhängig; Elternzeit variiert</td>
-                    <td>Paid Parental Leave; Family Tax Credit</td>
-                    <td>Elternzeit/Leistungen gut; Kita begrenzt</td>
+                    <td class="good" data-label="Norwegen">Elterngeld/‑zeit stark; günstige Kita (Obergrenzen)</td>
+                    <td data-label="Kanada">Canada Child Benefit einkommensabhängig; Elternzeit variiert</td>
+                    <td data-label="Neuseeland">Paid Parental Leave; Family Tax Credit</td>
+                    <td data-label="Island">Elternzeit/Leistungen gut; Kita begrenzt</td>
                   </tr>
                   <tr>
                     <td class="k">Arbeitszeit/Urlaub</td>
-                    <td>~37.5 h; 25+ Urlaubstage, Tarif stark</td>
-                    <td>~40 h; 10–20 Urlaubstage (provinziell)</td>
-                    <td>~40 h; 20 Urlaubstage (min.)</td>
-                    <td>38–40 h; 24–30 Urlaubstage (Tarif)</td>
+                    <td data-label="Norwegen">~37.5 h; 25+ Urlaubstage, Tarif stark</td>
+                    <td data-label="Kanada">~40 h; 10–20 Urlaubstage (provinziell)</td>
+                    <td data-label="Neuseeland">~40 h; 20 Urlaubstage (min.)</td>
+                    <td data-label="Island">38–40 h; 24–30 Urlaubstage (Tarif)</td>
                   </tr>
                   <tr>
                     <td class="k">Steuern (effektiv)</td>
-                    <td>~28–35% median (Familie, Kommune variiert)</td>
-                    <td>~22–35% je nach Provinz/Einkommen</td>
-                    <td>~20–30% je nach Einkommen</td>
-                    <td>~28–35% je nach Einkommen</td>
+                    <td data-label="Norwegen">~28–35% median (Familie, Kommune variiert)</td>
+                    <td data-label="Kanada">~22–35% je nach Provinz/Einkommen</td>
+                    <td data-label="Neuseeland">~20–30% je nach Einkommen</td>
+                    <td data-label="Island">~28–35% je nach Einkommen</td>
                   </tr>
                   <tr>
                     <td class="k">Registrierung & Behörden</td>
-                    <td>Folkeregister, D‑/Personnummer, Skatteetaten, Hausarzt</td>
-                    <td>SIN, Health Card, Driver’s License, CRA</td>
-                    <td>IRD, GP‑Einschreibung, Driver Licence Convert</td>
-                    <td>Kennitala, Registers Iceland, Gesundheitskasse</td>
+                    <td data-label="Norwegen">Folkeregister, D‑/Personnummer, Skatteetaten, Hausarzt</td>
+                    <td data-label="Kanada">SIN, Health Card, Driver’s License, CRA</td>
+                    <td data-label="Neuseeland">IRD, GP‑Einschreibung, Driver Licence Convert</td>
+                    <td data-label="Island">Kennitala, Registers Iceland, Gesundheitskasse</td>
                   </tr>
                   <tr>
                     <td class="k">Erste Schritte (Kurz)</td>
-                    <td>Wohnsitz anmelden → Personnr. → Bank/Steuer → Schule/Kita</td>
-                    <td>Work Permit/PR → SIN → Health Card → Bank/Schule</td>
-                    <td>Work Visa → IRD → GP → Bank/Schule</td>
-                    <td>Adressmeldung → Kennitala → Bank/Skattur → Schule/Kita</td>
+                    <td data-label="Norwegen">Wohnsitz anmelden → Personnr. → Bank/Steuer → Schule/Kita</td>
+                    <td data-label="Kanada">Work Permit/PR → SIN → Health Card → Bank/Schule</td>
+                    <td data-label="Neuseeland">Work Visa → IRD → GP → Bank/Schule</td>
+                    <td data-label="Island">Adressmeldung → Kennitala → Bank/Skattur → Schule/Kita</td>
                   </tr>
                 </tbody>
               </table>
@@ -2648,7 +2648,7 @@
               <h2>Budget (konservative Monatswerte)</h2>
               <div class="household">
                 <h3>Beispielhaushalt (2 Vollzeit, konservativ – Netto vs. Budget)</h3>
-                <table>
+                <table class="responsive-table household-table">
                   <thead>
                     <tr>
                       <th>Stadt</th>
@@ -2659,28 +2659,28 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Oslo</td>
-                      <td>~7.1</td>
-                      <td>~3.8</td>
-                      <td class="good">~+3.3</td>
+                      <td data-label="Stadt">Oslo</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~7.1</td>
+                      <td data-label="Budget (~k€)">~3.8</td>
+                      <td class="good" data-label="Delta">~+3.3</td>
                     </tr>
                     <tr>
-                      <td>Toronto/Vancouver</td>
-                      <td>~7.0</td>
-                      <td>~3.9</td>
-                      <td class="good">~+3.1</td>
+                      <td data-label="Stadt">Toronto/Vancouver</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~7.0</td>
+                      <td data-label="Budget (~k€)">~3.9</td>
+                      <td class="good" data-label="Delta">~+3.1</td>
                     </tr>
                     <tr>
-                      <td>Auckland</td>
-                      <td>~6.5</td>
-                      <td>~3.3</td>
-                      <td class="good">~+3.2</td>
+                      <td data-label="Stadt">Auckland</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~6.5</td>
+                      <td data-label="Budget (~k€)">~3.3</td>
+                      <td class="good" data-label="Delta">~+3.2</td>
                     </tr>
                     <tr>
-                      <td>Reykjavík</td>
-                      <td>~6.4</td>
-                      <td>~4.4</td>
-                      <td class="good">~+2.0</td>
+                      <td data-label="Stadt">Reykjavík</td>
+                      <td data-label="Netto 2 Jobs (~k€)">~6.4</td>
+                      <td data-label="Budget (~k€)">~4.4</td>
+                      <td class="good" data-label="Delta">~+2.0</td>
                     </tr>
                   </tbody>
                 </table>
@@ -2689,7 +2689,7 @@
               <div class="two-col-print">
                 <div>
                   <p class="small">Richtwerte für städtische Lagen (Stand 2025). Nettolöhne variieren nach Arbeitgeber, Tarif, Erfahrung, Steuern, Wechselkurs. Beträge gerundet.</p>
-                  <table>
+                  <table class="responsive-table cost-table">
                     <thead>
                       <tr>
                         <th class="k">Posten</th>
@@ -2701,46 +2701,46 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="k">Miete 3‑Zi. (Stadt)</td>
-                        <td class="warn">1.85–2.5k €</td>
-                        <td class="warn">1.5–2.4k €</td>
-                        <td class="warn">1.55–2.15k €</td>
-                        <td class="warn">2.45–3.5k €</td>
+                        <td class="k" data-label="Posten">Miete 3‑Zi. (Stadt)</td>
+                        <td class="warn" data-label="Oslo">1.85–2.5k €</td>
+                        <td class="warn" data-label="Toronto/Vancouver">1.5–2.4k €</td>
+                        <td class="warn" data-label="Auckland">1.55–2.15k €</td>
+                        <td class="warn" data-label="Reykjavík">2.45–3.5k €</td>
                       </tr>
                       <tr>
-                        <td class="k">ÖPNV (Fam.)</td>
-                        <td>1.800–2.200 NOK (~150–180 €)</td>
-                        <td>200–280 €</td>
-                        <td>120–180 €</td>
-                        <td>15.000–25.000 ISK (~105–175 €)</td>
+                        <td class="k" data-label="Posten">ÖPNV (Fam.)</td>
+                        <td data-label="Oslo">1.800–2.200 NOK (~150–180 €)</td>
+                        <td data-label="Toronto/Vancouver">200–280 €</td>
+                        <td data-label="Auckland">120–180 €</td>
+                        <td data-label="Reykjavík">15.000–25.000 ISK (~105–175 €)</td>
                       </tr>
                       <tr>
-                        <td class="k">Kinderbetreuung</td>
-                        <td>125–290 €</td>
-                        <td>250–450 €</td>
-                        <td>85–170 €</td>
-                        <td>140–280 €</td>
+                        <td class="k" data-label="Posten">Kinderbetreuung</td>
+                        <td data-label="Oslo">125–290 €</td>
+                        <td data-label="Toronto/Vancouver">250–450 €</td>
+                        <td data-label="Auckland">85–170 €</td>
+                        <td data-label="Reykjavík">140–280 €</td>
                       </tr>
                       <tr>
-                        <td class="k">Krankenversicherung/Zuzahlungen</td>
-                        <td>120–220 €</td>
-                        <td>150–300 €</td>
-                        <td>110–190 €</td>
-                        <td>120–200 €</td>
+                        <td class="k" data-label="Posten">Krankenversicherung/Zuzahlungen</td>
+                        <td data-label="Oslo">120–220 €</td>
+                        <td data-label="Toronto/Vancouver">150–300 €</td>
+                        <td data-label="Auckland">110–190 €</td>
+                        <td data-label="Reykjavík">120–200 €</td>
                       </tr>
                       <tr>
-                        <td class="k">Lebensmittel/Alltag</td>
-                        <td>0.7–1.0k €</td>
-                        <td>0.7–1.1k €</td>
-                        <td>0.65–0.95k €</td>
-                        <td>0.7–1.1k €</td>
+                        <td class="k" data-label="Posten">Lebensmittel/Alltag</td>
+                        <td data-label="Oslo">0.7–1.0k €</td>
+                        <td data-label="Toronto/Vancouver">0.7–1.1k €</td>
+                        <td data-label="Auckland">0.65–0.95k €</td>
+                        <td data-label="Reykjavík">0.7–1.1k €</td>
                       </tr>
                       <tr>
-                        <td class="k">Summe konservativ (Monat)</td>
-                        <td class="warn">3.0k–4.6k €</td>
-                        <td class="warn">3.1k–4.7k €</td>
-                        <td class="warn">2.7k–3.9k €</td>
-                        <td class="warn">3.5k–5.3k €</td>
+                        <td class="k" data-label="Posten">Summe konservativ (Monat)</td>
+                        <td class="warn" data-label="Oslo">3.0k–4.6k €</td>
+                        <td class="warn" data-label="Toronto/Vancouver">3.1k–4.7k €</td>
+                        <td class="warn" data-label="Auckland">2.7k–3.9k €</td>
+                        <td class="warn" data-label="Reykjavík">3.5k–5.3k €</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2748,7 +2748,7 @@
                 </div>
                 <div>
                   <h3>Nettolohn‑Spannen (Vollzeit, 2025, grob)</h3>
-                  <table>
+                  <table class="responsive-table income-table">
                     <thead>
                       <tr>
                         <th class="k">Rolle</th>
@@ -2760,18 +2760,18 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="k">Sozialpädagogik/Sozialarbeit</td>
-                        <td>2.800–3.600 € netto</td>
-                        <td>2.600–3.400 € netto</td>
-                        <td>2.500–3.200 € netto</td>
-                        <td>2.400–3.100 € netto</td>
+                        <td class="k" data-label="Rolle">Sozialpädagogik/Sozialarbeit</td>
+                        <td data-label="Oslo">2.800–3.600 € netto</td>
+                        <td data-label="Toronto/Vancouver">2.600–3.400 € netto</td>
+                        <td data-label="Auckland">2.500–3.200 € netto</td>
+                        <td data-label="Reykjavík">2.400–3.100 € netto</td>
                       </tr>
                       <tr>
-                        <td class="k">Wirtschaft (Finance/Controlling)</td>
-                        <td>3.200–4.500 € netto</td>
-                        <td>3.200–4.800 € netto</td>
-                        <td>3.000–4.200 € netto</td>
-                        <td>3.000–4.300 € netto</td>
+                        <td class="k" data-label="Rolle">Wirtschaft (Finance/Controlling)</td>
+                        <td data-label="Oslo">3.200–4.500 € netto</td>
+                        <td data-label="Toronto/Vancouver">3.200–4.800 € netto</td>
+                        <td data-label="Auckland">3.000–4.200 € netto</td>
+                        <td data-label="Reykjavík">3.000–4.300 € netto</td>
                       </tr>
                     </tbody>
                   </table>
