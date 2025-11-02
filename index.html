@@ -1730,6 +1730,48 @@
           .doc-laendervergleich .household td { padding: 4px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
           .doc-laendervergleich .two-col-print { display: grid; grid-template-columns: 1fr; gap: 16px; }
           @media (min-width: 1000px) { .doc-laendervergleich .two-col-print { grid-template-columns: 1fr 1fr; } }
+          @media (max-width: 640px) {
+            .doc-laendervergleich .responsive-table {
+              border-collapse: separate;
+              border-spacing: 0;
+              background: transparent;
+            }
+            .doc-laendervergleich .responsive-table thead {
+              display: none;
+            }
+            .doc-laendervergleich .responsive-table tbody {
+              display: grid;
+              gap: 14px;
+            }
+            .doc-laendervergleich .responsive-table tr {
+              display: grid;
+              gap: 10px;
+              padding: 14px 16px;
+              border: 1px solid #e5e7eb;
+              border-radius: 14px;
+              background: #f9fafb;
+              box-shadow: 0 8px 16px rgba(15, 23, 42, 0.06);
+            }
+            .doc-laendervergleich .responsive-table td {
+              padding: 0;
+              border: 0;
+            }
+            .doc-laendervergleich .responsive-table td:first-child {
+              font-weight: 600;
+              color: var(--dl-muted);
+            }
+            .doc-laendervergleich .responsive-table td[data-label] {
+              display: grid;
+              grid-template-columns: minmax(120px, 40%) 1fr;
+              gap: 12px;
+              align-items: baseline;
+            }
+            .doc-laendervergleich .responsive-table td[data-label]::before {
+              content: attr(data-label);
+              font-weight: 600;
+              color: var(--dl-ink);
+            }
+          }
         </style>
         <style>
           .doc-laendervergleich section,
@@ -1764,7 +1806,7 @@
             </header>
             <section>
               <h2>Kurz-Übersicht (tabellarisch)</h2>
-              <table>
+              <table class="responsive-table quick-table">
                 <thead>
                   <tr>
                     <th class="k">Kriterium</th>
@@ -1777,45 +1819,45 @@
                 <tbody>
                   <tr>
                     <td class="k">Schulen</td>
-                    <td class="good">Ganztag, Förderung</td>
-                    <td class="good">Öffentlich, hoch</td>
-                    <td class="good">Gut, Fritids</td>
-                    <td class="good">Solide, klein</td>
+                    <td class="good" data-label="Norwegen">Ganztag, Förderung</td>
+                    <td class="good" data-label="Kanada">Öffentlich, hoch</td>
+                    <td class="good" data-label="Neuseeland">Gut, Fritids</td>
+                    <td class="good" data-label="Island">Solide, klein</td>
                   </tr>
                   <tr>
                     <td class="k">Sozialpädagogik</td>
-                    <td>Bedarf Kommune</td>
-                    <td>Registrierung provinzl.</td>
-                    <td>Kommunen/Schulen</td>
-                    <td>Kleine Märkte</td>
+                    <td data-label="Norwegen">Bedarf Kommune</td>
+                    <td data-label="Kanada">Registrierung provinzl.</td>
+                    <td data-label="Neuseeland">Kommunen/Schulen</td>
+                    <td data-label="Island">Kleine Märkte</td>
                   </tr>
                   <tr>
                     <td class="k">Wirtschaftsjobs</td>
-                    <td>Beratung, Energie</td>
-                    <td>Finance, Tech Hubs</td>
-                    <td>Finance, Agritech, Tourismus</td>
-                    <td>Tourismus, Energie</td>
+                    <td data-label="Norwegen">Beratung, Energie</td>
+                    <td data-label="Kanada">Finance, Tech Hubs</td>
+                    <td data-label="Neuseeland">Finance, Agritech, Tourismus</td>
+                    <td data-label="Island">Tourismus, Energie</td>
                   </tr>
                   <tr>
                     <td class="k">Gesundheit</td>
-                    <td>Universell</td>
-                    <td>Universell (Provinz)</td>
-                    <td>Öffentlich/teils privat</td>
-                    <td>Universell</td>
+                    <td data-label="Norwegen">Universell</td>
+                    <td data-label="Kanada">Universell (Provinz)</td>
+                    <td data-label="Neuseeland">Öffentlich/teils privat</td>
+                    <td data-label="Island">Universell</td>
                   </tr>
                   <tr>
                     <td class="k">Kosten</td>
-                    <td class="warn">Hoch</td>
-                    <td class="warn">Hoch (Hubs)</td>
-                    <td class="warn">Mittel</td>
-                    <td class="warn">Hoch</td>
+                    <td class="warn" data-label="Norwegen">Hoch</td>
+                    <td class="warn" data-label="Kanada">Hoch (Hubs)</td>
+                    <td class="warn" data-label="Neuseeland">Mittel</td>
+                    <td class="warn" data-label="Island">Hoch</td>
                   </tr>
                   <tr>
                     <td class="k">Klima</td>
-                    <td>Küste mild</td>
-                    <td>West mild, Inland kalt</td>
-                    <td>Mild, ozeanisch</td>
-                    <td>Kühl‑maritim</td>
+                    <td data-label="Norwegen">Küste mild</td>
+                    <td data-label="Kanada">West mild, Inland kalt</td>
+                    <td data-label="Neuseeland">Mild, ozeanisch</td>
+                    <td data-label="Island">Kühl‑maritim</td>
                   </tr>
                   <tr>
                     <td class="k">Sprache</td>
@@ -1826,7 +1868,7 @@
               <p class="small">Kurzüberblick: farbige Markierungen zeigen Tendenzen; Details siehe Matrix unten.</p>
             </section>
             <section class="matrix">
-              <table>
+              <table class="responsive-table quick-table">
                 <thead>
                   <tr>
                     <th class="k">Kriterium</th>
@@ -2188,6 +2230,48 @@
           .doc-vergleich .household td { padding: 4px 6px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
           .doc-vergleich .two-col-print { display: grid; grid-template-columns: 1fr; gap: 16px; }
           @media (min-width: 1000px) { .doc-vergleich .two-col-print { grid-template-columns: 1fr 1fr; } }
+          @media (max-width: 640px) {
+            .doc-vergleich .responsive-table {
+              border-collapse: separate;
+              border-spacing: 0;
+              background: transparent;
+            }
+            .doc-vergleich .responsive-table thead {
+              display: none;
+            }
+            .doc-vergleich .responsive-table tbody {
+              display: grid;
+              gap: 14px;
+            }
+            .doc-vergleich .responsive-table tr {
+              display: grid;
+              gap: 10px;
+              padding: 14px 16px;
+              border: 1px solid #e5e7eb;
+              border-radius: 14px;
+              background: #f9fafb;
+              box-shadow: 0 8px 16px rgba(15, 23, 42, 0.06);
+            }
+            .doc-vergleich .responsive-table td {
+              padding: 0;
+              border: 0;
+            }
+            .doc-vergleich .responsive-table td:first-child {
+              font-weight: 600;
+              color: var(--dv-muted);
+            }
+            .doc-vergleich .responsive-table td[data-label] {
+              display: grid;
+              grid-template-columns: minmax(120px, 40%) 1fr;
+              gap: 12px;
+              align-items: baseline;
+            }
+            .doc-vergleich .responsive-table td[data-label]::before {
+              content: attr(data-label);
+              font-weight: 600;
+              color: var(--dv-ink);
+            }
+          }
         </style>
         <style>
           .doc-vergleich section,
@@ -2280,45 +2364,45 @@
                 <tbody>
                   <tr>
                     <td class="k">Schulen</td>
-                    <td class="good">Ganztag, Förderung</td>
-                    <td class="good">Öffentlich, hoch</td>
-                    <td class="good">Gut, Fritids</td>
-                    <td class="good">Solide, klein</td>
+                    <td class="good" data-label="Norwegen">Ganztag, Förderung</td>
+                    <td class="good" data-label="Kanada">Öffentlich, hoch</td>
+                    <td class="good" data-label="Neuseeland">Gut, Fritids</td>
+                    <td class="good" data-label="Island">Solide, klein</td>
                   </tr>
                   <tr>
                     <td class="k">Sozialpädagogik</td>
-                    <td>Bedarf Kommune</td>
-                    <td>Registrierung provinzl.</td>
-                    <td>Kommunen/Schulen</td>
-                    <td>Kleine Märkte</td>
+                    <td data-label="Norwegen">Bedarf Kommune</td>
+                    <td data-label="Kanada">Registrierung provinzl.</td>
+                    <td data-label="Neuseeland">Kommunen/Schulen</td>
+                    <td data-label="Island">Kleine Märkte</td>
                   </tr>
                   <tr>
                     <td class="k">Wirtschaftsjobs</td>
-                    <td>Beratung, Energie</td>
-                    <td>Finance, Tech Hubs</td>
-                    <td>Finance, Agritech, Tourismus</td>
-                    <td>Tourismus, Energie</td>
+                    <td data-label="Norwegen">Beratung, Energie</td>
+                    <td data-label="Kanada">Finance, Tech Hubs</td>
+                    <td data-label="Neuseeland">Finance, Agritech, Tourismus</td>
+                    <td data-label="Island">Tourismus, Energie</td>
                   </tr>
                   <tr>
                     <td class="k">Gesundheit</td>
-                    <td>Universell</td>
-                    <td>Universell (Provinz)</td>
-                    <td>Öffentlich/teils privat</td>
-                    <td>Universell</td>
+                    <td data-label="Norwegen">Universell</td>
+                    <td data-label="Kanada">Universell (Provinz)</td>
+                    <td data-label="Neuseeland">Öffentlich/teils privat</td>
+                    <td data-label="Island">Universell</td>
                   </tr>
                   <tr>
                     <td class="k">Kosten</td>
-                    <td class="warn">Hoch</td>
-                    <td class="warn">Hoch (Hubs)</td>
-                    <td class="warn">Mittel</td>
-                    <td class="warn">Hoch</td>
+                    <td class="warn" data-label="Norwegen">Hoch</td>
+                    <td class="warn" data-label="Kanada">Hoch (Hubs)</td>
+                    <td class="warn" data-label="Neuseeland">Mittel</td>
+                    <td class="warn" data-label="Island">Hoch</td>
                   </tr>
                   <tr>
                     <td class="k">Klima</td>
-                    <td>Küste mild</td>
-                    <td>West mild, Inland kalt</td>
-                    <td>Mild, ozeanisch</td>
-                    <td>Kühl‑maritim</td>
+                    <td data-label="Norwegen">Küste mild</td>
+                    <td data-label="Kanada">West mild, Inland kalt</td>
+                    <td data-label="Neuseeland">Mild, ozeanisch</td>
+                    <td data-label="Island">Kühl‑maritim</td>
                   </tr>
                   <tr>
                     <td class="k">Sprache</td>
