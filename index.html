@@ -155,8 +155,8 @@
     td {
       padding: 0.6em;
       text-align: left;
-      word-break: break-word;
-      overflow-wrap: anywhere;
+      word-break: normal;
+      overflow-wrap: break-word;
       hyphens: auto;
     }
 
@@ -1809,9 +1809,11 @@
             }
             .doc-laendervergleich .responsive-table td[data-label] {
               display: grid;
-              grid-template-columns: minmax(120px, 40%) 1fr;
+              grid-template-columns: minmax(140px, 45%) minmax(0, 1fr);
               gap: 12px;
-              align-items: baseline;
+              align-items: flex-start;
+              white-space: normal;
+              word-break: normal;
             }
             .doc-laendervergleich .responsive-table td[data-label]::before {
               content: attr(data-label);
@@ -2315,9 +2317,11 @@
             }
             .doc-vergleich .responsive-table td[data-label] {
               display: grid;
-              grid-template-columns: minmax(120px, 40%) 1fr;
+              grid-template-columns: minmax(140px, 45%) minmax(0, 1fr);
               gap: 12px;
-              align-items: baseline;
+              align-items: flex-start;
+              white-space: normal;
+              word-break: normal;
             }
             .doc-vergleich .responsive-table td[data-label]::before {
               content: attr(data-label);
