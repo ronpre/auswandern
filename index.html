@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auswanderungsleitfaden – Familie 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --ink-soft: #5a5650;
+      --ink-muted: #9a948e;
+      --bg: #f7f4ef;
+      --bg-warm: #ede9e2;
+      --bg-card: #faf8f5;
+      --border: #e2ddd6;
+      --border-soft: #ede9e2;
+      --green: #2d6a4f;
+      --green-light: #d8f3dc;
+      --green-text: #1b4332;
+      --amber: #92400e;
+      --amber-light: #fef3c7;
+      --amber-text: #78350f;
+      --blue: #1e40af;
+      --blue-light: #dbeafe;
+      --blue-text: #1e3a8a;
+      --gold: #b45309;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      color: #f7f4ef;
+      padding: 3rem 1.5rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 110% -20%, #3d5a3e 0%, transparent 60%),
+                  radial-gradient(ellipse 50% 50% at -10% 120%, #2c3a5a 0%, transparent 55%);
+    }
+    .hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+    .hero-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #b5b0a8;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #a8c5a0;
+    }
+    .hero-sub {
+      color: #b5b0a8;
+      font-size: 14px;
+      font-weight: 300;
+      max-width: 480px;
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+
+    /* ── NAV ── */
+    .nav-strip {
+      background: var(--ink);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 0 1.5rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-strip::-webkit-scrollbar { display: none; }
+    .nav-inner {
+      display: flex;
+      gap: 0;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .nav-inner a {
+      display: block;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #9a948e;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .nav-inner a:hover { color: #f7f4ef; border-bottom-color: rgba(255,255,255,0.3); }
+
+    /* ── MAIN ── */
+    .main { max-width: 680px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+
+    /* ── SECTION HEADER ── */
+    .section-head {
+      padding: 2.5rem 0 1.25rem;
+    }
+    .section-head h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .section-head p {
+      font-size: 13px;
+      color: var(--ink-muted);
+      font-weight: 300;
+    }
+
+    /* ── VERDICT BANNER ── */
+    .verdict {
+      background: var(--green);
+      color: #fff;
+      border-radius: 14px;
+      padding: 1.25rem 1.4rem;
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .verdict-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 1px; }
+    .verdict-body h3 { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+    .verdict-body p { font-size: 13px; opacity: 0.88; line-height: 1.55; font-weight: 300; }
+
+    /* ── COUNTRY CARD ── */
+    .country-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+      transition: box-shadow 0.2s;
+    }
+    .country-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .country-card.featured { border-color: var(--green); border-width: 2px; }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1.25rem 1.4rem 1rem;
+      border-bottom: 1px solid var(--border-soft);
+      gap: 1rem;
+    }
+    .card-header-left { display: flex; gap: 14px; align-items: flex-start; }
+    .flag-circle {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      background: var(--bg-warm);
+      flex-shrink: 0;
+    }
+    .card-title { font-family: 'Fraunces', serif; font-size: 1.2rem; font-weight: 500; line-height: 1.2; }
+    .card-subtitle { font-size: 12px; color: var(--ink-muted); margin-top: 2px; font-weight: 300; }
+    .rec-badge {
+      font-size: 11px; font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--green-light);
+      color: var(--green-text);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── SCORES ── */
+    .scores-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border-soft);
+    }
+    .score-item {
+      background: var(--bg-card);
+      padding: 0.875rem 1.25rem;
+    }
+    .score-label {
+      font-size: 11px;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 5px;
+    }
+    .score-bar-wrap { display: flex; align-items: center; gap: 8px; }
+    .score-bar {
+      flex: 1; height: 5px; background: var(--bg-warm);
+      border-radius: 99px; overflow: hidden;
+    }
+    .score-fill { height: 100%; border-radius: 99px; background: var(--green); }
+    .score-num { font-size: 12px; font-weight: 500; color: var(--ink-soft); min-width: 20px; }
+
+    /* ── CARD BODY ── */
+    .card-body { padding: 1.25rem 1.4rem; }
+
+    .summary-text {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--ink-soft);
+      font-weight: 300;
+      margin-bottom: 1.1rem;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1.1rem; }
+    .tag {
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--ink-soft);
+    }
+    .tag.good { background: var(--green-light); border-color: #b7e4c7; color: var(--green-text); }
+    .tag.warn { background: var(--amber-light); border-color: #fcd34d; color: var(--amber-text); }
+    .tag.info { background: var(--blue-light); border-color: #bfdbfe; color: var(--blue-text); }
+
+    /* ── TIPS ── */
+    .tips-block {
+      background: var(--bg-warm);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .tips-title {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: var(--ink-muted);
+      margin-bottom: 0.65rem;
+    }
+    .tips-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .tips-list li {
+      font-size: 13px;
+      color: var(--ink-soft);
+      font-weight: 300;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.55;
+    }
+    .tips-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--ink-muted);
+      font-size: 11px;
+      top: 2px;
+    }
+
+    /* ── ACCORDION ── */
+    details { border-top: 1px solid var(--border-soft); }
+    details:last-child { border-bottom: 1px solid var(--border-soft); }
+    summary {
+      padding: 0.875rem 0;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink-muted);
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    .details-body {
+      padding: 0 0 1rem;
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+    .details-body ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 5px; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table-wrap { overflow-x: auto; margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 540px; }
+    th {
+      background: var(--bg-warm);
+      padding: 9px 12px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--ink-soft);
+      border-bottom: 1px solid var(--border);
+    }
+    td { padding: 9px 12px; border-bottom: 1px solid var(--border-soft); color: var(--ink-soft); font-weight: 300; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-weight: 500; color: var(--ink); }
+    .cell-good { color: var(--green); font-weight: 500; }
+    .cell-warn { color: var(--amber); font-weight: 500; }
+
+    /* ── CHECKLIST ── */
+    .checklist { display: flex; flex-direction: column; gap: 6px; }
+    .check-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 9px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
+    .check-icon { color: var(--green); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── PHASE TIMELINE ── */
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+    .phase {
+      display: flex;
+      gap: 0;
+    }
+    .phase-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 36px;
+      flex-shrink: 0;
+    }
+    .phase-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .phase-line {
+      width: 1px;
+      flex: 1;
+      background: var(--border);
+      margin: 4px 0;
+    }
+    .phase:last-child .phase-line { display: none; }
+    .phase-content { padding-bottom: 1.5rem; flex: 1; }
+    .phase-label {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .phase-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 5px; }
+    .phase-items { font-size: 13px; color: var(--ink-soft); font-weight: 300; line-height: 1.65; }
+    .phase-items ul { padding-left: 1.1rem; display: flex; flex-direction: column; gap: 3px; }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.25rem;
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .page-footer p { font-size: 12px; color: var(--ink-muted); font-weight: 300; line-height: 1.6; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .country-card { animation: fadeUp 0.4s ease both; }
+    .country-card:nth-child(1) { animation-delay: 0.05s; }
+    .country-card:nth-child(2) { animation-delay: 0.12s; }
+    .country-card:nth-child(3) { animation-delay: 0.19s; }
+    .country-card:nth-child(4) { animation-delay: 0.26s; }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-label">Auswanderungsleitfaden</p>
+    <h1>Wo das Leben <em>gemeinsam</em><br>gut gelingt</h1>
+    <p class="hero-sub">Vier Länder im Vergleich – mit Fokus auf soziales Miteinander, Willkommenskultur und ein Leben ohne Alltagsdiskriminierung.</p>
+
+  </div>
+</header>
+
+<!-- STICKY NAV -->
+<nav class="nav-strip" aria-label="Seitennavigation">
+  <div class="nav-inner">
+    <a href="#laender">Länder</a>
+    <a href="#norwegen">Norwegen</a>
+    <a href="#kanada">Kanada</a>
+    <a href="#neuseeland">Neuseeland</a>
+    <a href="#island">Island</a>
+    <a href="#vergleich">Vergleich</a>
+    <a href="#zeitplan">Zeitplan</a>
+    <a href="#checkliste">Checkliste</a>
+  </div>
+</nav>
+
+<main class="main">
+
+  <!-- VERDICT -->
+  <div class="section-head" id="laender">
+    <h2>Unsere Einschätzung</h2>
+    <p>Basierend auf euren Profilen und Schwerpunkten</p>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-icon">🏆</div>
+    <div class="verdict-body">
+      <h3>Empfehlung: Norwegen</h3>
+      <p>Für eine Familie, bei der soziales Miteinander, Gleichstellung und eine respektvolle Arbeitskultur im Vordergrund stehen, ist Norwegen die stärkste Wahl. Kanada folgt dicht als Alternative mit der professionellsten Newcomer-Infrastruktur Europas.</p>
+    </div>
+  </div>
+
+  <!-- ─── NORWEGEN ─── -->
+  <div class="country-card featured" id="norwegen">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="flag-circle">🇳🇴</div>
+        <div>
+          <div class="card-title">Norwegen</div>
+          <div class="card-subtitle">Oslo · Trondheim · Bergen · Stavanger</div>
+        </div>
+      </div>
+      <span class="rec-badge">Nr. 1 Empfehlung</span>
+    </div>
+
+    <div class="scores-grid">
+      <div class="score-item">
+        <div class="score-label">Willkommenskultur</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:90%"></div></div>
+          <span class="score-num">9</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Gleichstellung</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:96%"></div></div>
+          <span class="score-num">9.6</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Antidiskriminierung</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:88%"></div></div>
+          <span class="score-num">8.8</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Familienfreundlich</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:94%"></div></div>
+          <span class="score-num">9.4</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <p class="summary-text">
+        Norwegen ist strukturell auf Konsens und niedrige Hierarchien ausgelegt – das ist keine Floskel, sondern spürbare Alltagskultur. Gesellschaftliche Polarisierung ist gering, die Demokratie stabil, die Gleichstellung international Spitze. Für eine Sozialpädagogin ist die gesellschaftliche Grundhaltung auch beruflich besonders passend.
+      </p>
+
+      <div class="tags">
+        <span class="tag good">Geringe Polarisierung</span>
+        <span class="tag good">Top-Gleichstellung</span>
+        <span class="tag good">Work-Life-Balance</span>
+        <span class="tag good">Familienleistungen</span>
+        <span class="tag good">EU/EFTA – Freizügigkeit</span>
+        <span class="tag warn">Norwegisch nötig</span>
+        <span class="tag warn">Hohe Lebenshaltung</span>
+      </div>
+
+      <div class="tips-block">
+        <div class="tips-title">🌿 Praktische Tipps</div>
+        <ul class="tips-list">
+          <li>Sprachkurse schon vor dem Umzug beginnen: Duolingo/Norskkurs online, dann Folkeuniversitet vor Ort. Norwegen A2 reicht für den Alltag.</li>
+          <li>Für euren Berufseinstieg: NOKUT prüft Abschlüsse kostenfrei – frühzeitig einreichen, da 3–6 Monate Bearbeitungszeit.</li>
+          <li>finn.no ist das Zillow Norwegens: für Jobs, Wohnungen und Gebrauchtes. Unverzichtbar ab Tag 1.</li>
+          <li>Kita-Plätze (barnehage) sind staatlich subventioniert – Hauptanmeldefrist ist jährlich im Januar für den August-Start.</li>
+          <li>NAV (Arbeitsamt) ist ein echter Service-Anlaufpunkt – auch für Neuzugezogene offen und hilfreich.</li>
+          <li>Die meisten Norweger sprechen hervorragendes Englisch – für den Start keine Angst vor Kommunikationsproblemen.</li>
+          <li>Scout-Reise 2–4 Wochen im Frühjahr einplanen: Asker/Bærum bei Oslo ist familienfreundlich, günstiger und hat gute Schulen.</li>
+        </ul>
+      </div>
+
+      <details>
+        <summary>Arbeitsmarkt – eure Profile</summary>
+        <div class="details-body">
+          <ul>
+            <li><strong>Sozialpädagogik:</strong> Bedarf in Barnevern (Kinder-/Jugendhilfe), Schulsozialarbeit, NAV-nahen Tätigkeiten und NGOs. Teils Autorisasjon über Helsedirektoratet nötig – Zeitpuffer einplanen.</li>
+            <li><strong>Wirtschaft:</strong> Finance, Controlling und Beratung sind in Oslo stark nachgefragt. Energie-Hubs in Stavanger. Englischsprachige Rollen bei internationalen Firmen vorhanden.</li>
+            <li>Einstiegsgehälter sind hoch – aber Steuern und Lebenshaltung ebenfalls. Netto bleibt oft weniger als erwartet.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Schule & Kind</summary>
+        <div class="details-body">
+          <ul>
+            <li>Öffentliche Schulen kostenlos, keine Gebühren. Sprachförderung für zugewanderte Kinder ist Standard (morsmålsopplæring).</li>
+            <li>Schulstart August, Quereinstieg jederzeit möglich. Die Kommune weist die Schule zu.</li>
+            <li>Internationale Schulen in Oslo, Bergen, Stavanger und Trondheim als gebührenpflichtige Alternative (ca. 15.000–25.000 NOK/Jahr).</li>
+            <li>Das 10-jährige Kind wird sprachlich schnell integriert – Kinder lernen Norwegisch erfahrungsgemäß in 6–12 Monaten.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Wohnen & Kosten</summary>
+        <div class="details-body">
+          <ul>
+            <li>Oslo: 3-Zimmer-Wohnung ca. 18.000–28.000 NOK/Monat. Außerhalb (Asker, Bærum, Lørenskog) 14.000–20.000 NOK.</li>
+            <li>Start möbliert (møblert) über finn.no, 3 Monatsmieten Kaution auf separates Depositumskonto.</li>
+            <li>Trondheim und Stavanger sind deutlich günstiger als Oslo bei vergleichbarer Lebensqualität.</li>
+            <li>Gehaltsrahmen Sozialarbeit: 500.000–620.000 NOK/Jahr. Wirtschaft: 600.000–850.000+ NOK je nach Rolle.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Einreise & Anerkennung</summary>
+        <div class="details-body">
+          <ul>
+            <li>EU/EFTA: Online-Vorregistrierung bei UDI → Termin bei Polizei → Personnummer bei Skatteetaten.</li>
+            <li>NOKUT prüft Bildungsabschlüsse (für Sozialberufe ggf. zusätzlich Helsedirektoratet).</li>
+            <li>Übersetzungen müssen beglaubigt sein – staatlich anerkannte Übersetzer beauftragen.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ─── KANADA ─── -->
+  <div class="country-card" id="kanada">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="flag-circle">🇨🇦</div>
+        <div>
+          <div class="card-title">Kanada</div>
+          <div class="card-subtitle">Vancouver · Ottawa · Halifax · Victoria</div>
+        </div>
+      </div>
+      <span class="rec-badge" style="background:#dbeafe;color:#1e3a8a;">Nr. 2 Alternative</span>
+    </div>
+
+    <div class="scores-grid">
+      <div class="score-item">
+        <div class="score-label">Willkommenskultur</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:95%"></div></div>
+          <span class="score-num">9.5</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Diversität & Inklusion</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:94%"></div></div>
+          <span class="score-num">9.4</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Antidiskriminierung</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:92%"></div></div>
+          <span class="score-num">9.2</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Newcomer-Infrastruktur</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:98%"></div></div>
+          <span class="score-num">9.8</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <p class="summary-text">
+        Kanada hat weltweit eine der professionellsten Einwanderungs-Infrastrukturen. Settlement Services, Newcomer-Zentren, Community-Support – das ist staatlich finanziert und wirklich gut. Die Gesellschaft ist strukturell multikulturell, Antidiskriminierung ist gesetzlich tief verankert.
+      </p>
+
+      <div class="tags">
+        <span class="tag good">Multikulturell</span>
+        <span class="tag good">Settlement Services</span>
+        <span class="tag good">Englischsprachig</span>
+        <span class="tag good">Express Entry Visa</span>
+        <span class="tag warn">Kalte Winter möglich</span>
+        <span class="tag warn">Hohe Mieten in Hubs</span>
+        <span class="tag warn">Visa-Prozess nötig</span>
+      </div>
+
+      <div class="tips-block">
+        <div class="tips-title">🍁 Praktische Tipps</div>
+        <ul class="tips-list">
+          <li>Express Entry Profil früh anlegen: IELTS General (Englisch) und WES Educational Credential Assessment (ECA) brauchen je 6–12 Wochen – sofort starten.</li>
+          <li>Ottawa und Halifax oft unterschätzt: günstigere Mieten, starke öffentliche Verwaltung, sehr familienfreundlich, weniger Regen als Vancouver.</li>
+          <li>Settlement.org und Welcome Centres bieten kostenlose Orientierungshilfe und Jobvermittlung direkt nach Ankunft.</li>
+          <li>Social Worker Registrierung ist provinzabhängig – für British Columbia: BC College of Social Workers, für Ontario: OCSWSSW. Frühzeitig prüfen.</li>
+          <li>Gesundheitsversicherung (Provincial Health Card) gilt erst nach 3 Monaten – Überbrückungs-Privatversicherung einplanen.</li>
+          <li>Schulen sind öffentlich und kostenlos; die Schulqualität variiert nach Stadtbezirk – Bewertungen auf GreatSchools.ca prüfen.</li>
+          <li>SIN (Social Insurance Number) ist die erste Behördenaufgabe nach Ankunft – ohne SIN kein Job, kein Bankkonto.</li>
+        </ul>
+      </div>
+
+      <details>
+        <summary>Welche Provinz / Stadt passt?</summary>
+        <div class="details-body">
+          <ul>
+            <li><strong>Vancouver / BC:</strong> Mildestes Klima, sehr weltoffen, aber teuerste Mieten Kanadas. Für Sozialberufe starker Markt.</li>
+            <li><strong>Ottawa:</strong> Stabile Beamtenwirtschaft, hohe Zweisprachigkeit (EN/FR), gute Schulen, moderatere Mieten.</li>
+            <li><strong>Halifax / NS:</strong> Atlantic Immigration Program (AIP) erleichtert Einwanderung erheblich. Günstig, maritim, wachsend.</li>
+            <li><strong>Victoria / BC:</strong> Sehr familienfreundlich, milder als Vancouver, etwas kleinerer Markt.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Einreise – Express Entry & Co.</summary>
+        <div class="details-body">
+          <ul>
+            <li>Federal Skilled Worker (FSW): Punkte für Alter, Sprache, Bildung, Erfahrung. CRS-Score ist entscheidend.</li>
+            <li>Provincial Nominee Program (PNP): Provinz nominiert – oft schneller als Federal.</li>
+            <li>Atlantic Immigration Program (AIP): Besonders zugänglich für Halifax/Moncton-Bereich.</li>
+            <li>Bearbeitungszeit Express Entry: 6–12 Monate nach Invitation to Apply.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ─── NEUSEELAND ─── -->
+  <div class="country-card" id="neuseeland">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="flag-circle">🇳🇿</div>
+        <div>
+          <div class="card-title">Neuseeland</div>
+          <div class="card-subtitle">Wellington · Christchurch · Regionalstädte</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scores-grid">
+      <div class="score-item">
+        <div class="score-label">Willkommenskultur</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:84%"></div></div>
+          <span class="score-num">8.4</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Gesellschaftl. Offenheit</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:85%"></div></div>
+          <span class="score-num">8.5</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Antidiskriminierung</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:82%"></div></div>
+          <span class="score-num">8.2</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Familienfreundlich</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:80%"></div></div>
+          <span class="score-num">8.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <p class="summary-text">
+        Pragmatische, community-orientierte Gesellschaft mit starkem Biculturalism-Wert (Māori/Pākehā). Politisch stabil, Englisch als Alltagssprache ist ein riesiger Vorteil. Der entscheidende Nachteil: 20.000 km von Europa – für Familien mit verwandtschaftlichen Bindungen eine ernste Abwägung.
+      </p>
+
+      <div class="tags">
+        <span class="tag good">Englischsprachig</span>
+        <span class="tag good">Community-stark</span>
+        <span class="tag good">Biculturalism als Wert</span>
+        <span class="tag good">Naturverbunden</span>
+        <span class="tag warn">20.000 km von DE</span>
+        <span class="tag warn">Visa-Prozess komplex</span>
+        <span class="tag warn">Teuer in Auckland</span>
+      </div>
+
+      <div class="tips-block">
+        <div class="tips-title">🥝 Praktische Tipps</div>
+        <ul class="tips-list">
+          <li>Skilled Migrant Category vs. Accredited Employer Work Visa: zweiter Weg ist aktuell schneller – zuerst Jobangebot, dann Visa. Job-first-Strategie empfohlen.</li>
+          <li>NZQA Assessment (Qualifikationsbewertung) so früh wie möglich beauftragen – kostenpflichtig, dauert 8–12 Wochen.</li>
+          <li>Social Workers Registration Board (SWRB) ist die zuständige Stelle für Sozialpädagogik/Sozialarbeit – Anforderungen vorab klären.</li>
+          <li>Wellington ist kleiner als Auckland, günstiger und hat eine sehr aktive Community-Szene – ideal für Sozialberufe und gutes Schulumfeld.</li>
+          <li>IRD Number (Steuer-ID) ist nach Ankunft der erste Schritt – ohne IRD kein Lohn auszahlbar.</li>
+          <li>Flugzeiten beachten: Frankfurt → Auckland ca. 24 Stunden. Heimbesuche sind teuer und aufwändig.</li>
+        </ul>
+      </div>
+
+      <details>
+        <summary>Klima & Regionen</summary>
+        <div class="details-body">
+          <ul>
+            <li><strong>Auckland (Norden):</strong> Subtropisch mild, feucht. Größter Jobmarkt, teuerste Mieten.</li>
+            <li><strong>Wellington:</strong> Windig, mild. Kulturell reich, politisch aktiv, sehr gut für Sozialberufe.</li>
+            <li><strong>Christchurch:</strong> Trockener, kühler. Tech/Engineering-Hubs. Moderatere Preise.</li>
+            <li><strong>Regionalstädte:</strong> Deutlich günstiger, ruhiger, engere Gemeinschaft.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ─── ISLAND ─── -->
+  <div class="country-card" id="island">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="flag-circle">🇮🇸</div>
+        <div>
+          <div class="card-title">Island</div>
+          <div class="card-subtitle">Reykjavík · Kópavogur · Akureyri</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scores-grid">
+      <div class="score-item">
+        <div class="score-label">Willkommenskultur</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:80%"></div></div>
+          <span class="score-num">8.0</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Gleichstellung (WEF)</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:99%"></div></div>
+          <span class="score-num">9.9</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Sicherheit</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:97%"></div></div>
+          <span class="score-num">9.7</span>
+        </div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Arbeitsmarktgröße</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-fill" style="width:42%"></div></div>
+          <span class="score-num">4.2</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <p class="summary-text">
+        Island belegt beim WEF Global Gender Gap Index seit Jahren Platz 1 – Gleichstellung ist tief in Gesellschaft und Recht verankert. Sehr sicher, sehr gemeinschaftlich. Der Haken: Es ist ein kleines Land mit entsprechend begrenztem Arbeitsmarkt, und Isländisch ist für echte gesellschaftliche Teilhabe unumgänglich.
+      </p>
+
+      <div class="tags">
+        <span class="tag good">WEF Gleichstellung Nr. 1</span>
+        <span class="tag good">Weltsicherster Staat</span>
+        <span class="tag good">EU/EFTA – Freizügigkeit</span>
+        <span class="tag good">Englisch verbreitet</span>
+        <span class="tag warn">Isländisch wichtig</span>
+        <span class="tag warn">Sehr kleiner Jobmarkt</span>
+        <span class="tag warn">Hohe Importkosten</span>
+      </div>
+
+      <div class="tips-block">
+        <div class="tips-title">🌋 Praktische Tipps</div>
+        <ul class="tips-list">
+          <li>Kennitala (nationale ID-Nummer) beantragen ist der erste Schritt nach Anmeldung bei Registers Iceland (Þjóðskrá). Alles andere folgt daraus.</li>
+          <li>Isländisch lernen geht langsam – Sprache ist komplex. Parallel auf Englisch Jobs suchen, Isländisch in der Freizeit aufbauen.</li>
+          <li>Wohnraum in Reykjavík ist sehr knapp. Kópavogur und Hafnarfjörður (südlich von Reykjavík) sind familienfreundlicher und günstiger.</li>
+          <li>Tourismus-Sektor bietet viele englischsprachige Einstiegsmöglichkeiten – als Übergang gut geeignet.</li>
+          <li>Geothermie und Energie sind Wachstumsbranchen – für Wirtschaftsprofil interessant.</li>
+          <li>Die isländische Gesellschaft ist sehr klein: ca. 380.000 Menschen. Das bedeutet kurze Wege, aber auch wenig Anonymität.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── VERGLEICH ─── -->
+  <div class="section-head" id="vergleich">
+    <h2>Direktvergleich</h2>
+    <p>Alle vier Länder auf einen Blick</p>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Kriterium</th>
+          <th>🇳🇴 Norwegen</th>
+          <th>🇨🇦 Kanada</th>
+          <th>🇳🇿 NZ</th>
+          <th>🇮🇸 Island</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Willkommenskultur</td>
+          <td class="cell-good">★★★★★</td>
+          <td class="cell-good">★★★★★</td>
+          <td>★★★★☆</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>Gleichstellung</td>
+          <td class="cell-good">Top 2 weltweit</td>
+          <td>Sehr gut</td>
+          <td>Gut</td>
+          <td class="cell-good">Nr. 1 weltweit</td>
+        </tr>
+        <tr>
+          <td>Sprache für Start</td>
+          <td class="cell-good">Englisch reicht</td>
+          <td class="cell-good">Englisch</td>
+          <td class="cell-good">Englisch</td>
+          <td class="cell-good">Englisch reicht</td>
+        </tr>
+        <tr>
+          <td>Sprache für Integration</td>
+          <td class="cell-warn">Norwegisch nötig</td>
+          <td class="cell-good">Englisch</td>
+          <td class="cell-good">Englisch</td>
+          <td class="cell-warn">Isländisch nötig</td>
+        </tr>
+        <tr>
+          <td>Einreise (DE)</td>
+          <td class="cell-good">EU/EFTA frei</td>
+          <td class="cell-warn">Visa-Prozess</td>
+          <td class="cell-warn">Visa-Prozess</td>
+          <td class="cell-good">EU/EFTA frei</td>
+        </tr>
+        <tr>
+          <td>Lebenshaltung</td>
+          <td>Hoch</td>
+          <td>Hoch (Hubs)</td>
+          <td>Mittel–Hoch</td>
+          <td>Sehr hoch</td>
+        </tr>
+        <tr>
+          <td>Jobmarkt Sozialarbeit</td>
+          <td class="cell-good">Groß, Bedarf</td>
+          <td class="cell-good">Sehr groß</td>
+          <td>Mittel</td>
+          <td class="cell-warn">Klein</td>
+        </tr>
+        <tr>
+          <td>Jobmarkt Wirtschaft</td>
+          <td class="cell-good">Stark (Energie/Tech)</td>
+          <td class="cell-good">Sehr stark</td>
+          <td>Mittel</td>
+          <td class="cell-warn">Begrenzt</td>
+        </tr>
+        <tr>
+          <td>Entfernung zu DE</td>
+          <td class="cell-good">~2h Flug</td>
+          <td>~9h Flug</td>
+          <td class="cell-warn">~24h Flug</td>
+          <td class="cell-good">~3h Flug</td>
+        </tr>
+        <tr>
+          <td>Klima</td>
+          <td>4 Jahreszeiten</td>
+          <td>Regional sehr verschieden</td>
+          <td>Mild-ozeanisch</td>
+          <td>Kühl-maritim</td>
+        </tr>
+        <tr>
+          <td>Schule (10-j. Kind)</td>
+          <td class="cell-good">Kostenlos, Förderung</td>
+          <td class="cell-good">Kostenlos, gut</td>
+          <td class="cell-good">Kostenlos, gut</td>
+          <td>Kostenlos, solide</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ─── ZEITPLAN ─── -->
+  <div class="section-head" id="zeitplan">
+    <h2>Planungs-Zeitstrahl</h2>
+    <p>12-Monats-Plan für eine realistische Vorbereitung</p>
+  </div>
+
+  <div class="timeline">
+    <div class="phase">
+      <div class="phase-left">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-label">Monat 1–3</div>
+        <div class="phase-title">Entscheidung & Grundlagen</div>
+        <div class="phase-items">
+          <ul>
+            <li>Zielland final festlegen, Budgetrahmen definieren</li>
+            <li>Sprachkurs starten (Norwegisch A1 oder IELTS-Vorbereitung)</li>
+            <li>Dokumente sammeln: Zeugnisse, Urkunden, Führungszeugnis</li>
+            <li>NOKUT/NZQA/WES-Antrag einreichen (Bearbeitungszeit 3–6 Monate)</li>
+            <li>LinkedIn-Profil auf Englisch/Zielsprache aktualisieren</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-left">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-label">Monat 4–6</div>
+        <div class="phase-title">Scout-Reise & Jobsuche</div>
+        <div class="phase-items">
+          <ul>
+            <li>Scout-Reise 1–2 Wochen: Schulen, Stadtteile, Wohnungsmarkt erkunden</li>
+            <li>Gespräche mit potenziellen Arbeitgebern (auch informell)</li>
+            <li>Berufsanerkennung vertiefen, Zwischenrolle als Plan B definieren</li>
+            <li>Finanzpuffer aufbauen: 6–9 Monatsausgaben als Rücklage</li>
+            <li>Erste konkrete Bewerbungen absenden</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-left">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-label">Monat 7–9</div>
+        <div class="phase-title">Konkretisierung & Logistik</div>
+        <div class="phase-items">
+          <ul>
+            <li>Arbeitsangebot oder konkreter Jobkontakt vorhanden</li>
+            <li>Übergangswohnung buchen (möbliert, 3–6 Monate)</li>
+            <li>Spedition anfragen, Zollliste vorbereiten</li>
+            <li>Schulanmeldung bei Zielkommune einleiten</li>
+            <li>Krankenversicherung Übergang klären</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-left">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-label">Monat 10–11</div>
+        <div class="phase-title">Abmeldungen & Übergaben</div>
+        <div class="phase-items">
+          <ul>
+            <li>Kündigung Wohnung, Kita/Schule, Strom, Internet</li>
+            <li>Banken, Altersvorsorge, Depot klären und informieren</li>
+            <li>Vollmachten für Verbleibende regeln</li>
+            <li>Nachsendeauftrag bei Post einrichten</li>
+            <li>Abmeldung Einwohnermeldeamt (erst direkt vor Ausreise)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-left">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-content">
+        <div class="phase-label">Erste 90 Tage vor Ort</div>
+        <div class="phase-title">Ankommen & Einleben</div>
+        <div class="phase-items">
+          <ul>
+            <li>Adresse anmelden → Steuer-/Sozialnummer beantragen</li>
+            <li>Bankkonto eröffnen, SIM-Karte, Hausarzt einschreiben</li>
+            <li>Schulantritt des Kindes begleiten, Elterngespräch führen</li>
+            <li>Sprachkurs intensivieren, Nachbarschaft und Vereine kennenlernen</li>
+            <li>Nach 90 Tagen Review: Budget, Wohlbefinden Kind, Job-Fit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CHECKLISTE ─── -->
+  <div class="section-head" id="checkliste">
+    <h2>Checkliste Dokumente</h2>
+    <p>Was ihr auf jeden Fall braucht</p>
+  </div>
+
+  <div class="checklist">
+    <div class="check-item"><span class="check-icon">✓</span><span>Reisepässe aller Familienmitglieder (Gültigkeit mind. 2 Jahre nach geplantem Umzug)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Geburts- und Heiratsurkunden – mehrsprachig und beglaubigt</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Bildungsabschlüsse und Zeugnisse – original + beglaubigte Übersetzungen</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Arbeitszeugnisse und Tätigkeitsnachweise (übersetzt)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Erweitertes Führungszeugnis (Bundeszentralregister, auf Englisch beantragen)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Impfnachweise der ganzen Familie (WHO-Impfpass)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Krankenakte und Schulzeugnisse des Kindes</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Letzte 3 Steuerbescheide und Gehaltsabrechnungen</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Nachweis Eigenkapital / Finanzreserven (Kontoauszug)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Aktuelle Referenzschreiben von Arbeitgebern (englisch)</span></div>
+    <div class="check-item"><span class="check-icon">✓</span><span>Digitale Kopien aller Dokumente – verschlüsselt in der Cloud sichern</span></div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <p>Leitfaden erstellt auf Basis eigener Recherche · Stand: 25.09.2025<br>
+  Alle Angaben ohne Gewähr. Prüft vor Entscheidungen stets offizielle Quellen:<br>
+  UDI (Norwegen) · IRCC (Kanada) · Immigration NZ · Registers Iceland</p>
+</footer>
+
+</body>
+</html>
